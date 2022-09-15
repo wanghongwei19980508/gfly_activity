@@ -1,0 +1,3775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <title>开学季，每日首次充值2.5倍钻石</title>
+  <script src="../../js/rem-count.js"></script>
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="activity.css">
+  <script>
+    //获取浏览器页面可见高度和宽度
+    var ua = navigator.userAgent.toLowerCase()
+    if (/iphone|ipad|ipod/.test(ua)) {
+
+    } else {
+      loading();
+    }
+
+    function loading() {
+      var _PageHeight = document.documentElement.clientHeight,
+        _PageWidth = document.documentElement.clientWidth;
+      //			计算loading框距离顶部和左部的距离（loading框的宽度为215px，高度为61px）
+      var _LoadingTop = _PageHeight > 61 ? (_PageHeight - 61) / 2 : 0,
+        _LoadingLeft = _PageWidth > 215 ? (_PageWidth - 215) / 2 : 0;
+      //			在页面未加载完毕之前显示的loading Html自定义内容
+      var loading = '<div class="loading" id="loading" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;background: #fff;z-index: 9999;"><img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/preferential/loding.gif" style="top: calc(50% - 16px);;position: absolute;left: calc(50% - 16px);"> </div></div>';
+
+      document.write(loading);
+      //监听加载状态改变
+
+      document.onreadystatechange = completeLoading;
+      function completeLoading() {
+        if (document.readyState == "complete") {
+          var loadingMask = document.getElementById('loading');
+          loadingMask.parentNode.removeChild(loadingMask);
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="loding">
+    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/preferential/loding.gif">
+  </div>
+  <div class="box">
+    <div class="top"></div>
+    <div class="pagebox">
+      <li>
+        <div class="pagebtn0 pagebtn0Add" id="0" uid="pagebtn0"></div>
+      </li>
+      <li>
+        <div class="pagebtn1" id="1" uid="pagebtn1"></div>
+      </li>
+      <li>
+        <div class="pagebtn2" id="2" uid="pagebtn2"></div>
+      </li>
+      <li>
+        <div class="pagebtn3" id="3" uid="pagebtn3"></div>
+      </li>
+      <li>
+        <div class="pagebtn4" id="4" uid="pagebtn4"></div>
+      </li>
+      <li>
+        <div class="pagebtn5" id="5" uid="pagebtn5"></div>
+      </li>
+      <li>
+        <div class="pagebtn6" id="6" uid="pagebtn6"></div>
+      </li>
+      <li>
+        <div class="pagebtn7" id="7" uid="pagebtn7"></div>
+      </li>
+    </div>
+    <div class="change-box">
+      <div class="content">
+        <div class="currenttargetrewardtext"><img
+            src=" http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/当前目标奖励.png" alt=""></div>
+        <div class="currenttargetrewardbox">
+          <div class="howtoplaybtn"></div>
+          <div class="progressbox">
+            <div class="progressbar"></div>
+          </div>
+          <div class="targetrewardbtn">详情</div>
+        </div>
+        <div class="objectivebox">
+          <p>
+            <span class="objnum">0</span>/1456(<span class="objpercent">0</span>%)
+          </p>
+        </div>
+        <div class="targetrewardbox">
+          <li>
+            <div class="targetrewardlist">
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+              <p>元宝x1.5万</p>
+            </div>
+          </li>
+          <li>
+            <div class="targetrewardlist">
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/purple.png"
+                alt="">
+              <p>紫水晶x3</p>
+            </div>
+          </li>
+          <li>
+            <div class="targetrewardlist">
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                alt="">
+              <p>绿水晶x5</p>
+            </div>
+          </li>
+        </div>
+        <div class="targetrewardbox targetreward-box" style="display: none;">
+          <li>
+            <div class="targetrewardlist">
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+              <p>元宝x3万</p>
+            </div>
+          </li>
+          <li>
+            <div class="targetrewardlist">
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/purple.png"
+                alt="">
+              <p>紫水晶x6</p>
+            </div>
+          </li>
+          <li>
+            <div class="targetrewardlist">
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                alt="">
+              <p>绿水晶x10</p>
+            </div>
+          </li>
+        </div>
+        <div class="targetrewardbox targetreward-box" style="display: none;">
+          <li>
+            <div class="targetrewardlist">
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+              <p>元宝x6万</p>
+            </div>
+          </li>
+          <li>
+            <div class="targetrewardlist">
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/purple.png"
+                alt="">
+              <p>紫水晶x10</p>
+            </div>
+          </li>
+          <li>
+            <div class="targetrewardlist">
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                alt="">
+              <p>绿水晶x15</p>
+            </div>
+          </li>
+        </div>
+        <div class="targetrewardbox targetreward-box" style="display: none;">
+          <li>
+            <div class="targetrewardlist">
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+              <p>元宝x10万</p>
+            </div>
+          </li>
+          <li>
+            <div class="targetrewardlist">
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/purple.png"
+                alt="">
+              <p>紫水晶x30</p>
+            </div>
+          </li>
+          <li>
+            <div class="targetrewardlist">
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                alt="">
+              <p>绿水晶x50</p>
+            </div>
+          </li>
+        </div>
+        <div class="targetrewardbox targetreward-box" style="display: none;">
+          <li>
+            <div class="targetrewardlist">
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+              <p>元宝x30万</p>
+            </div>
+          </li>
+          <li>
+            <div class="targetrewardlist">
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/purple.png"
+                alt="">
+              <p>紫水晶x50</p>
+            </div>
+          </li>
+          <li>
+            <div class="targetrewardlist">
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                alt="">
+              <p>绿水晶x100</p>
+            </div>
+          </li>
+        </div>
+        <div class="cumulativeloginbox welfare-box">
+          <div class="cumulativeloginlist">
+            <div>
+              <p>累计登录（<span>0</span>/1）</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/skill/skill_prop_1@2x.png"
+                  alt="">
+                <p>大力丸x5</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x1</p>
+              </li>
+              <li>
+                <div class="loginbtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+1</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>累计登录（<span>0</span>/2）</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/skill/skill_prop_3@2x.png"
+                  alt="">
+                <p>烈焰红唇x5</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x2</p>
+              </li>
+              <li>
+                <div class="loginbtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+3</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>累计登录（<span>0</span>/3）</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/skill/skill_prop_5@2x.png"
+                  alt="">
+                <p>魔法棒x5</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x2</p>
+              </li>
+              <li>
+                <div class="loginbtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+5</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>累计登录（<span>0</span>/4）</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>元宝x3万</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x3</p>
+              </li>
+              <li>
+                <div class="loginbtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+7</p>
+            </div>
+          </div>
+        </div>
+        <div class="cumulativeloginbox welfare-box" style="display: none;">
+          <div class="cumulativeloginlist">
+            <div>
+              <p>活动期间单笔充值6元（<span>0</span>/6）</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>元宝x2.8万</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x1</p>
+              </li>
+              <li>
+                <img class="car-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/carImg/icon_4011006.png" alt="">
+                <p>三轮车x3天</p>
+              </li>
+              <li>
+                <div class="rechargebtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+10</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计充值30元（<span>0</span>/30）</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>元宝x18万</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x3</p>
+              </li>
+              <li>
+                <div class="rechargebtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+15</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计充值50元（<span>0</span>/50）</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>元宝x28万</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x5</p>
+              </li>
+              <li>
+                <div class="rechargebtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+20</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计充值120元（<span>0</span>/120）</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>元宝x58万</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x7</p>
+              </li>
+              <li>
+                <div class="rechargebtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+25</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计充值300元（<span>0</span>/300）</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>元宝x128万</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x9</p>
+              </li>
+              <li>
+                <div class="rechargebtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+30</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计充值600元（<span>0</span>/600）</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>元宝x288万</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x11</p>
+              </li>
+              <li>
+                <div class="rechargebtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+35</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计充值1500元（<span>0</span>/1500）</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>元宝x488万</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x13</p>
+              </li>
+              <li>
+                <div class="rechargebtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+40</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计充值3000元（<span>0</span>/3000）</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>元宝x888万</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x15</p>
+              </li>
+              <li>
+                <div class="rechargebtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+45</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计充值5000元（<span>0</span>/5000）</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>x1588万</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>x30</p>
+              </li>
+              <li>
+                <div class="weiwoduzun"></div>
+                <p>永久</p>
+              </li>
+              <li>
+                <div class="rechargebtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+50</p>
+            </div>
+          </div>
+        </div>
+        <div class="cumulativeloginbox welfare-box" style="display: none;">
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计消费（<span>0</span>/1000）钻石</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>元宝x3万</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x1</p>
+              </li>
+              <li>
+                <div class="consumeDbtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+5</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计消费（<span>0</span>/2000）钻石</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>元宝x6万</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x1</p>
+              </li>
+              <li>
+                <div class="consumeDbtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+5</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计消费（<span>0</span>/5000）钻石</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>元宝x12万</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x2</p>
+              </li>
+              <li>
+                <div class="consumeDbtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+5</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计消费（<span>0</span>/10000）钻石</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>元宝x24万</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x2</p>
+              </li>
+              <li>
+                <div class="consumeDbtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+10</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计消费（<span>0</span>/30000）钻石</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>元宝x48万</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x3</p>
+              </li>
+              <li>
+                <div class="consumeDbtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+10</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计消费（<span>0</span>/50000）钻石</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>元宝x100万</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x5</p>
+              </li>
+              <li>
+                <div class="consumeDbtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+20</p>
+            </div>
+          </div>
+        </div>
+        <div class="cumulativeloginbox welfare-box" style="display: none;">
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计消耗（<span>0</span>/100）绿水晶</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                  alt="">
+                <p>绿水晶x10</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x1</p>
+              </li>
+              <li>
+                <div class="consumeGbtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+1</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计消耗（<span>0</span>/200）绿水晶</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                  alt="">
+                <p>绿水晶x20</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x1</p>
+              </li>
+              <li>
+                <div class="consumeGbtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+1</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计消耗（<span>0</span>/500）绿水晶</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                  alt="">
+                <p>绿水晶x50</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x1</p>
+              </li>
+              <li>
+                <div class="consumeGbtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+1</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计消耗（<span>0</span>/1000）绿水晶</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                  alt="">
+                <p>绿水晶x100</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x2</p>
+              </li>
+              <li>
+                <div class="consumeGbtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+2</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计消耗（<span>0</span>/2000）绿水晶</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/skill/skill_prop_5@2x.png"
+                  alt="">
+                <p>魔法棒x10</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x2</p>
+              </li>
+              <li>
+                <div class="consumeGbtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+2</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计消耗（<span>0</span>/5000）绿水晶</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/skill/skill_prop_5@2x.png"
+                  alt="">
+                <p>魔法棒x20</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x2</p>
+              </li>
+              <li>
+                <div class="consumeGbtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+2</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计消耗（<span>0</span>/10000）绿水晶</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/purple.png"
+                  alt="">
+                <p>紫水晶x30</p>
+              </li>
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/skill/skill_prop_5@2x.png"
+                  alt="">
+                <p>魔法棒x10</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x3</p>
+              </li>
+              <li>
+                <div class="consumeGbtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+5</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计消耗（<span>0</span>/50000）绿水晶</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/purple.png"
+                  alt="">
+                <p>紫水晶x100</p>
+              </li>
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/skill/skill_prop_5@2x.png"
+                  alt="">
+                <p>魔法棒x50</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x5</p>
+              </li>
+              <li>
+                <div class="consumeGbtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+7</p>
+            </div>
+          </div>
+        </div>
+        <div class="cumulativeloginbox welfare-box" style="display: none;">
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计消耗（<span>0</span>/50）紫水晶</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                  alt="">
+                <p>绿水晶x10</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x1</p>
+              </li>
+              <li>
+                <div class="consumePbtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+1</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计消耗（<span>0</span>/100）紫水晶</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                  alt="">
+                <p>绿水晶x20</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x1</p>
+              </li>
+              <li>
+                <div class="consumePbtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+1</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计消耗（<span>0</span>/200）紫水晶</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                  alt="">
+                <p>绿水晶x40</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x2</p>
+              </li>
+              <li>
+                <div class="consumePbtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+1</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计消耗（<span>0</span>/500）紫水晶</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                  alt="">
+                <p>绿水晶x80</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x3</p>
+              </li>
+              <li>
+                <div class="consumePbtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+3</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计消耗（<span>0</span>/1000）紫水晶</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/purple.png"
+                  alt="">
+                <p>紫水晶x30</p>
+              </li>
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/skill/skill_prop_5@2x.png"
+                  alt="">
+                <p>魔法棒x10</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x3</p>
+              </li>
+              <li>
+                <div class="consumePbtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+3</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计消耗（<span>0</span>/2000）紫水晶</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/purple.png"
+                  alt="">
+                <p>紫水晶x60</p>
+              </li>
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/skill/skill_prop_5@2x.png"
+                  alt="">
+                <p>魔法棒x15</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x5</p>
+              </li>
+              <li>
+                <div class="consumePbtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+3</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计消耗（<span>0</span>/5000）紫水晶</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/purple.png"
+                  alt="">
+                <p>紫水晶x150</p>
+              </li>
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/skill/skill_prop_5@2x.png"
+                  alt="">
+                <p>魔法棒x30</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x5</p>
+              </li>
+              <li>
+                <div class="consumePbtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+5</p>
+            </div>
+          </div>
+          <div class="cumulativeloginlist">
+            <div>
+              <p>每日累计消耗（<span>0</span>/10000）紫水晶</p>
+            </div>
+            <ul class="cumulativelogincontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/purple.png"
+                  alt="">
+                <p>紫水晶x300</p>
+              </li>
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/skill/skill_prop_5@2x.png"
+                  alt="">
+                <p>魔法棒x60</p>
+              </li>
+              <li>
+                <img class="scene-littleImg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+                  alt="">
+                <p>藏宝图x7</p>
+              </li>
+              <li>
+                <div class="consumePbtn">未达成</div>
+              </li>
+            </ul>
+            <div>
+              <p>进度+7</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rollerbox">
+        <div class="welfareObjectives-box">
+          <ul class="welfareObjectives-content">
+            <li>
+              <div class="welfareO welfareOAdd" uid="welfareO">签到目标</div>
+            </li>
+            <li>
+              <div class="welfareO" uid="welfareO">充值目标</div>
+            </li>
+            <li>
+              <div class="welfareO" uid="welfareO">消费目标</div>
+            </li>
+            <li>
+              <div class="welfareO" uid="welfareO">消耗目标1</div>
+            </li>
+            <li>
+              <div class="welfareO" uid="welfareO">消耗目标2</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="change-box" style="display: none;">
+      <div class="content">
+        <div class="treasurebox">
+          <div class="treasurecontent">
+            <li uid="12" id="greenSquare12" class="greenSquare greenSquare1">
+              <div class="treasurelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                  alt="">
+                <p class="Squaretext">150~500</p>
+              </div>
+            </li>
+            <li uid="11" id="greenSquare11" class="greenSquare">
+              <div class="treasurelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                  alt="">
+                <p>1~3</p>
+              </div>
+            </li>
+            <li uid="10" id="greenSquare10" class="greenSquare">
+              <div class="treasurelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                  alt="">
+                <p>30~70</p>
+              </div>
+            </li>
+            <li uid="9" id="greenSquare9" class="greenSquare">
+              <div class="treasurelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                  alt="">
+                <p>3~5</p>
+              </div>
+            </li>
+            <li uid="8" id="greenSquare8" class="greenSquare greenSquare1">
+              <div class="treasurelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                  alt="">
+                <p class="Squaretext">70~150</p>
+              </div>
+            </li>
+          </div>
+          <div class="treasurecontent treasurecontent1">
+            <li uid="13" id="greenSquare13" class="greenSquare">
+              <div class="treasurelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                  alt="">
+                <p>5~7</p>
+              </div>
+            </li>
+            <li uid="7" id="greenSquare7" class="greenSquare">
+              <div class="treasurelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                  alt="">
+                <p>7~15</p>
+              </div>
+            </li>
+          </div>
+          <div class="treasurecontent treasurecontent1">
+            <li uid="14" id="greenSquare14" class="greenSquare">
+              <div class="treasurelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                  alt="">
+                <p>15~35</p>
+              </div>
+            </li>
+            <li uid="6" id="greenSquare6" class="greenSquare">
+              <div class="treasurelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                  alt="">
+                <p>15~35</p>
+              </div>
+            </li>
+          </div>
+          <div class="treasurecontent treasurecontent1">
+            <li uid="15" id="greenSquare15" class="greenSquare">
+              <div class="treasurelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                  alt="">
+                <p>7~15</p>
+              </div>
+            </li>
+            <li uid="5" id="greenSquare5" class="greenSquare">
+              <div class="treasurelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                  alt="">
+                <p>5~7</p>
+              </div>
+            </li>
+          </div>
+          <div class="treasurecontent">
+            <li uid="0" id="greenSquare0" class="greenSquare greenSquare1 green-lighting">
+              <div class="treasurelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                  alt="">
+                <p class="Squaretext">70~150</p>
+              </div>
+            </li>
+            <li uid="1" id="greenSquare1" class="greenSquare">
+              <div class="treasurelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                  alt="">
+                <p>3~5</p>
+              </div>
+            </li>
+            <li uid="2" id="greenSquare2" class="greenSquare">
+              <div class="treasurelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                  alt="">
+                <p>30~70</p>
+              </div>
+            </li>
+            <li uid="3" id="greenSquare3" class="greenSquare">
+              <div class="treasurelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                  alt="">
+                <p>1~3</p>
+              </div>
+            </li>
+            <li uid="4" id="greenSquare4" class="greenSquare greenSquare1">
+              <div class="treasurelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                  alt="">
+                <p class="Squaretext">150~500</p>
+              </div>
+            </li>
+          </div>
+          <div class="treasurehuntbox treasurehuntawardsbox">
+            <p>寻宝纪录</p>
+            <div class="treasurehuntcontent treasurehuntawardscontent">
+              <div>
+                <!-- <p><span class="treasuretitle">青龙青龙青龙青</span><span>获得</span><span class="treasurenum">绿水晶x100</span></p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="treasuretimebox">
+          <li class="treasuretimelist">
+            <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+              alt="">
+            <span><span class="treasuretimenum">0</span>/1</span>
+          </li>
+          <li class="treasuretimelist">
+            <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/藏宝图.png"
+              alt="">
+            <span><span class="treasuretimenum">0</span>/10</span>
+          </li>
+        </div>
+        <div class="treasurebtnbox">
+          <div class="onetenbtn treasurebtn treasureonebtn">寻宝一次</div>
+          <div class="onetenbtn treasurebtn treasuretenbtn">寻宝十次</div>
+        </div>
+      </div>
+    </div>
+    <div class="change-box" style="display: none;">
+      <div class="content">
+        <div class="giftbagbox">
+          <div class="giftbaglist">
+            <div class="skillbagbox">
+              <div>
+                <p>3折</p>
+              </div>
+              <div>
+                <p>技能道具礼包一</p>
+              </div>
+              <div>
+                <p>原价：10000钻石</p>
+                <p>现价：3000钻石</p>
+              </div>
+            </div>
+            <ul class="giftbagcontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/skill/skill_prop_5@2x.png"
+                  alt="">
+                <p>魔法棒x100</p>
+              </li>
+              <li>
+                <div class="purchasebtn">购买</div>
+                <p>每日限购（<span>0</span>/1）</p>
+              </li>
+            </ul>
+          </div>
+          <div class="giftbaglist">
+            <div class="skillbagbox">
+              <div>
+                <p>3折</p>
+              </div>
+              <div>
+                <p>技能道具礼包二</p>
+              </div>
+              <div>
+                <p>原价：15000钻石</p>
+                <p>现价：4500钻石</p>
+              </div>
+            </div>
+            <ul class="giftbagcontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/skill/skill_prop_3@2x.png"
+                  alt="">
+                <p>烈焰红唇x100</p>
+              </li>
+              <li>
+                <div class="purchasebtn">购买</div>
+                <p>每日限购（<span>0</span>/1）</p>
+              </li>
+            </ul>
+          </div>
+          <div class="giftbaglist">
+            <div class="skillbagbox">
+              <div>
+                <p>5折</p>
+              </div>
+              <div>
+                <p>技能升级礼包一</p>
+              </div>
+              <div>
+                <p>原价：5000钻石</p>
+                <p>现价：2500钻石</p>
+              </div>
+            </div>
+            <ul class="giftbagcontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                  alt="">
+                <p>绿水晶x500</p>
+              </li>
+              <li>
+                <div class="purchasebtn">购买</div>
+                <p>每日限购（<span>0</span>/2）</p>
+              </li>
+            </ul>
+          </div>
+          <div class="giftbaglist">
+            <div class="skillbagbox">
+              <div>
+                <p>5折</p>
+              </div>
+              <div>
+                <p>技能升级礼包二</p>
+              </div>
+              <div>
+                <p>原价：10000钻石</p>
+                <p>现价：5000钻石</p>
+              </div>
+            </div>
+            <ul class="giftbagcontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                  alt="">
+                <p>绿水晶x1000</p>
+              </li>
+              <li>
+                <div class="purchasebtn">购买</div>
+                <p>每日限购（<span>0</span>/2）</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="change-box" style="display: none;">
+      <div class="content">
+        <div class="vipdiscountbox">
+          <div class="vipdiscountlist vipdiscountlist1">
+            <div class="viprewardbox">
+              <p class="openvip">开通黄金VIPx30天</p>
+            </div>
+            <ul class="vipdiscountcontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>元宝x10万</p>
+              </li>
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                  alt="">
+                <p>绿水晶x50</p>
+              </li>
+              <li>
+                <div class="buybtn">去开通</div>
+                <p class="buybtntext">本期限领（<span>0</span>/1）</p>
+              </li>
+            </ul>
+          </div>
+          <div class="vipdiscountlist vipdiscountlist1">
+            <div class="viprewardbox">
+              <p class="openvip">开通铂金VIPx30天</p>
+            </div>
+            <ul class="vipdiscountcontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>元宝x30万</p>
+              </li>
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                  alt="">
+                <p>绿水晶x100</p>
+              </li>
+              <li>
+                <div class="buybtn">去开通</div>
+                <p class="buybtntext">本期限领（<span>0</span>/1）</p>
+              </li>
+            </ul>
+          </div>
+          <div class="vipdiscountlist vipdiscountlist1">
+            <div class="viprewardbox">
+              <p class="openvip">开通至尊VIPx30天</p>
+            </div>
+            <ul class="vipdiscountcontent">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>元宝x50万</p>
+              </li>
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                  alt="">
+                <p>绿水晶x300</p>
+              </li>
+              <li>
+                <div class="buybtn">去开通</div>
+                <p class="buybtntext">本期限领（<span>0</span>/1）</p>
+              </li>
+            </ul>
+          </div>
+          <div class="vipdiscountlist">
+            <div class="viprewardbox">
+              <div>
+                <p>9折</p>
+              </div>
+              <div>
+                <p>仅限黄金VIP购买</p>
+              </div>
+              <div>
+                <p>原价：4000钻石</p>
+                <p>现价：3600钻石</p>
+              </div>
+            </div>
+            <ul class="vipdiscountcontent1">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/purple.png"
+                  alt="">
+                <p>紫水晶x100</p>
+              </li>
+              <li>
+                <div class="buyvipbtn">购买</div>
+                <p>每日限购（<span>0</span>/2）</p>
+              </li>
+            </ul>
+          </div>
+          <div class="vipdiscountlist">
+            <div class="viprewardbox">
+              <div>
+                <p>8折</p>
+              </div>
+              <div>
+                <p>仅限铂金VIP购买</p>
+              </div>
+              <div>
+                <p>原价：12000钻石</p>
+                <p>现价：9600钻石</p>
+              </div>
+            </div>
+            <ul class="vipdiscountcontent1">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/purple.png"
+                  alt="">
+                <p>紫水晶x300</p>
+              </li>
+              <li>
+                <div class="buyvipbtn">购买</div>
+                <p>每日限购（<span>0</span>/2）</p>
+              </li>
+            </ul>
+          </div>
+          <div class="vipdiscountlist">
+            <div class="viprewardbox">
+              <div>
+                <p>7折</p>
+              </div>
+              <div>
+                <p>仅限至尊VIP购买</p>
+              </div>
+              <div>
+                <p>原价：20000钻石</p>
+                <p>现价：14000钻石</p>
+              </div>
+            </div>
+            <ul class="vipdiscountcontent1">
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/purple.png"
+                  alt="">
+                <p>紫水晶x500</p>
+              </li>
+              <li>
+                <div class="buyvipbtn">购买</div>
+                <p>每日限购（<span>0</span>/2）</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="change-box" style="display: none;">
+      <div class="content">
+        <div class="eggbox">
+          <p>每消费100钻石即可获得1次砸金蛋机会</p>
+          <div class="eggcontent">
+            <div class="egghowtoplaybtn"></div>
+            <div class="winningrecordbtn">中奖纪录</div>
+          </div>
+          <div class="egglist">
+            <ul>
+              <!-- <li>恭喜<span class="eggname">青龙</span>获得<span class="eggnum">元宝x1000</span></li> -->
+            </ul>
+          </div>
+          <!-- 蛋 -->
+          <div class="eggimgbox"></div>
+          <div class="rewardstorebox">
+            <li>
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/奖励预览.png"
+                alt="">
+              <p>奖励预览</p>
+            </li>
+            <li>
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/砸蛋商店.png"
+                alt="">
+              <p>砸蛋商店</p>
+            </li>
+          </div>
+        </div>
+        <div class="hammerbox">
+          <div class="hammercontent">
+            <li>
+              <span>5</span>
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/锤子.png"
+                alt="">
+            </li>
+            <li>
+              <span>25</span>
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/锤子.png"
+                alt="">
+            </li>
+            <li>
+              <span>60</span>
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/锤子.png"
+                alt="">
+            </li>
+            <li>
+              <span>100</span>
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/锤子.png"
+                alt="">
+            </li>
+          </div>
+          <div class="hammerprogressbox">
+            <div>0</div>
+            <div>
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <div class="hammerprogress">
+                <div class="hammerbar"></div>
+              </div>
+            </div>
+          </div>
+          <div class="hammereggbox">
+            <li>砸蛋次数</li>
+            <li>50</li>
+            <li>250</li>
+            <li>600</li>
+            <li>1000</li>
+          </div>
+        </div>
+        <div class="hammereggbtnbox">
+          <div class="onetenbtn hammereggonebtn" uid="1">砸蛋一次</div>
+          <div class="onetenbtn hammereggtenbtn" uid="10">砸蛋十次</div>
+        </div>
+        <div class="hammereggtext">剩余砸蛋次数：<span class="hammereggnum">0</span></div>
+      </div>
+    </div>
+    <div class="change-box" style="display: none;">
+      <div class="content">
+        <div class="premiumrebatebox">
+          <div class="premiumrebatecontent">
+            <li uid="12" id="moneySquare12" class="moneySquare moneySquare1">
+              <div class="premiumrebatelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>50w</p>
+              </div>
+            </li>
+            <li uid="11" id="moneySquare11" class="moneySquare">
+              <div class="premiumrebatelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>2k~3k</p>
+              </div>
+            </li>
+            <li uid="10" id="moneySquare10" class="moneySquare">
+              <div class="premiumrebatelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>5w</p>
+              </div>
+            </li>
+            <li uid="9" id="moneySquare9" class="moneySquare">
+              <div class="premiumrebatelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>8w</p>
+              </div>
+            </li>
+            <li uid="8" id="moneySquare8" class="moneySquare moneySquare1">
+              <div class="premiumrebatelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>30w</p>
+              </div>
+            </li>
+          </div>
+          <div class="premiumrebatecontent premiumrebatecontent1">
+            <li uid="13" id="moneySquare13" class="moneySquare">
+              <div class="premiumrebatelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>3k~4k</p>
+              </div>
+            </li>
+            <li uid="7" id="moneySquare7" class="moneySquare">
+              <div class="premiumrebatelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>1k~2k</p>
+              </div>
+            </li>
+          </div>
+          <div class="premiumrebatecontent premiumrebatecontent1">
+            <li uid="14" id="moneySquare14" class="moneySquare">
+              <div class="premiumrebatelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>10w</p>
+              </div>
+            </li>
+            <li uid="6" id="moneySquare6" class="moneySquare">
+              <div class="premiumrebatelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>10w</p>
+              </div>
+            </li>
+          </div>
+          <div class="premiumrebatecontent premiumrebatecontent1">
+            <li uid="15" id="moneySquare15" class="moneySquare">
+              <div class="premiumrebatelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>1k~2k</p>
+              </div>
+            </li>
+            <li uid="5" id="moneySquare5" class="moneySquare">
+              <div class="premiumrebatelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>3k~4k</p>
+              </div>
+            </li>
+          </div>
+          <div class="premiumrebatecontent">
+            <li uid="0" id="moneySquare0" class="moneySquare moneySquare1 money-lighting">
+              <div class="premiumrebatelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>100w</p>
+              </div>
+            </li>
+            <li uid="1" id="moneySquare1" class="moneySquare">
+              <div class="premiumrebatelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>8w</p>
+              </div>
+            </li>
+            <li uid="2" id="moneySquare2" class="moneySquare">
+              <div class="premiumrebatelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>5w</p>
+              </div>
+            </li>
+            <li uid="3" id="moneySquare3" class="moneySquare">
+              <div class="premiumrebatelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>2k~3k</p>
+              </div>
+            </li>
+            <li uid="4" id="moneySquare4" class="moneySquare moneySquare1">
+              <div class="premiumrebatelist">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                <p>30w</p>
+              </div>
+            </li>
+          </div>
+          <div class="awardannouncementbox treasurehuntawardsbox">
+            <p>获奖公告</p>
+            <div class="awardannouncementcontent treasurehuntawardscontent">
+              <div>
+                <!-- <p><span class="awardannouncementtitle">青龙</span><span>获得</span><span class="awardannouncementnum">元宝x100</span></p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rechargehowtoplaybox">
+          <div>每充值10元 可抽奖一次</div>
+          <div class="rechargehowtoplaybtn"></div>
+        </div>
+        <div class="rechargebox">
+          <div class="rechargecontent">
+            <div>
+              <div>壕气值</div>
+              <div class="moatairbox">
+                <div class="moatairbar"></div>
+              </div>
+              <div><span class="moatairnum">0</span>/<span class="moatairnum1">5</span></div>
+            </div>
+            <p>抽奖可累计壕气值 获得超值大礼包</p>
+          </div>
+          <div class="rechargegiftbtn"></div>
+        </div>
+        <div class="luckdrawbtnbox">
+          <div class="onetenbtn luckdrawbtn luckdrawonebtn">抽奖一次</div>
+          <div class="onetenbtn luckdrawbtn luckdrawtenbtn">抽奖十次</div>
+        </div>
+        <div class="luckdrawtext">剩余抽奖次数：<span class="luckdrawnum">0</span></div>
+      </div>
+    </div>
+    <div class="change-box" style="display: none;">
+      <div class="content">
+        <div class="investlistbox">
+          <div class="investlistcontent">
+            <div class="investlistframeimg">
+              <div class="investlistheadimg"></div>
+            </div>
+            <p>暂无小主上榜</p>
+            <div>积分：<span class="integralnum"></span></div>
+          </div>
+          <div class="rankinglistcontent">
+            <div>
+              <div class="trophybtn">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/排行榜.png"
+                  alt="">
+                <p>排行榜</p>
+              </div>
+              <div class="myrankingbtn">我的排名<br><span class="myrankingnum">未上榜</span></div>
+            </div>
+            <!-- 钻石消费 -->
+            <!--                <p>我的钻石消费：<br><span class="rechargeamountnum">0</span></p>  -->
+            <!-- 充值 -->
+            <p>我的充值额：<br><span class="rechargeamountnum">0</span></p>
+            <div>
+              <div class="rankinglist">
+                <div>
+                  <p>冠军</p>
+                </div>
+                <div>
+                  <ul>
+                    <li class="rankingcontent">
+                      <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                      <p>50万</p>
+                    </li>
+                    <li class="rankingcontent">
+                      <img
+                        src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/purple.png"
+                        alt="">
+                      <p>500</p>
+                    </li>
+                    <li class="rankingcontent rankingcontent2">
+                      <!--                                    <div class="weiwoduzun"></div>-->
+                      <img src="http://obs.99yuyin.com/httpServer/image/title1/icon_title_9901213.png" alt="">
+                      <p>永久</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="arrow"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rankinglistbox">
+          <li>
+            <div class="rankinglist rankinglist1">
+              <div>
+                <p>第2名</p>
+              </div>
+              <div>
+                <ul>
+                  <li class="rankingcontent rankingcontent1">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                    <p>30万</p>
+                  </li>
+                  <li class="rankingcontent rankingcontent1">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/purple.png"
+                      alt="">
+                    <p>300</p>
+                  </li>
+                  <li class="rankingcontent rankingcontent1 rankingcontent2 rankingcontent3">
+                    <!--                                <div class="weiwoduzun"></div>-->
+                    <img src="http://obs.99yuyin.com/httpServer/image/title1/icon_title_9901213.png" alt="">
+                    <p>30天</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="arrow"></div>
+            </div>
+          </li>
+          <li>
+            <div class="rankinglist rankinglist1">
+              <div>
+                <p>第3名</p>
+              </div>
+              <div>
+                <ul>
+                  <li class="rankingcontent rankingcontent1">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                    <p>20万</p>
+                  </li>
+                  <li class="rankingcontent rankingcontent1">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/purple.png"
+                      alt="">
+                    <p>100</p>
+                  </li>
+                  <li class="rankingcontent rankingcontent1 rankingcontent2 rankingcontent3">
+                    <!--                                <div class="weiwoduzun"></div>-->
+                    <img src="http://obs.99yuyin.com/httpServer/image/title1/icon_title_9901213.png" alt="">
+                    <p>15天</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="arrow"></div>
+            </div>
+          </li>
+          <li>
+            <div class="rankinglist rankinglist1">
+              <div>
+                <p>第4-10名</p>
+              </div>
+              <div>
+                <ul>
+                  <li class="rankingcontent rankingcontent1">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                    <p>15万</p>
+                  </li>
+                  <li class="rankingcontent rankingcontent1">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                      alt="">
+                    <p>150</p>
+                  </li>
+                  <li class="rankingcontent rankingcontent1 rankingcontent2 rankingcontent3">
+                    <!--                                <div class="weiwoduzun"></div>-->
+                    <img src="http://obs.99yuyin.com/httpServer/image/title1/icon_title_9901213.png" alt="">
+                    <p>10天</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="arrow"></div>
+            </div>
+          </li>
+          <li>
+            <div class="rankinglist rankinglist1">
+              <div>
+                <p>第11-20名</p>
+              </div>
+              <div>
+                <ul>
+                  <li class="rankingcontent rankingcontent1">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                    <p>10万</p>
+                  </li>
+                  <li class="rankingcontent rankingcontent1">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                      alt="">
+                    <p>100</p>
+                  </li>
+                  <li class="rankingcontent rankingcontent1 rankingcontent2 rankingcontent3">
+                    <!--                                <div class="weiwoduzun"></div>-->
+                    <img src="http://obs.99yuyin.com/httpServer/image/title1/icon_title_9901213.png" alt="">
+                    <p>7天</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="arrow"></div>
+            </div>
+          </li>
+        </div>
+        <!-- 消费 -->
+        <!--         <p class="rankingtip">-->
+        <!--             前5名至少送礼消费28888钻石才能上榜<br>-->
+        <!--             奖励发放：奖励将于活动结束后由系统自动发放<br>-->
+        <!--            （排行榜上仅能看到当前排名上下各一名玩家的进度情况）-->
+        <!--        </p>-->
+        <!-- 充值 -->
+        <p class="rankingtip">
+          前5名至少充值1000元钻石才能上榜<br>
+          奖励发放：奖励将于活动结束后由系统自动发放<br>
+          （排行榜上仅能看到当前排名上下各一名玩家的进度情况）
+        </p>
+      </div>
+    </div>
+    <div class="change-box" style="display: none;">
+      <div class="content">
+        <div class="starascendantbox">
+          <li class="starascendantlist">
+            <div class="luckystarbtn">福星</div>
+            <div class="awardbtn">奖励</div>
+          </li>
+          <li class="starascendantlist1">
+            <div class="tianxuanfuxing"></div>
+            <div class="starascendantimg"></div>
+            <div class="starascendantframeimg">
+              <div class="starascendantheadimg"></div>
+            </div>
+            <div class="starascendanttitle">暂无小主获得福星呦~</div>
+          </li>
+          <li class="starascendantlist">
+            <div class="luckystarexplainbtn">玩法</div>
+            <div class="blessingmissionbtn">祈福</div>
+          </li>
+        </div>
+        <div class="firstprizebox firstprize-box">
+          <p>一等奖</p>
+          <div class="firstprizecontent">
+            <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+            <p>88.8万</p>
+          </div>
+          <div class="firstprizecontent firstprizecontent1">
+            <img
+              src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/httpServer/image/title1/icon_title_9901051.png">
+            <p>1天</p>
+          </div>
+        </div>
+        <div class="firstprizebox firstprize-box" style="display: none;">
+          <p>一等奖</p>
+          <div class="firstprizecontent">
+            <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+            <p>98.8万</p>
+          </div>
+          <div class="firstprizecontent firstprizecontent1">
+            <img
+              src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/httpServer/image/title1/icon_title_9901051.png">
+            <p>1天</p>
+          </div>
+        </div>
+        <div class="firstprizebox firstprize-box" style="display: none;">
+          <p>一等奖</p>
+          <div class="firstprizecontent">
+            <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+            <p>108.8万</p>
+          </div>
+          <div class="firstprizecontent firstprizecontent1">
+            <img
+              src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/httpServer/image/title1/icon_title_9901051.png">
+            <p>1天</p>
+          </div>
+        </div>
+        <div class="firstprizebox firstprize-box" style="display: none;">
+          <p>一等奖</p>
+          <div class="firstprizecontent">
+            <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+            <p>118.8万</p>
+          </div>
+          <div class="firstprizecontent firstprizecontent1">
+            <img
+              src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/httpServer/image/title1/icon_title_9901051.png">
+            <p>1天</p>
+          </div>
+        </div>
+
+
+        <div class="stardaybox">
+          <li class="stardaybtn stardayAdd" uid="starday">第一天</li>
+          <li class="stardaybtn" uid="starday">第二天</li>
+          <li class="stardaybtn" uid="starday">第三天</li>
+          <li class="stardaybtn" uid="starday">第四天</li>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-p">
+        <p>用户参与此活动默认为接受本公司的相关协议与规定</p>
+        <p>本活动与苹果公司无关</p>
+      </div>
+    </div>
+    <!-- </div> -->
+    <!-- 弹窗 -->
+    <div class="backG_black" style="display: none;">
+      <!-- 全目标奖励弹窗 -->
+      <div class="targetrewardpopup" style="display: none;">
+        <div class="titlebg">
+          <div class="targetrewardtitle titletext"></div>
+          <div class="targetrewardclose closebtn"></div>
+        </div>
+        <div class="popupbox">
+          <div class="targetrewardcase">
+            <p>
+              <span class="trcnum">0</span>/1456(<span class="trcpercent">0</span>%)
+            </p>
+          </div>
+          <div class="schedulebox">
+            <div class="scheduletext">当前进度</div>
+            <div class="scheduleprogressbox">
+              <div class="schedulebar"></div>
+            </div>
+          </div>
+          <div class="scheduleachievedbox">
+            <div class="scheduleachievedlist">
+              <div>
+                <p>进度达到（<span class="scheduleachievednum">0</span>/5%)得以下奖励</p>
+              </div>
+              <ul class="scheduleachievedcontent">
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                  <p>元宝x1.5万</p>
+                </li>
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/purple.png"
+                    alt="">
+                  <p>紫水晶x3</p>
+                </li>
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                    alt="">
+                  <p>绿水晶x5</p>
+                </li>
+                <li>
+                  <div class="scheduleachievedbtn">未达成</div>
+                </li>
+              </ul>
+            </div>
+            <div class="scheduleachievedlist">
+              <div>
+                <p>进度达到（<span>0</span>/10%)得以下奖励</p>
+              </div>
+              <ul class="scheduleachievedcontent">
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                  <p>元宝x3万</p>
+                </li>
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/purple.png"
+                    alt="">
+                  <p>紫水晶x6</p>
+                </li>
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                    alt="">
+                  <p>绿水晶x10</p>
+                </li>
+                <li>
+                  <div class="scheduleachievedbtn">未达成</div>
+                </li>
+              </ul>
+            </div>
+            <div class="scheduleachievedlist">
+              <div>
+                <p>进度达到（<span>0</span>/30%)得以下奖励</p>
+              </div>
+              <ul class="scheduleachievedcontent">
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                  <p>元宝x6万</p>
+                </li>
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/purple.png"
+                    alt="">
+                  <p>紫水晶x10</p>
+                </li>
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                    alt="">
+                  <p>绿水晶x15</p>
+                </li>
+                <li>
+                  <div class="scheduleachievedbtn">未达成</div>
+                </li>
+              </ul>
+            </div>
+            <div class="scheduleachievedlist">
+              <div>
+                <p>进度达到（<span>0</span>/60%)得以下奖励</p>
+              </div>
+              <ul class="scheduleachievedcontent">
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                  <p>元宝x10万</p>
+                </li>
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/purple.png"
+                    alt="">
+                  <p>紫水晶x30</p>
+                </li>
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                    alt="">
+                  <p>绿水晶x50</p>
+                </li>
+                <li>
+                  <div class="scheduleachievedbtn">未达成</div>
+                </li>
+              </ul>
+            </div>
+            <div class="scheduleachievedlist">
+              <div>
+                <p>进度达到（<span>0</span>/100%)得以下奖励</p>
+              </div>
+              <ul class="scheduleachievedcontent">
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+                  <p>元宝x30万</p>
+                </li>
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/purple.png"
+                    alt="">
+                  <p>紫水晶x50</p>
+                </li>
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png"
+                    alt="">
+                  <p>绿水晶x100</p>
+                </li>
+                <li>
+                  <div class="scheduleachievedbtn">未达成</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="titlebg1"></div>
+      </div>
+
+      <!-- 奖励预览弹窗 -->
+      <div class="rewardpreviewbox" style="display: none;">
+        <div class="titlebg">
+          <div class="rewardpreviewtitle titletext"></div>
+          <div class="rewardpreviewclose closebtn"></div>
+        </div>
+        <div class="popupbox">
+          <ul class="rewardpreviewlist">
+            <li>
+              <div class="junlintianxia"></div>
+              <p>君临天下x6小时</p>
+            </li>
+            <li>
+              <img class="bigImg" src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/member/bick.png">
+              <p>小美三轮车x6小时</p>
+            </li>
+            <li>
+              <img class="bigImg"
+                src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/carImg/icon_4011000.png">
+              <p>蝙蝠战车×6小时</p>
+            </li>
+            <li>
+              <img class="bigImg"
+                src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/NationalDay/gqzj.png">
+              <p>神威号×6小时</p>
+            </li>
+            <li>
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/dragon/money.png">
+              <p>大量元宝</p>
+            </li>
+            <li>
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/dragon/point.png">
+              <p>大量点券</p>
+            </li>
+            <li>
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/dragon/green.png">
+              <p>绿水晶</p>
+            </li>
+            <li>
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/dragon/purple.png">
+              <p>紫水晶</p>
+            </li>
+            <li>
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/砸蛋币.png"
+                alt="">
+              <p>砸蛋币x10</p>
+            </li>
+            <li>
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/砸蛋币.png"
+                alt="">
+              <p>砸蛋币x1</p>
+            </li>
+            <li>
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/skill/skill_prop_3@2x.png">
+              <p>么么哒</p>
+            </li>
+            <li>
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/skill/skill_prop_1@2x.png">
+              <p>大力丸</p>
+            </li>
+            <li>
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/skill/skill_prop_5@2x.png">
+              <p>魔法棒</p>
+            </li>
+            <li>
+              <img class="bigImg"
+                src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/httpServer/image/chat_bubble/50012/bubble_shop@2x.png">
+              <p>冬日浓情气泡x6小时</p>
+            </li>
+          </ul>
+        </div>
+        <div class="titlebg1"></div>
+      </div>
+
+      <!-- 砸蛋商店弹窗 -->
+      <div class="eggsmashingshopbox" style="display: none;">
+        <div class="titlebg">
+          <div class="eggsmashingshoptitle titletext"></div>
+          <div class="eggsmashingshopclose closebtn"></div>
+        </div>
+        <div class="popupbox">
+          <div class="diamondcoinbox">
+            <li>
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/motherDay/diamond.png" alt="">
+              <span class="diamnondnum">0</span>
+            </li>
+            <li>
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/砸蛋币.png"
+                alt="">
+              <span class="eggcoinnum">0</span>
+            </li>
+          </div>
+          <div class="commoditybox">
+            <div class="commoditylist">
+              <div>
+                <p>砸蛋达到5次解锁</p>
+              </div>
+              <ul class="commoditycontent">
+                <li class="commoditycontentlist">
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+                  <p>元宝x1000</p>
+                </li>
+                <li class="commoditycontentlist">
+                  <p>本期限购（<span class="limitbuynum">0</span>/500）</p>
+                  <div class="buyconditionsbox">
+                    <img
+                      src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/砸蛋币.png"
+                      alt="">
+                    <span>砸蛋币x2</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="commoditybuybtn">购买</div>
+                </li>
+              </ul>
+            </div>
+            <div class="commoditylist">
+              <div>
+                <p>砸蛋达到15次解锁</p>
+              </div>
+              <ul class="commoditycontent">
+                <li class="commoditycontentlist">
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png">
+                  <p>绿水晶x1</p>
+                </li>
+                <li class="commoditycontentlist">
+                  <p>本期限购（<span class="limitbuynum">0</span>/500）</p>
+                  <div class="buyconditionsbox">
+                    <img
+                      src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/砸蛋币.png"
+                      alt="">
+                    <span>砸蛋币x2</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="commoditybuybtn">购买</div>
+                </li>
+              </ul>
+            </div>
+            <div class="commoditylist">
+              <div>
+                <p>砸蛋达到25次解锁</p>
+              </div>
+              <ul class="commoditycontent">
+                <li class="commoditycontentlist">
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/purple.png" alt="">
+                  <p>紫水晶x1</p>
+                </li>
+                <li class="commoditycontentlist">
+                  <p>本期限购（<span class="limitbuynum">0</span>/500）</p>
+                  <div class="buyconditionsbox">
+                    <img
+                      src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/砸蛋币.png"
+                      alt="">
+                    <span>砸蛋币x8</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="commoditybuybtn">购买</div>
+                </li>
+              </ul>
+            </div>
+            <div class="commoditylist">
+              <div>
+                <p>砸蛋达到50次解锁</p>
+              </div>
+              <ul class="commoditycontent">
+                <li class="commoditycontentlist">
+                  <div class="zuishuainansheng"></div>
+                  <p>全服最帅男神x30天</p>
+                </li>
+                <li>
+                  <p>本期限购（<span class="limitbuynum">0</span>/12）</p>
+                  <div class="buyconditionsbox">
+                    <div>
+                      <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/motherDay/diamond.png"
+                        alt="">
+                      <span>钻石x5000</span>
+                    </div>
+                    <div>
+                      <img
+                        src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/砸蛋币.png"
+                        alt="">
+                      <span>砸蛋币x150</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="commoditybuybtn">购买</div>
+                </li>
+              </ul>
+            </div>
+            <div class="commoditylist">
+              <div>
+                <p>砸蛋达到100次解锁</p>
+              </div>
+              <ul class="commoditycontent">
+                <li class="commoditycontentlist">
+                  <div class="zuimeinvsheng"></div>
+                  <p>全服最美女神x30天</p>
+                </li>
+                <li>
+                  <p>本期限购（<span class="limitbuynum">0</span>/12）</p>
+                  <div class="buyconditionsbox">
+                    <div>
+                      <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/motherDay/diamond.png"
+                        alt="">
+                      <span>钻石x5000</span>
+                    </div>
+                    <div>
+                      <img
+                        src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/砸蛋币.png"
+                        alt="">
+                      <span>砸蛋币x300</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="commoditybuybtn">购买</div>
+                </li>
+              </ul>
+            </div>
+            <div class="commoditylist">
+              <div>
+                <p>砸蛋达到150次解锁</p>
+              </div>
+              <ul class="commoditycontent">
+                <li class="commoditycontentlist">
+                  <div class="junlintianxia"></div>
+                  <p>君临天下x30天</p>
+                </li>
+                <li>
+                  <p>本期限购（<span class="limitbuynum">0</span>/12）</p>
+                  <div class="buyconditionsbox">
+                    <div>
+                      <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/motherDay/diamond.png"
+                        alt="">
+                      <span>钻石x10000</span>
+                    </div>
+                    <div>
+                      <img
+                        src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/砸蛋币.png"
+                        alt="">
+                      <span>砸蛋币x500</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="commoditybuybtn">购买</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="titlebg1"></div>
+      </div>
+
+      <!-- 壕气返利弹窗 -->
+      <div class="returntoprofitbox" style="display:none;">
+        <div class="titlebg">
+          <div class="returntoprofittitle titletext"></div>
+          <div class="returntoprofitclose closebtn"></div>
+        </div>
+        <div class="popupbox">
+          <div class="rebatebox">
+            <div class="rebatelist">
+              <ul class="rebatecontent">
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/dragon/point.png">
+                  <p>x50000</p>
+                </li>
+                <li>
+                  <p>壕气值到达5<br>（<span class="rebatenum">0</span>/5）</p>
+                </li>
+                <li>
+                  <div class="rebatebtn">购买</div>
+                </li>
+              </ul>
+              <ul class="rebatecontent">
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/dragon/point.png">
+                  <p>x100000</p>
+                </li>
+                <li>
+                  <p>壕气值到达10<br>（<span class="rebatenum">0</span>/10）</p>
+                </li>
+                <li>
+                  <div class="rebatebtn">购买</div>
+                </li>
+              </ul>
+              <ul class="rebatecontent">
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/dragon/point.png">
+                  <p>x150000</p>
+                </li>
+                <li>
+                  <p>壕气值到达15<br>（<span class="rebatenum">0</span>/15）</p>
+                </li>
+                <li>
+                  <div class="rebatebtn">购买</div>
+                </li>
+              </ul>
+              <ul class="rebatecontent">
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/dragon/point.png">
+                  <p>x250000</p>
+                </li>
+                <li>
+                  <p>壕气值到达25<br>（<span class="rebatenum">0</span>/25）</p>
+                </li>
+                <li>
+                  <div class="rebatebtn">购买</div>
+                </li>
+              </ul>
+              <ul class="rebatecontent">
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/dragon/point.png">
+                  <p>x350000</p>
+                </li>
+                <li>
+                  <p>壕气值到达35<br>（<span class="rebatenum">0</span>/35）</p>
+                </li>
+                <li>
+                  <div class="rebatebtn">购买</div>
+                </li>
+              </ul>
+              <ul class="rebatecontent">
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/dragon/point.png">
+                  <p>x450000</p>
+                </li>
+                <li>
+                  <p>壕气值到达45<br>（<span class="rebatenum">0</span>/45）</p>
+                </li>
+                <li>
+                  <div class="rebatebtn">购买</div>
+                </li>
+              </ul>
+              <ul class="rebatecontent">
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/dragon/point.png">
+                  <p>x650000</p>
+                </li>
+                <li>
+                  <p>壕气值到达65<br>（<span class="rebatenum">0</span>/65）</p>
+                </li>
+                <li>
+                  <div class="rebatebtn">购买</div>
+                </li>
+              </ul>
+              <ul class="rebatecontent">
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/dragon/point.png">
+                  <p>x850000</p>
+                </li>
+                <li>
+                  <p>壕气值到达85<br>（<span class="rebatenum">0</span>/85）</p>
+                </li>
+                <li>
+                  <div class="rebatebtn">购买</div>
+                </li>
+              </ul>
+              <ul class="rebatecontent">
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/dragon/point.png">
+                  <p>x1050000</p>
+                </li>
+                <li>
+                  <p>壕气值到达105<br>（<span class="rebatenum">0</span>/105）</p>
+                </li>
+                <li>
+                  <div class="rebatebtn">购买</div>
+                </li>
+              </ul>
+              <ul class="rebatecontent">
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/dragon/point.png">
+                  <p>x1350000</p>
+                </li>
+                <li>
+                  <p>壕气值到达135<br>（<span class="rebatenum">0</span>/135）</p>
+                </li>
+                <li>
+                  <div class="rebatebtn">购买</div>
+                </li>
+              </ul>
+              <ul class="rebatecontent">
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/dragon/point.png">
+                  <p>x1650000</p>
+                </li>
+                <li>
+                  <p>壕气值到达165<br>（<span class="rebatenum">0</span>/165）</p>
+                </li>
+                <li>
+                  <div class="rebatebtn">购买</div>
+                </li>
+              </ul>
+              <ul class="rebatecontent">
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/dragon/point.png">
+                  <p>x2000000</p>
+                </li>
+                <li>
+                  <p>壕气值到达200<br>（<span class="rebatenum">0</span>/200）</p>
+                </li>
+                <li>
+                  <div class="rebatebtn">购买</div>
+                </li>
+              </ul>
+              <ul class="rebatecontent">
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/dragon/point.png">
+                  <p>x2400000</p>
+                </li>
+                <li>
+                  <p>壕气值到达240<br>（<span class="rebatenum">0</span>/240）</p>
+                </li>
+                <li>
+                  <div class="rebatebtn">购买</div>
+                </li>
+              </ul>
+              <ul class="rebatecontent">
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/dragon/point.png">
+                  <p>x2800000</p>
+                </li>
+                <li>
+                  <p>壕气值到达280<br>（<span class="rebatenum">0</span>/280）</p>
+                </li>
+                <li>
+                  <div class="rebatebtn">购买</div>
+                </li>
+              </ul>
+              <ul class="rebatecontent">
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/dragon/point.png">
+                  <p>x3300000</p>
+                </li>
+                <li>
+                  <p>壕气值到达330<br>（<span class="rebatenum">0</span>/330）</p>
+                </li>
+                <li>
+                  <div class="rebatebtn">购买</div>
+                </li>
+              </ul>
+              <ul class="rebatecontent">
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/dragon/point.png">
+                  <p>x3800000</p>
+                </li>
+                <li>
+                  <p>壕气值到达380<br>（<span class="rebatenum">0</span>/380）</p>
+                </li>
+                <li>
+                  <div class="rebatebtn">购买</div>
+                </li>
+              </ul>
+              <ul class="rebatecontent">
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/dragon/point.png">
+                  <p>x4300000</p>
+                </li>
+                <li>
+                  <p>壕气值到达430<br>（<span class="rebatenum">0</span>/430）</p>
+                </li>
+                <li>
+                  <div class="rebatebtn">购买</div>
+                </li>
+              </ul>
+              <ul class="rebatecontent">
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/dragon/point.png">
+                  <p>x4800000</p>
+                </li>
+                <li>
+                  <p>壕气值到达480<br>（<span class="rebatenum">0</span>/480）</p>
+                </li>
+                <li>
+                  <div class="rebatebtn">购买</div>
+                </li>
+              </ul>
+              <ul class="rebatecontent">
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/dragon/point.png">
+                  <p>x5800000</p>
+                </li>
+                <li>
+                  <p>壕气值到达580<br>（<span class="rebatenum">0</span>/580）</p>
+                </li>
+                <li>
+                  <div class="rebatebtn">购买</div>
+                </li>
+              </ul>
+              <ul class="rebatecontent">
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/dragon/point.png">
+                  <p>x6800000</p>
+                </li>
+                <li>
+                  <p>壕气值到达680<br>（<span class="rebatenum">0</span>/680）</p>
+                </li>
+                <li>
+                  <div class="rebatebtn">购买</div>
+                </li>
+              </ul>
+              <ul class="rebatecontent">
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/dragon/point.png">
+                  <p>x7800000</p>
+                </li>
+                <li>
+                  <p>壕气值到达780<br>（<span class="rebatenum">0</span>/780）</p>
+                </li>
+                <li>
+                  <div class="rebatebtn">购买</div>
+                </li>
+              </ul>
+              <ul class="rebatecontent">
+                <li>
+                  <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/dragon/point.png">
+                  <p>x8800000</p>
+                </li>
+                <li>
+                  <p>壕气值到达880<br>（<span class="rebatenum">0</span>/880）</p>
+                </li>
+                <li>
+                  <div class="rebatebtn">购买</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="titlebg1"></div>
+      </div>
+
+      <!-- 排行榜弹窗 -->
+      <div class="chartslistbox" style="display: none;">
+        <div class="titlebg">
+          <div class="chartslisttitle titletext"></div>
+          <div class="chartslistclose closebtn"></div>
+        </div>
+        <div class="popupbox popupbox1">
+          <div class="topthreebox">
+            <ul>
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/银牌.png"
+                  alt="">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/占位.png"
+                  alt="">
+                <p>暂无人上榜</p>
+                <p>???</p>
+              </li>
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/金牌.png"
+                  alt="">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/占位.png"
+                  alt="">
+                <p>暂无人上榜</p>
+                <p>???</p>
+              </li>
+              <li>
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/铜牌.png"
+                  alt="">
+                <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/占位.png"
+                  alt="">
+                <p>暂无人上榜</p>
+                <p>???</p>
+              </li>
+            </ul>
+          </div>
+          <div class="otherplacestextbox">
+            <li>排名</li>
+            <li>玩家名</li>
+            <li>积分</li>
+          </div>
+          <div class="otherplacesbox">
+            <div>
+              <!--  <ul class="otherplaceslist">
+                                <li>4</li>
+                                <li>
+                                    <img class="otherplacesheadimg" src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/占位.png" alt="">
+                                    <span class="otherplacesheadname">暂无人上榜</span>
+                                </li>
+                                <li>10000</li>
+                                <div class="otherplacesline"></div>
+                            </ul>
+                            <ul class="otherplaceslist">
+                                <li>5</li>
+                                <li>
+                                    <img class="otherplacesheadimg" src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/占位.png" alt="">
+                                    <span class="otherplacesheadname">暂无人上榜</span>
+                                </li>
+                                <li>10000</li>
+                                <div class="otherplacesline"></div>
+                            </ul>
+                            <ul class="otherplaceslist">
+                                <li>6</li>
+                                <li>
+                                    <img class="otherplacesheadimg" src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/占位.png" alt="">
+                                    <span class="otherplacesheadname">暂无人上榜</span>
+                                </li>
+                                <li>10000</li>
+                                <div class="otherplacesline"></div>
+                            </ul>
+                            <ul class="otherplaceslist">
+                                <li>7</li>
+                                <li>
+                                    <img class="otherplacesheadimg" src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/占位.png" alt="">
+                                    <span class="otherplacesheadname">暂无人上榜</span>
+                                </li>
+                                <li>10000</li>
+                                <div class="otherplacesline"></div>
+                            </ul>
+                            <ul class="otherplaceslist">
+                                <li>8</li>
+                                <li>
+                                    <img class="otherplacesheadimg" src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/占位.png" alt="">
+                                    <span class="otherplacesheadname">暂无人上榜</span>
+                                </li>
+                                <li>10000</li>
+                                <div class="otherplacesline"></div>
+                            </ul>
+                            <ul class="otherplaceslist">
+                                <li>9</li>
+                                <li>
+                                    <img class="otherplacesheadimg" src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/占位.png" alt="">
+                                    <span class="otherplacesheadname">暂无人上榜</span>
+                                </li>
+                                <li>10000</li>
+                                <div class="otherplacesline"></div>
+                            </ul>
+                            <ul class="otherplaceslist">
+                                <li>10</li>
+                                <li>
+                                    <img class="otherplacesheadimg" src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/占位.png" alt="">
+                                    <span class="otherplacesheadname">暂无人上榜</span>
+                                </li>
+                                <li>10000</li>
+                                <div class="otherplacesline"></div>
+                            </ul>
+                            <ul class="otherplaceslist">
+                                <li>11</li>
+                                <li>
+                                    <img class="otherplacesheadimg" src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/占位.png" alt="">
+                                    <span class="otherplacesheadname">暂无人上榜</span>
+                                </li>
+                                <li>10000</li>
+                                <div class="otherplacesline"></div>
+                            </ul> -->
+            </div>
+          </div>
+          <!-- <div class="rechargerankingbox">
+                        <p>我的排名：<span class="myrankingnum">未上榜</span></p>
+                        <p>排行榜页面说明：充值300元可以上榜</p>
+                    </div> -->
+          <!--            <div class="rechargerankingtip">送礼消费8888钻石可以上榜</div>-->
+          <div class="rechargerankingtip">充值300元钻石可以上榜</div>
+        </div>
+        <div class="titlebg1"></div>
+      </div>
+
+      <!-- 奖励弹窗 -->
+      <div class="awardbox" style="display: none;">
+        <div class="titlebg">
+          <div class="awardtitle titletext"></div>
+          <div class="awardclose closebtn"></div>
+        </div>
+        <div class="popupbox">
+          <div class="prizesbox">
+            <ul class="prizeslist">
+              <li>奖项</li>
+              <li>名额</li>
+              <li>奖励</li>
+            </ul>
+          </div>
+          <div class="prizeslistbox">
+            <div class="prizeslistcontent prizeslist-content">
+              <ul class="prizeslist prizeslist1 prizeslist2">
+                <li>1等奖</li>
+                <li>1</li>
+                <li>
+                  <div class="prizescontent">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+                    <p>88.8万</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="prizescontent prizescontent1">
+                    <img
+                      src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/httpServer/image/title1/icon_title_9901051.png">
+                    <p>1天</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="prizeslist prizeslist1">
+                <li>2等奖</li>
+                <li>2</li>
+                <li>
+                  <div class="prizescontent">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+                    <p>38.8万</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="prizeslist prizeslist1">
+                <li>3等奖</li>
+                <li>3</li>
+                <li>
+                  <div class="prizescontent">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+                    <p>18.8万</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="prizeslist prizeslist1">
+                <li>4等奖</li>
+                <li>5</li>
+                <li>
+                  <div class="prizescontent">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+                    <p>8.8万</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="prizeslist prizeslist1">
+                <li>5等奖</li>
+                <li>10</li>
+                <li>
+                  <div class="prizescontent">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+                    <p>3.8万</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="prizeslist prizeslist1">
+                <li>6等奖</li>
+                <li>15</li>
+                <li>
+                  <div class="prizescontent">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+                    <p>1.5万</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="prizeslist prizeslist1">
+                <li>7等奖</li>
+                <li>30</li>
+                <li>
+                  <div class="prizescontent">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+                    <p>8888</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="prizeslistcontent prizeslist-content" style="display: none;">
+              <ul class="prizeslist prizeslist1 prizeslist2">
+                <li>1等奖</li>
+                <li>1</li>
+                <li>
+                  <div class="prizescontent">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+                    <p>98.8万</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="prizescontent prizescontent1">
+                    <img
+                      src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/httpServer/image/title1/icon_title_9901051.png">
+                    <p>1天</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="prizeslist prizeslist1">
+                <li>2等奖</li>
+                <li>2</li>
+                <li>
+                  <div class="prizescontent">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+                    <p>43.8万</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="prizeslist prizeslist1">
+                <li>3等奖</li>
+                <li>3</li>
+                <li>
+                  <div class="prizescontent">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+                    <p>21.8万</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="prizeslist prizeslist1">
+                <li>4等奖</li>
+                <li>5</li>
+                <li>
+                  <div class="prizescontent">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+                    <p>9.8万</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="prizeslist prizeslist1">
+                <li>5等奖</li>
+                <li>10</li>
+                <li>
+                  <div class="prizescontent">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+                    <p>4.3万</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="prizeslist prizeslist1">
+                <li>6等奖</li>
+                <li>15</li>
+                <li>
+                  <div class="prizescontent">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+                    <p>1.8万</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="prizeslist prizeslist1">
+                <li>7等奖</li>
+                <li>30</li>
+                <li>
+                  <div class="prizescontent">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+                    <p>9888</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="prizeslistcontent prizeslist-content" style="display: none;">
+              <ul class="prizeslist prizeslist1 prizeslist2">
+                <li>1等奖</li>
+                <li>1</li>
+                <li>
+                  <div class="prizescontent">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+                    <p>108.8万</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="prizescontent prizescontent1">
+                    <img
+                      src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/httpServer/image/title1/icon_title_9901051.png">
+                    <p>1天</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="prizeslist prizeslist1">
+                <li>2等奖</li>
+                <li>2</li>
+                <li>
+                  <div class="prizescontent">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+                    <p>48.8万</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="prizeslist prizeslist1">
+                <li>3等奖</li>
+                <li>3</li>
+                <li>
+                  <div class="prizescontent">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+                    <p>24.8万</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="prizeslist prizeslist1">
+                <li>4等奖</li>
+                <li>5</li>
+                <li>
+                  <div class="prizescontent">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+                    <p>10.8万</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="prizeslist prizeslist1">
+                <li>5等奖</li>
+                <li>10</li>
+                <li>
+                  <div class="prizescontent">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+                    <p>4.8万</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="prizeslist prizeslist1">
+                <li>6等奖</li>
+                <li>15</li>
+                <li>
+                  <div class="prizescontent">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+                    <p>2.1万</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="prizeslist prizeslist1">
+                <li>7等奖</li>
+                <li>30</li>
+                <li>
+                  <div class="prizescontent">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+                    <p>1万</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="prizeslistcontent prizeslist-content" style="display: none;">
+              <ul class="prizeslist prizeslist1 prizeslist2">
+                <li>1等奖</li>
+                <li>1</li>
+                <li>
+                  <div class="prizescontent">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+                    <p>118.8万</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="prizescontent prizescontent1">
+                    <img
+                      src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/httpServer/image/title1/icon_title_9901051.png">
+                    <p>1天</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="prizeslist prizeslist1">
+                <li>2等奖</li>
+                <li>2</li>
+                <li>
+                  <div class="prizescontent">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+                    <p>53.8万</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="prizeslist prizeslist1">
+                <li>3等奖</li>
+                <li>3</li>
+                <li>
+                  <div class="prizescontent">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+                    <p>27.8万</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="prizeslist prizeslist1">
+                <li>4等奖</li>
+                <li>5</li>
+                <li>
+                  <div class="prizescontent">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+                    <p>11.8万</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="prizeslist prizeslist1">
+                <li>5等奖</li>
+                <li>10</li>
+                <li>
+                  <div class="prizescontent">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+                    <p>5.3万</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="prizeslist prizeslist1">
+                <li>6等奖</li>
+                <li>15</li>
+                <li>
+                  <div class="prizescontent">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+                    <p>2.4万</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="prizeslist prizeslist1">
+                <li>7等奖</li>
+                <li>30</li>
+                <li>
+                  <div class="prizescontent">
+                    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png">
+                    <p>1.1万</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="prizeslistdaybox">
+            <li class="prizeslistdaybtn prizeslistdayAdd" uid="prizeslistday">第一天</li>
+            <li class="prizeslistdaybtn" uid="prizeslistday">第二天</li>
+            <li class="prizeslistdaybtn" uid="prizeslistday">第三天</li>
+            <li class="prizeslistdaybtn" uid="prizeslistday">第四天</li>
+          </div>
+        </div>
+        <div class="titlebg1"></div>
+      </div>
+
+      <!-- 福星弹窗 -->
+      <div class="luckystarbox" style="display: none;">
+        <div class="titlebg">
+          <div class="luckystartitle titletext"></div>
+          <div class="luckystarclose closebtn"></div>
+        </div>
+        <div class="popupbox">
+          <div class="luckystarimgbox">
+            <ul>
+              <li class="luckystarlistimgbtn luckystarlistimgAdd" uid="luckystarlistimg"></li>
+              <li class="luckystarnumimgbtn" uid="luckystarnumimg"></li>
+            </ul>
+          </div>
+          <div class="prizelistbox">
+            <div class="luckystarprizebox">
+              <li>1-7等奖</li>
+              <li>福星名单</li>
+            </div>
+            <div class="luckystarlistbox">
+              <div class="luckystarlistcontent">
+                <ul>
+                  <li>1等奖</li>
+                  <li>
+                    <!-- <div>s1.aa天秤</div> -->
+                  </li>
+                </ul>
+                <div class="clear"></div>
+                <div class="luckystarlistline"></div>
+                <ul>
+                  <li>2等奖</li>
+                  <li>
+                    <!-- <div>s1.aa天秤</div>
+                                        <div>s1.aa天秤</div>
+                                        <div>s1.aa天秤</div> -->
+                  </li>
+                </ul>
+                <div class="clear"></div>
+                <div class="luckystarlistline"></div>
+                <ul>
+                  <li>3等奖</li>
+                  <li>
+                    <!-- <div>s1.aa天秤</div>
+                                        <div>s1.aa天秤</div>
+                                        <div>s1.aa天秤</div>
+                                        <div>s1.aa天秤</div>
+                                        <div>s1.aa天秤</div>
+                                        <div>s1.aa天秤</div>
+                                        <div>s1.aa天秤</div>
+                                        <div>s1.aa天秤</div>
+                                        <div>s1.aa天秤</div>
+                                        <div>s1.aa天秤</div>
+                                        <div>s1.aa天秤</div>
+                                        <div>s1.aa天秤</div> -->
+                  </li>
+                </ul>
+                <div class="clear"></div>
+                <div class="luckystarlistline"></div>
+                <ul>
+                  <li>4等奖</li>
+                  <li>
+                    <!-- <div>s1.aa天秤</div> -->
+                  </li>
+                </ul>
+                <div class="clear"></div>
+                <div class="luckystarlistline"></div>
+                <ul>
+                  <li>5等奖</li>
+                  <li>
+                    <!-- <div>s1.aa天秤</div> -->
+                  </li>
+                </ul>
+                <div class="clear"></div>
+                <div class="luckystarlistline"></div>
+                <ul>
+                  <li>6等奖</li>
+                  <li>
+                    <!-- <div>s1.aa天秤</div> -->
+                  </li>
+                </ul>
+                <div class="clear"></div>
+                <div class="luckystarlistline"></div>
+                <ul>
+                  <li>7等奖</li>
+                  <li>
+                    <!-- <div>s1.aa天秤</div> -->
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="prizelistbox" style="display: none;">
+            <div class="luckystarprizebox">
+              <li>1-7等奖</li>
+              <li>福星号</li>
+            </div>
+            <div class="luckystarlistbox">
+              <div class="luckystarlistcontent">
+                <ul>
+                  <li>1等奖</li>
+                  <li>
+                    <!-- <div>s1.aa天秤</div> -->
+                  </li>
+                </ul>
+                <div class="clear"></div>
+                <div class="luckystarlistline"></div>
+                <ul>
+                  <li>2等奖</li>
+                  <li>
+                    <!-- <div>s1.aa天秤</div>
+                                        <div>s1.aa天秤</div>
+                                        <div>s1.aa天秤</div> -->
+                  </li>
+                </ul>
+                <div class="clear"></div>
+                <div class="luckystarlistline"></div>
+                <ul>
+                  <li>3等奖</li>
+                  <li>
+                    <!-- <div>s1.aa天秤</div>
+                                        <div>s1.aa天秤</div>
+                                        <div>s1.aa天秤</div>
+                                        <div>s1.aa天秤</div>
+                                        <div>s1.aa天秤</div>
+                                        <div>s1.aa天秤</div>
+                                        <div>s1.aa天秤</div>
+                                        <div>s1.aa天秤</div>
+                                        <div>s1.aa天秤</div>
+                                        <div>s1.aa天秤</div>
+                                        <div>s1.aa天秤</div>
+                                        <div>s1.aa天秤</div> -->
+                  </li>
+                </ul>
+                <div class="clear"></div>
+                <div class="luckystarlistline"></div>
+                <ul>
+                  <li>4等奖</li>
+                  <li>
+                    <!-- <div>s1.aa天秤</div> -->
+                  </li>
+                </ul>
+                <div class="clear"></div>
+                <div class="luckystarlistline"></div>
+                <ul>
+                  <li>5等奖</li>
+                  <li>
+                    <!-- <div>s1.aa天秤</div> -->
+                  </li>
+                </ul>
+                <div class="clear"></div>
+                <div class="luckystarlistline"></div>
+                <ul>
+                  <li>6等奖</li>
+                  <li>
+                    <!-- <div>s1.aa天秤</div> -->
+                  </li>
+                </ul>
+                <div class="clear"></div>
+                <div class="luckystarlistline"></div>
+                <ul>
+                  <li>7等奖</li>
+                  <li>
+                    <!-- <div>s1.aa天秤</div> -->
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="myprizenumberbox">
+            <ul>
+              <li>我的获奖号</li>
+              <li>奖项</li>
+              <li>天数</li>
+            </ul>
+            <div class="myprizenumberlist">
+              <div class="myprizenumbercontent">
+                <!-- <ul>
+                                    <li class="prizenumbertext">631111</li>
+                                    <li>6等奖</li>
+                                    <li>第一天</li>
+                                </ul>
+                                <ul>
+                                    <li class="prizenumbertext">63111</li>
+                                    <li>6等奖</li>
+                                    <li>第二天</li>
+                                </ul>
+                                <ul>
+                                    <li class="prizenumbertext">6311</li>
+                                    <li>6等奖</li>
+                                    <li>第二天</li>
+                                </ul>
+                                <ul>
+                                    <li class="prizenumbertext">6311</li>
+                                    <li>6等奖</li>
+                                    <li>第二天</li>
+                                </ul> -->
+              </div>
+            </div>
+          </div>
+          <div class="luckystardaybox">
+            <li class="luckystardaybtn luckystardayAdd" uid="luckystarday">第一天</li>
+            <li class="luckystardaybtn" uid="luckystarday">第二天</li>
+            <li class="luckystardaybtn" uid="luckystarday">第三天</li>
+            <li class="luckystardaybtn" uid="luckystarday">第四天</li>
+          </div>
+        </div>
+        <div class="titlebg1"></div>
+      </div>
+
+      <!-- 祈福任务弹窗 -->
+      <div class="blessingmissionbox" style="display: none;">
+        <div class="titlebg">
+          <div class="blessingmissiontitle titletext"></div>
+          <div class="blessingmissionclose closebtn"></div>
+        </div>
+        <div class="popupbox">
+          <div class="blessingtaskbox">
+            <div class="blessingtaskcontent">
+              <div class="blessingtasklist">
+                <div>
+                  <p>今日消费51888钻石（<span class="blessingtasknum">0</span>/51888）</p>
+                </div>
+                <ul class="blessingtasklistcontent">
+                  <li>随机获得1张祈福号</li>
+                  <li>
+                    <div class="blessingtasklistbtn">前往</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="blessingtasklist">
+                <div>
+                  <p>今日累计充值6元（<span class="blessingtasknum">0</span>/6）</p>
+                </div>
+                <ul class="blessingtasklistcontent">
+                  <li>随机获得1张祈福号</li>
+                  <li>
+                    <div class="blessingtasklistbtn">前往</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="blessingtasklist">
+                <div>
+                  <p>今日累计充值98元（<span class="blessingtasknum">0</span>/98）</p>
+                </div>
+                <ul class="blessingtasklistcontent">
+                  <li>随机获得1张祈福号</li>
+                  <li>
+                    <div class="blessingtasklistbtn">前往</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="blessingtasklist">
+                <div>
+                  <p>今日累计充值198元（<span class="blessingtasknum">0</span>/198）</p>
+                </div>
+                <ul class="blessingtasklistcontent">
+                  <li>随机获得1张祈福号</li>
+                  <li>
+                    <div class="blessingtasklistbtn">前往</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="blessingtasklist">
+                <div>
+                  <p>今日累计充值328元（<span class="blessingtasknum">0</span>/328）</p>
+                </div>
+                <ul class="blessingtasklistcontent">
+                  <li>随机获得1张祈福号</li>
+                  <li>
+                    <div class="blessingtasklistbtn">前往</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="blessingtasklist">
+                <div>
+                  <p>今日累计充值648元（<span class="blessingtasknum">0</span>/648）</p>
+                </div>
+                <ul class="blessingtasklistcontent">
+                  <li>随机获得1张祈福号</li>
+                  <li>
+                    <div class="blessingtasklistbtn">前往</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="blessingtasklist">
+                <div>
+                  <p>今日分享1次（<span class="blessingtasknum">0</span>/1）</p>
+                </div>
+                <ul class="blessingtasklistcontent">
+                  <li>随机获得1张祈福号</li>
+                  <li>
+                    <div class="blessingtasklistbtn">前往</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="myblessingbox">
+            <div>
+              <p>我的祈福</p>
+            </div>
+            <div class="myblessinglist">
+              <ul>
+                <!-- <li><p class="blessingnum">631111</p></li>
+                                <li><p class="blessingnum">631111</p></li>
+                                <li><p class="blessingnum">631111</p></li>
+                                <li><p class="blessingnum">631111</p></li>
+                                <li><p class="blessingnum">631111</p></li>
+                                <li><p class="blessingnum">631111</p></li>
+                                <li><p class="blessingnum">631111</p></li>
+                                <li><p class="blessingnum">631111</p></li>
+                                <li><p class="blessingnum">631111</p></li>
+                                <li><p class="blessingnum">631111</p></li> -->
+              </ul>
+            </div>
+          </div>
+          <!-- <p class="blessingtip">注：祈福号由数字组成，起始祈福号为3位数字随机产生，3位数字随机完毕，依次随机4位、5位、6位。</p> -->
+        </div>
+        <div class="titlebg1"></div>
+      </div>
+
+      <!-- 福利目标——玩法说明弹窗 -->
+      <div class="welfareobjexplainbox" style="display: none;">
+        <div class="titlebg">
+          <div class="welfareobjexplaintitle titletext"></div>
+          <div class="welfareobjexplainclose closebtn"></div>
+        </div>
+        <div class="popupbox">
+          <div class="welfareobjexplainlist">
+            <p class="welfareobjexplaintext">首充翻倍：</p>
+            <p>1.每日首次充值享受<span>2.5倍钻石</span><br>
+              2.活动开始后重置<span>安卓、IOS、代充</span>所有额度首充<br>
+              3.活动期间每天重置<span>1000元以下</span>额度首充<br>
+              4.同一个账号在<span>安卓设备</span>充值后，在<span>苹果设备</span>充值没有首充翻倍<br>
+              5.在客户端充值不影响代充处的首充翻倍额度
+            </p>
+            <p class="welfareobjexplaintext">消耗返利：</p>
+            <p>1、活动期间，各技能道具数量的最高存量上限提高。<br>
+              2、领取奖励时请注意各技能道具数量的已有存量，再领取奖励。<br>
+              3、因技能道具达到上限，领取技能道具奖励后超过技能道具上限部分的道具损失自行承担，不予补发。<br>
+              4、活动期间技能道具上限说明：<br>
+              （1） 金冠以下技能道具上限为：200<br>
+              （2）金冠技能道具上限为：300<br>
+              （3）彩冠技能道具上限为：400<br>
+              注：消耗返利仅限升级技能时所消耗的紫水晶和绿水晶。
+            </p>
+          </div>
+        </div>
+        <div class="titlebg1"></div>
+      </div>
+
+      <!-- 砸金蛋——玩法说明弹窗 -->
+      <div class="smasheggsexplainbox" style="display: none;">
+        <div class="titlebg">
+          <div class="smasheggsexplaintitle titletext"></div>
+          <div class="smasheggsexplainclose closebtn"></div>
+        </div>
+        <div class="popupbox">
+          <div class="smasheggsexplainlist">
+            <p class="smasheggsexplaintext">玩法说明：</p>
+            <p>1.活动期间，钻石送礼、发布世界消息、钻石使用技能等每消费100钻石，即可获得1次砸蛋机会。</br>
+              2.每次砸蛋均可随机获得一份奖励。</br>
+              3.累计达到一定砸蛋次数，可领取累计次数奖励。</br>
+              4.累计达到一定砸蛋次数，可解锁砸蛋商店商品，每件商品有购买次数限制，请及时购买。
+            </p>
+            <p>砸蛋获得道具概率如下：</br>
+              砸蛋币*10：0.8%</br>
+              砸蛋币*1：16%</br>
+              君临天下*6小时：0.05%</br>
+              小美三轮车*6小时：6.7%</br>
+              蝙蝠战车*6小时：0.1%</br>
+              神威号*6小时：0.1%</br>
+              紫水晶*1~3：1.5%</br>
+              紫水晶*5~30：0.15%</br>
+              冬日浓情气泡*6小时：1.5%</br>
+              点券*699~5999：16%</br>
+              元宝*599~4999：8.85%</br>
+              绿水晶*1~3：2.75%</br>
+              绿水晶*5~30：0.5%</br>
+              么么哒*1~3：15%</br>
+              大力丸*1~3：15%</br>
+              魔法棒*1~3：15%
+            </p>
+            <p class="smasheggsexplaintext">温馨提示：</p>
+            <p>
+              1、在活动中获得的技能道具上限说明：<br>
+              （1） 金冠以下技能道具上限为：200<br>
+              （2）金冠技能道具上限为：300<br>
+              （3）彩冠技能道具上限为：400<br>
+              2、在砸蛋中获得的技能道具奖励达到活动允许上限，超过上限部分技能道具数量损失自行承担，不予补发。
+            </p>
+          </div>
+        </div>
+        <div class="titlebg1"></div>
+      </div>
+
+      <!-- 超值返利——玩法说明弹窗 -->
+      <div class="premiumrebateexplainbox" style="display: none;">
+        <div class="titlebg">
+          <div class="premiumrebateexplaintitle titletext"></div>
+          <div class="premiumrebateexplainclose closebtn"></div>
+        </div>
+        <div class="popupbox">
+          <div class="premiumrebateexplainlist">
+            <p class="premiumrebateexplaintext">玩法说明：</p>
+            <p>1.活动期间，每充值10元，即可获得1次抽奖机会。<br>
+              2.每次抽奖可以积累壕气值，积累壕气值可以拿大奖！
+            </p>
+            <p>每次抽到的元宝数及对应概率如下：</br>
+              1000~1999元宝：65.204%</br>
+              2000~2999元宝：25.213%</br>
+              3000~3999元宝：8%</br>
+              50000元宝：1%</br>
+              80000元宝：0.35%</br>
+              100000元宝：0.1%</br>
+              300000元宝：0.08%</br>
+              500000元宝：0.05%</br>
+              1000000元宝：0.003%
+            </p>
+          </div>
+        </div>
+        <div class="titlebg1"></div>
+      </div>
+
+      <!-- 福星高照——玩法说明弹窗 -->
+      <div class="luckystarexplainbox" style="display: none;">
+        <div class="titlebg">
+          <div class="luckystarexplaintitle titletext"></div>
+          <div class="luckystarexplainclose closebtn"></div>
+        </div>
+        <div class="popupbox">
+          <div class="luckystarexplainlist">
+            <p class="luckystarexplaintext">玩法说明：</p>
+            <p>1.福星高照为跨全服的活动。<br>
+              2.每天通过祈福任务，可获得全服唯一的祈福号，祈福任务每天00:00重置。<br>
+              3.每天24:00从全服用户的祈福号中，抽出1~7等奖对应名额的祈福号，优先抽取1等奖，再逐步抽取2等奖、3等奖、4等奖、5等奖、6等奖、7等奖，发奖会耗时几分钟，请用户们耐心等待。<br>
+              4.已抽中的祈福号会从奖池中剔除，未中奖的祈福号继续存放在奖池中可被下次抽中，依次类推。<br>
+              5.奖励会越来越丰富哦！
+            </p>
+          </div>
+        </div>
+        <div class="titlebg1"></div>
+      </div>
+
+      <!-- 绿水晶寻宝弹窗 -->
+      <div class="greenSquare-box winthelotterybox" style="display: none;">
+        <div class="greentreasurebox winthelotterycontent">
+          <ul>
+            <li>
+              <div class="rewardimgbox">
+                <img class="greencrystalimg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png" alt="">
+              </div>
+              <p>绿水晶x10</p>
+            </li>
+            <li>
+              <div class="rewardimgbox">
+                <img class="greencrystalimg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png" alt="">
+              </div>
+              <p>绿水晶x1000</p>
+            </li>
+          </ul>
+        </div>
+        <div class="greenSquaresurebtn winthelotterybtn"></div>
+      </div>
+
+      <!-- 砸金蛋——中奖弹窗 -->
+      <div class="eggrewardbox winthelotterybox" style="display: none;">
+        <div class="eggrewardlistbox winthelotterycontent">
+          <ul>
+            <li>
+              <div class="rewardimgbox">
+                <div class="junlintianxia"></div>
+              </div>
+              <p>君临天下x6小时</p>
+            </li>
+            <li>
+              <div class="rewardimgbox">
+                <img class="carnormalimg1"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/member/bick.png" alt="">
+              </div>
+              <p>小美三轮车x6小时</p>
+            </li>
+            <li>
+              <div class="rewardimgbox">
+                <img class="carnormalimg1"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/carImg/icon_4011000.png" alt="">
+              </div>
+              <p>蝙蝠战车x6小时</p>
+            </li>
+            <li>
+              <div class="rewardimgbox">
+                <img class="carnormalimg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/httpServer/image/car/icon_4011011@2x.png"
+                  alt="">
+              </div>
+              <p>神威号x6小时</p>
+            </li>
+            <li>
+              <div class="rewardimgbox">
+                <img class="bubblenormalimg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/httpServer/image/chat_bubble/50012/bubble_shop@2x.png"
+                  alt="">
+              </div>
+              <p>冬日浓情气泡x6小时</p>
+            </li>
+            <li>
+              <div class="rewardimgbox">
+                <img class="propnormalimg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/purple.png"
+                  alt="">
+              </div>
+              <p>紫水晶</p>
+            </li>
+            <li>
+              <div class="rewardimgbox">
+                <img class="propnormalimg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/WinterSolstice/green.png" alt="">
+              </div>
+              <p>绿水晶</p>
+            </li>
+            <li>
+              <div class="rewardimgbox">
+                <img class="propnormalimg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/dragon/point.png" alt="">
+              </div>
+              <p>元宝</p>
+            </li>
+            <li>
+              <div class="rewardimgbox">
+                <img class="propnormalimg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+              </div>
+              <p>元宝</p>
+            </li>
+            <li>
+              <div class="rewardimgbox">
+                <img class="propnormalimg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/skill/skill_prop_3@2x.png"
+                  alt="">
+              </div>
+              <p>么么哒</p>
+            </li>
+            <li>
+              <div class="rewardimgbox">
+                <img class="propnormalimg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/skill/skill_prop_1@2x.png"
+                  alt="">
+              </div>
+              <p>大力丸</p>
+            </li>
+            <li>
+              <div class="rewardimgbox">
+                <img class="propnormalimg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/skill/skill_prop_5@2x.png"
+                  alt="">
+              </div>
+              <p>魔法棒</p>
+            </li>
+            <li>
+              <div class="rewardimgbox">
+                <img class="propnormalimg1"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/砸蛋币.png"
+                  alt="">
+              </div>
+              <p>砸蛋币x10</p>
+            </li>
+            <li>
+              <div class="rewardimgbox">
+                <img class="propnormalimg1"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/砸蛋币.png"
+                  alt="">
+              </div>
+              <p>砸蛋币x1</p>
+            </li>
+          </ul>
+        </div>
+        <div class="eggrewardsurebtn winthelotterybtn"></div>
+      </div>
+
+      <!-- 元宝抽奖弹窗 -->
+      <div class="moneySquare-box winthelotterybox" style="display: none;">
+        <div class="moneytreasurebox winthelotterycontent">
+          <ul>
+            <li>
+              <div class="rewardimgbox">
+                <img class="moneycrystalimg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+              </div>
+              <p>元宝x100w</p>
+            </li>
+            <li>
+              <div class="rewardimgbox">
+                <img class="moneycrystalimg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+              </div>
+              <p>元宝x10w</p>
+            </li>
+            <li>
+              <div class="rewardimgbox">
+                <img class="moneycrystalimg"
+                  src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/money/wing.png" alt="">
+              </div>
+              <p>元宝x10w</p>
+            </li>
+          </ul>
+        </div>
+        <div class="moneySquaresurebtn winthelotterybtn"></div>
+      </div>
+
+      <!-- 分享弹窗 -->
+      <div class="lucky-share" style="display: none;">
+        <div class="lucky-share-top">
+          <div class="lucky-share-title">分享到:</div>
+          <div class="lucky-share-content">
+            <div data-mold="0" class="share-click">
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/turnplate/img/share_weChat.png"
+                alt="微信好友">
+              <span>微信好友</span>
+            </div>
+            <div data-mold="1" class="share-click">
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/turnplate/img/share_QQ.png" alt="QQ好友">
+              <span>QQ好友</span>
+            </div>
+            <div data-mold="2" class="share-click">
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/turnplate/img/share_WeCircle.png"
+                alt="朋友圈">
+              <span>朋友圈</span>
+            </div>
+            <div data-mold="3" class="share-click">
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/turnplate/img/share_QSpace.png"
+                alt="QQ空间">
+              <span>QQ空间</span>
+            </div>
+          </div>
+        </div>
+        <div class="lucky-share-bottom">取消</div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="../../js/common_native.js"></script>
+  <script src="../../js/jquery.min.js"></script>
+  <script src="../../js/svga.min.js"></script>
+  <script src="../../js/methods.js"></script>
+  <script src="../../js/giftNameByBackground.js"></script>
+  <script src="activity.js"></script>
+</body>
+
+</html>

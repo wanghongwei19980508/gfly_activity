@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <title>添加账户</title>
+    <script src="../../js/rem-count.js"></script>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="addaccount.css">
+    <script>
+        //获取浏览器页面可见高度和宽度
+        var ua = navigator.userAgent.toLowerCase()
+        if (/iphone|ipad|ipod/.test(ua)) {
+
+        }else {
+            loading();
+        }
+
+        function loading() {
+            var _PageHeight = document.documentElement.clientHeight,
+                _PageWidth = document.documentElement.clientWidth;
+            //			计算loading框距离顶部和左部的距离（loading框的宽度为215px，高度为61px）
+            var _LoadingTop = _PageHeight > 61 ? (_PageHeight - 61) / 2 : 0,
+                _LoadingLeft = _PageWidth > 215 ? (_PageWidth - 215) / 2 : 0;
+            //			在页面未加载完毕之前显示的loading Html自定义内容
+            var loading = '<div class="loading" id="loading" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;background: #fff;z-index: 9999;"><img src="http://doudoujiaoyou.oss-cn-beijing.aliyuncs.com/h5/activity/preferential/loding.gif" style="top: calc(50% - 16px);;position: absolute;left: calc(50% - 16px);"> </div></div>';
+
+            document.write(loading);
+            //监听加载状态改变
+
+            document.onreadystatechange = completeLoading;
+
+            function completeLoading() {
+                if (document.readyState == "complete") {
+                    var loadingMask = document.getElementById('loading');
+                    loadingMask.parentNode.removeChild(loadingMask);
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="box">
+        <!-- <div class="contentbox contentbox0">
+            <div class="returntowithdrawalbox">
+                <div class="returnbtn"></div>
+                <p class="withdrawalaccounttext">提现账户</p>
+            </div>
+            <p class="addbankcardtext">请添加<span class="fullnametext">星恋</span>的银行卡</p>
+            <div class="bankcardbox">
+                <p class="bankcardtext">银行卡号</p>
+                <input class="bankInput" maxlength="24" type="tel" name="" id="" placeholder="请输入卡号">
+                <div class="deletebtn" style="display: none;"></div>
+            </div>
+            <div class="nextstepbtn">下一步</div>
+        </div>  -->
+        <div class="contentbox contentbox1">
+            <div class="returntowithdrawalbox">
+                <div class="returnbtn"></div>
+                <p class="withdrawalaccounttext">提现账户</p>
+            </div>
+            <p class="perfectchecktext">请完善并填写您的银行卡信息</p>
+            <div class="accountinformationbox">
+                <form action="" class="accountinformationform">
+                    <li>
+                        <p>姓名</p>
+                        <input class="nameInput" type="text" name="" id="" placeholder="">
+                    </li>
+                    <li>
+                        <p>银行卡号</p>
+                        <input class="bankcardInput" maxlength="24" type="text" name="" id="" placeholder="">
+                    </li>
+                    <li>
+                        <p>开户银行</p>
+                        <!-- <input class="bankofdepositInput" type="text" name="" id="" placeholder=""> -->
+                        <select name="" id="">
+                            <option selected="selected" value="">请选择开户银行</option>
+                            <option value="鞍山银行">鞍山银行</option>
+                            <option value="北京银行">北京银行</option>
+                            <option value="渤海银行">渤海银行</option>
+                            <option value="沧州银行">沧州银行</option>
+                            <option value="朝阳银行">朝阳银行</option>
+                            <option value="成都银行">成都银行</option>
+                            <option value="承德银行">承德银行</option>
+                            <option value="大连银行">大连银行</option>
+                            <option value="丹东银行">丹东银行</option>
+                            <option value="德州银行">德州银行</option>
+                            <option value="东莞银行">东莞银行</option>
+                            <option value="东营银行">东营银行</option>
+                            <option value="鄂尔多斯银行">鄂尔多斯银行</option>
+                            <option value="福建海峡银行">福建海峡银行</option>
+                            <option value="抚顺银行">抚顺银行</option>
+                            <option value="富滇银行">富滇银行</option>
+                            <option value="甘肃银行">甘肃银行</option>
+                            <option value="赣州银行">赣州银行</option>
+                            <option value="广东华兴银行">广东华兴银行</option>
+                            <option value="广东南粤银行">广东南粤银行</option>
+                            <option value="广发银行">广发银行</option>
+                            <option value="广西北部湾银行">广西北部湾银行</option>
+                            <option value="广州银行">广州银行</option>
+                            <option value="贵阳银行">贵阳银行</option>
+                            <option value="贵州银行">贵州银行</option>
+                            <option value="桂林银行">桂林银行</option>
+                            <option value="哈尔滨银行">哈尔滨银行</option>
+                            <option value="哈密市商业银行">哈密市商业银行</option>
+                            <option value="海南银行">海南银行</option>
+                            <option value="汉口银行">汉口银行</option>
+                            <option value="杭州银行">杭州银行</option>
+                            <option value="河北银行">河北银行</option>
+                            <option value="恒丰银行">恒丰银行</option>
+                            <option value="衡水银行">衡水银行</option>
+                            <option value="葫芦岛银行">葫芦岛银行</option>
+                            <option value="湖北银行">湖北银行</option>
+                            <option value="湖州银行">湖州银行</option>
+                            <option value="华融湘江银行">华融湘江银行</option>
+                            <option value="华夏银行">华夏银行</option>
+                            <option value="徽商银行">徽商银行</option>
+                            <option value="吉林银行">吉林银行</option>
+                            <option value="济宁银行">济宁银行</option>
+                            <option value="嘉兴银行阜新银行">嘉兴银行阜新银行</option>
+                            <option value="江苏银行">江苏银行</option>
+                            <option value="江西银行">江西银行</option>
+                            <option value="交通银行">交通银行</option>
+                            <option value="焦作中旅银行">焦作中旅银行</option>
+                            <option value="锦州银行">锦州银行</option>
+                            <option value="晋城银行">晋城银行</option>
+                            <option value="晋商银行">晋商银行</option>
+                            <option value="晋中银行">晋中银行</option>
+                            <option value="九江银行">九江银行</option>
+                            <option value="昆仑银行">昆仑银行</option>
+                            <option value="莱商银行">莱商银行</option>
+                            <option value="兰州银行">兰州银行</option>
+                            <option value="廊坊银行">廊坊银行</option>
+                            <option value="乐山市商业银行">乐山市商业银行</option>
+                            <option value="辽阳银行">辽阳银行</option>
+                            <option value="临商银行">临商银行</option>
+                            <option value="柳州银行">柳州银行</option>
+                            <option value="龙江银行">龙江银行</option>
+                            <option value="泸州银行">泸州银行</option>
+                            <option value="洛阳银行">洛阳银行</option>
+                            <option value="蒙商银行">蒙商银行</option>
+                            <option value="绵阳市商业银行">绵阳市商业银行</option>
+                            <option value="南京银行">南京银行</option>
+                            <option value="内蒙古银行">内蒙古银行</option>
+                            <option value="宁波东海银行">宁波东海银行</option>
+                            <option value="宁波通商银行">宁波通商银行</option>
+                            <option value="宁波银行">宁波银行</option>
+                            <option value="宁夏银行">宁夏银行</option>
+                            <option value="攀枝花市商业银行">攀枝花市商业银行</option>
+                            <option value="平安银行">平安银行</option>
+                            <option value="平顶山银行">平顶山银行</option>
+                            <option value="齐鲁银行">齐鲁银行</option>
+                            <option value="齐商银行">齐商银行</option>
+                            <option value="秦皇岛银行">秦皇岛银行</option>
+                            <option value="青岛银行">青岛银行</option>
+                            <option value="青海银行">青海银行</option>
+                            <option value="曲靖市商业银行">曲靖市商业银行</option>
+                            <option value="泉州银行">泉州银行</option>
+                            <option value="日照银行">日照银行</option>
+                            <option value="厦门国际银行">厦门国际银行</option>
+                            <option value="厦门银行">厦门银行</option>
+                            <option value="上海浦东发展银行">上海浦东发展银行</option>
+                            <option value="上海银行">上海银行</option>
+                            <option value="上饶银行金华银行">上饶银行金华银行</option>
+                            <option value="绍兴银行">绍兴银行</option>
+                            <option value="盛京银行">盛京银行</option>
+                            <option value="石嘴山银行">石嘴山银行</option>
+                            <option value="四川天府银行">四川天府银行</option>
+                            <option value="苏州银行">苏州银行</option>
+                            <option value="遂宁银行">遂宁银行</option>
+                            <option value="台州银行">台州银行</option>
+                            <option value="泰安银行">泰安银行</option>
+                            <option value="唐山银行">唐山银行</option>
+                            <option value="天津银行">天津银行</option>
+                            <option value="铁岭银行">铁岭银行</option>
+                            <option value="潍坊银行">潍坊银行</option>
+                            <option value="温州银行">温州银行</option>
+                            <option value="乌海银行">乌海银行</option>
+                            <option value="乌鲁木齐银行">乌鲁木齐银行</option>
+                            <option value="西安银行">西安银行</option>
+                            <option value="咸海市商业银行">咸海市商业银行</option>
+                            <option value="新疆汇和银行">新疆汇和银行</option>
+                            <option value="新疆银行">新疆银行</option>
+                            <option value="邢台银行">邢台银行</option>
+                            <option value="兴业银行">兴业银行</option>
+                            <option value="烟台银行">烟台银行</option>
+                            <option value="营口沿海银行">营口沿海银行</option>
+                            <option value="营口银行">营口银行</option>
+                            <option value="云南红塔银行">云南红塔银行</option>
+                            <option value="枣庄银行">枣庄银行</option>
+                            <option value="张家口银行">张家口银行</option>
+                            <option value="长安银行">长安银行</option>
+                            <option value="长城华西银行">长城华西银行</option>
+                            <option value="长沙银行">长沙银行</option>
+                            <option value="长治银行">长治银行</option>
+                            <option value="招商银行">招商银行</option>
+                            <option value="浙江稠州商业银行">浙江稠州商业银行</option>
+                            <option value="浙江民泰商业银行">浙江民泰商业银行</option>
+                            <option value="浙江泰隆商业银行">浙江泰隆商业银行</option>
+                            <option value="浙商银行">浙商银行</option>
+                            <option value="郑州银行">郑州银行</option>
+                            <option value="中国工商银行">中国工商银行</option>
+                            <option value="中国光大银行">中国光大银行</option>
+                            <option value="中国建设银行">中国建设银行</option>
+                            <option value="中国民生银行">中国民生银行</option>
+                            <option value="中国农业银行">中国农业银行</option>
+                            <option value="中国银行">中国银行</option>
+                            <option value="中国邮政储蓄银行">中国邮政储蓄银行</option>
+                            <option value="中信银行">中信银行</option>
+                            <option value="中原银行">中原银行</option>
+                            <option value="重庆三峡银行">重庆三峡银行</option>
+                            <option value="重庆银行">重庆银行</option>
+                            <option value="珠海华润银行">珠海华润银行</option>
+                            <option value="自贡银行">自贡银行</option>
+                        </select>
+                    </li>
+                    <li>
+                        <p>银行省份</p>
+                        <!-- <input class="bankprovinceInput" type="text" name="" id="" placeholder=""> -->
+                        <select name="province" class="province" lay-verify="required" lay-search lay-filter="province">
+                            <option value="">请选择所属省份</option>
+                            <!-- <option value="北京市">北京市</option>
+                            <option value="天津">天津</option>
+                            <option value="河北">河北</option>
+                            <option value="山西">山西</option>
+                            <option value="天津">天津</option>
+                            <option value="内蒙古">内蒙古</option>
+                            <option value="辽宁">辽宁</option>
+                            <option value="天津">天津</option>
+                            <option value="吉林">吉林</option>
+                            <option value="黑龙江">黑龙江</option>
+                            <option value="上海">上海</option>
+                            <option value="江苏">江苏</option>
+                            <option value="浙江">浙江</option>
+                            <option value="安徽">安徽</option>
+                            <option value="福建">福建</option>
+                            <option value="江西">江西</option>
+                            <option value="山东">山东</option>
+                            <option value="河南">河南</option>
+                            <option value="湖北">湖北</option>
+                            <option value="湖南">湖南</option>
+                            <option value="广东">广东</option>
+                            <option value="广西">广西</option>
+                            <option value="四川">四川</option>
+                            <option value="贵州">贵州</option>
+                            <option value="西藏">西藏</option>
+                            <option value="陕西">陕西</option>
+                            <option value="甘肃">甘肃</option>
+                            <option value="青海">青海</option>
+                            <option value="宁夏">宁夏</option>
+                            <option value="新疆">新疆</option> -->
+                        </select>
+                    </li>
+                    <li>
+                        <p>银行地级市</p>
+                        <!-- <input class="bankprovinceInput1" type="text" name="" id="" placeholder=""> -->
+                        <select name="city" class="city" lay-verify="required" lay-search lay-filter="city">
+                            <option value="">请选择所属地级市</option>
+                        </select>
+                    </li>
+                    <li>
+                        <p>联系电话</p>
+                        <input class="telInput" maxlength="11"  type="tel" name="" id="" placeholder="">
+                    </li>
+                    <li>
+                        <div class="selectbtn"></div>
+                        <p>已阅读并同意<span class="cooperationagreementtext">《合作协议》</span></p>
+                    </li>
+                </form>
+            </div>
+            <div class="submitbtn">提交</div>
+        </div>
+        <div class="contentbox contentbox2" style="display: none;">
+            <div class="returntowithdrawalbox">
+                <div class="returnbtn"></div>
+                <p class="withdrawalaccounttext">提现账户</p>
+            </div>
+            <p class="shortmessagetext">以上操作需要短信确认，请点按钮发送验证码至绑定手机， <span>150</span>****<span>3363</span>请按提示操作</p>
+            <div class="verificationcodebox">
+                <p class="verificationcodetext">验证码</p>
+                <input class="verificationcodeInput" type="text" name="" id="" placeholder="请输入验证码" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
+                <div class="verificationcodebtn">获取验证码</div>
+            </div>
+            <div class="refertobtn">提交</div>
+        </div>
+        <div class="contentbox contentbox3" style="display: none;">
+            <div class="returntowithdrawalbox">
+                <div class="returnbtn"></div>
+                <p class="withdrawalaccounttext">提现账户</p>
+            </div>
+            <p class="unbundlingtext">以下是你当前绑定的银行卡信息，如需修改银行卡信息请解绑当 前银行卡</p>
+            <div class="accountinformationbox">
+                <form action="" class="accountinformationform">
+                    <li>
+                        <p>姓名</p>
+                        <input class="nameInput" readonly type="text" name="" id="" placeholder="">
+                    </li>
+                    <li>
+                        <p>银行卡号</p>
+                        <input class="bankcardInput" readonly maxlength="24" type="text" name="" id="" placeholder="">
+                    </li>
+                    <li>
+                        <p>开户银行</p>
+                        <input class="bankofdepositInput" readonly type="text" name="" id="" placeholder="">
+                    </li>
+                    <li>
+                        <p>银行省份</p>
+                        <input class="bankprovinceInput" readonly type="text" name="" id="" placeholder="">
+                    </li>
+                    <li>
+                        <p>银行省份</p>
+                        <input class="bankprovinceInput1" readonly type="text" name="" id="" placeholder="">
+                    </li>
+                    <li>
+                        <p>联系电话</p>
+                        <input class="telInput" readonly maxlength="11" type="tel" name="" id="" placeholder="">
+                    </li>
+                </form>
+            </div>
+            <div class="unbundlingbtn">解绑</div>
+        </div>
+        <!-- 遮罩 -->
+        <div class="backG_black" style="display:none;"></div>
+        <!-- 解绑弹窗 -->
+        <div class="unbundlingpopupbox" style="display: none;">
+            <p class="untieornottext">解绑后当前账户信息将被清空，需重新添加，确定解绑吗？</p>
+            <div class="cancelconfirmationbox">
+                <div class="cancelbtn">取消</div>
+                <div class="determinebtn">确定</div>
+            </div>
+        </div>
+        
+
+    </div>
+    <script type="text/javascript" src="../../js/common_native.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/svga.min.js"></script>
+    <script src="../../js/methods.js"></script>
+    <script src="../../js/giftNameByBackground.js"></script>
+    <script src="addaccount.js"></script>
+    <script src="area.js"></script>
+    <script src="selectMore.js"></script>
+</body>
+</html>

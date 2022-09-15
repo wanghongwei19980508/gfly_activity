@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <title>开服盛典</title>
+  <script src="./vue.js"></script>
+  <script src="../../js/rem-count.js"></script>
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="DressCarnival.css">
+  <script>
+    //获取浏览器页面可见高度和宽度
+    var ua = navigator.userAgent.toLowerCase()
+    if (/iphone|ipad|ipod/.test(ua)) {
+    } else {
+      loading();
+    }
+    function loading() {
+      var _PageHeight = document.documentElement.clientHeight,
+        _PageWidth = document.documentElement.clientWidth;
+      //			计算loading框距离顶部和左部的距离（loading框的宽度为215px，高度为61px）
+      var _LoadingTop = _PageHeight > 61 ? (_PageHeight - 61) / 2 : 0,
+        _LoadingLeft = _PageWidth > 215 ? (_PageWidth - 215) / 2 : 0;
+      //			在页面未加载完毕之前显示的loading Html自定义内容
+      var loading = '<div class="loading" id="loading" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;background: #fff;z-index: 9999;"><img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/preferential/loding.gif" style="top: calc(50% - 16px);;position: absolute;left: calc(50% - 16px);"> </div></div>';
+      document.write(loading);
+      //监听加载状态改变
+      document.onreadystatechange = completeLoading;
+      function completeLoading() {
+        if (document.readyState == "complete") {
+          var loadingMask = document.getElementById('loading');
+          loadingMask.parentNode.removeChild(loadingMask);
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="loding">
+    <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/activity/preferential/loding.gif">
+  </div>
+  <div class="box">
+    <div class="pagebox">
+      <li>
+        <div class="pagebtn0" :style="pageList.pagebtn0 ? 'margin-top: -0.4rem' : 0" @click="pageChange(0)"></div>
+      </li>
+      <li>
+        <div class="pagebtn1" :style="pageList.pagebtn1 ? 'margin-top: -0.4rem' : 0" @click="pageChange(1)"></div>
+      </li>
+      <li>
+        <div class="pagebtn2" :style="pageList.pagebtn2 ? 'margin-top: -0.4rem' : 0" @click="pageChange(2)"></div>
+      </li>
+      <li>
+        <div class="pagebtn3" :style="pageList.pagebtn3 ? 'margin-top: -0.4rem' : 0" @click="pageChange(3)"></div>
+      </li>
+    </div>
+    <div class="change-box" v-show="pageList.pagebtn0">
+      <p class="title">家族活跃任务</p>
+      <div class="content">
+        <p class="familyText">完成所有活跃任务后，本活动自动结束</p>
+        <div class="datebg">
+          <div class="dateList">
+            <div>
+              <div v-for="item in page0.dateList" class="dateBtn" @click="dateChange(item)">
+                {{item.day}}
+                <img v-if="item.is_today" src="images/对号.png">
+                <img v-if="!item.disabled" src="images/锁链.png">
+              </div>
+            </div>
+          </div>
+          <img class="img" src="images/更多.png">
+        </div>
+        <div class="familyTask">
+          <div v-for="(item,key) in page0.familyTask">
+            <p>任务{{key == 0 ? '一': key == 1 ? '二' : '三'}}</p>
+            <div>
+              <p v-if="item.total">{{item.name}}（{{item.count}}/{{item.total}}）</p>
+              <p v-else>{{item.name}}</p>
+              <img :src="item.status == 1?'./images/任务完成.png':'./images/任务未完成.png'">
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="title">任务完成奖励</p>
+      <div class="content">
+        <div class="giftbox">
+          <div v-for="item in page0.familyGift">
+            <img :src="item.img">
+            <p>{{item.name}} x {{item.num}}</p>
+          </div>
+        </div>
+        <div class="Btn" :class="page0.familyBtn == 1 ? 'btnture':'btnfalse'" @click="getfamilyGift">
+          {{page0.familyBtn == 2 ?'已领取' :'立即领取'}}</div>
+      </div>
+      <p class="tip">
+        1、完成三个家族指定活跃目标任务，即可领取任务完成奖励<br>
+        2、家族活跃任务每天零点更新<br>
+        3、今日任务未完成的情况下，次日将继续进行当前任务<br>
+        4、当完成第90天任务后，活跃任务活动自行结束（本活动不受开服结束时间影响）
+      </p>
+    </div>
+    <div class="change-box" v-show="pageList.pagebtn1">
+      <div class="rechargebox">
+        <div :class="page1.rechargeChangeBtn == 1 ? 'recharge0Add' : 'recharge0'" @click="rechargeChange(1)">
+        </div>
+        <div :class="page1.rechargeChangeBtn == 2 ? 'recharge1Add' : 'recharge1'" @click="rechargeChange(2)">
+        </div>
+      </div>
+      <div class="giftContent" v-for="i in page1.rechargeList">
+        <p class="giftTitle">{{page1.rechargeChangeBtn == 1 ? '客户端': '代理端'}}累计充值{{i.level}}元</p>
+        <div class="giftbox">
+          <div v-for="item in i.rechargeGift">
+            <img :src="item.img ? item.img : ''">
+            <p>{{item.name}}x{{item.num}}</p>
+          </div>
+        </div>
+        <div class="Btn" :class="i.status == 1 ? 'btnture':'btnfalse'" @click="getrechargeGift(i)">
+          {{i.status == 2 ?'已领取' :'立即领取'}}</div>
+      </div>
+      <p class="tip">
+        1、每日首次充值享2.5倍钻石<br>
+        2、活动开始后重置客户端和代理端所有额度首充<br>
+        3、活动期间每日重置1000元以下额度的首充翻倍<br>
+        4、同一个账号在安卓设备充值后，在苹果设备充值没有翻倍<br>
+        5、在安卓及苹果设备的客户端充值不影响代理端的首充翻倍
+      </p>
+    </div>
+    <div class="change-box" v-show="pageList.pagebtn2" style="padding-bottom: 2rem">
+      <div class="giftContent" v-for="i in page2.inviteList">
+        <p class="giftTitle">有效邀请{{i.total}}人</p>
+        <div class="giftbox">
+          <div v-for="item in i.inviteGift">
+            <img :src="item.img">
+            <p>{{item.name}} x {{item.num}}</p>
+          </div>
+        </div>
+        <div class="Btn" :class="i.status == 1 ? 'btnture':'btnfalse'" @click="getinviteGift(i)">
+          {{i.status == 2 ?'已领取' :'立即领取'}}</div>
+      </div>
+      <div class="content" style="padding: 0.6rem 0.2rem 0.5rem;margin-top: 1rem;">
+        <div class="inviteTask">
+          <div v-for="(item,key) in page2.inviteTask">
+            <p>{{item.tip}}</p>
+            <div>{{item.content}}</div>
+          </div>
+          <p>注：活动期间内达到以上条件的，请联系客服领取自选靓号</p>
+        </div>
+      </div>
+      <p class="title">排行榜奖励</p>
+      <div class="content">
+        <div class="topthreebox">
+          <ul>
+            <li>
+              <div class="iconBg" @click="gotoApp(page2.threeList[1].uid)">
+                <img :src="page2.threeList[1]?picHttp+page2.threeList[1].pic+'.png':'./images/占位.png'" alt="">
+              </div>
+              <p>{{page2.threeList[1] ? page2.threeList[1].name : '暂无人上榜'}}</p>
+              <div class="greenBg">绿水晶+{{page2.threeList[1] ?page2.threeList[1].green:'???'}}</div>
+              <p>已邀请{{page2.threeList[1] ?page2.threeList[1].num : '???'}}人</p>
+            </li>
+            <li>
+              <div class="iconBg" @click="gotoApp(page2.threeList[0].uid)">
+                <img :src="page2.threeList[0]?picHttp+page2.threeList[0].pic+'.png':'./images/占位.png'" alt="">
+              </div>
+              <p>{{page2.threeList[0] ? page2.threeList[0].name : '暂无人上榜'}}</p>
+              <div class="greenBg">绿水晶+{{page2.threeList[0] ?page2.threeList[0].green:'???'}}</div>
+              <p>已邀请{{page2.threeList[0] ?page2.threeList[0].num : '???'}}人</p>
+            </li>
+            <li>
+              <div class="iconBg" @click="gotoApp(page2.threeList[2].uid)">
+                <img :src="page2.threeList[2]?picHttp+page2.threeList[2].pic+'.png':'./images/占位.png'" alt="">
+              </div>
+              <p>{{page2.threeList[2] ? page2.threeList[2].name : '暂无人上榜'}}</p>
+              <div class="greenBg">绿水晶+{{page2.threeList[2] ?page2.threeList[2].green:'???'}}</div>
+              <p>已邀请{{page2.threeList[2] ?page2.threeList[2].num : '???'}}人</p>
+            </li>
+          </ul>
+        </div>
+        <div class="inviteTree">
+          <div class="treeTitle">
+            <li>排名</li>
+            <li>头像</li>
+            <li>用户名靓号</li>
+            <li>邀请人数</li>
+          </div>
+          <div class="treeContent" v-for="(item,key) in page2.treeContent">
+            <li>{{key+4}}</li>
+            <li>
+              <div class="iconBg" @click="gotoApp(item.uid)"><img :src="picHttp+item.pic+'.png'"></div>
+            </li>
+            <li>
+              <p>{{item.name}}</p>
+              <div class="greenBg">绿水晶+{{item.green}}</div>
+            </li>
+            <li>
+              <p>已邀请{{item.num}}人</p>
+            </li>
+          </div>
+        </div>
+      </div>
+      <p class="title" style="position: fixed;bottom: 1.1rem;left: calc(50% - 1.5rem);z-index: 9;top: auto;">我的排名</p>
+      <div class="content" style="padding: 0.4rem 0.1rem 0.2rem;position: fixed;bottom: 0rem;width: 98%;left: 1%;">
+        <div v-if="page2.my" class="myContent">
+          <li>
+            <img :src="picHttp+page2.my.pic+'.png'">
+          </li>
+          <li>
+            <p>我的排名{{page2.my.number}}</p>
+            <p>邀请码{{page2.my.inviteNum}}</p>
+          </li>
+          <li>
+            <div @click="changeShareShow(true)">分享/邀请</div>
+          </li>
+          <li>
+            <p>已邀请{{page2.my.num}}人</p>
+          </li>
+        </div>
+      </div>
+      <p class="tip">
+        温馨提示：<br>
+        1、每台新设备只能被成功邀请一次，同一个登录帐号、同一个手机号、同一个设备等与用户身份相关的信息，其中任意一项或多项存在相同、相似、通过特定标记形成批量信息或其他非真实有效等情形的，都视为同一个用户。<br>
+        2、使用虚拟设备、多开分身或其他第三方外挂插件工具等参与本活动获得奖励或批量注册的平台将对涉及的帐号做奖励清除和封禁处理，包括但不限于封禁帐号和封禁设备。<br>
+        3、新设备是指从未安装过久久语音的正常移动设备。<br>
+        注：不包括模拟器等虚拟设备。<br>
+        4、新用户是指未曾下载/安装/使用/注册/登录。
+      </p>
+    </div>
+    <div class="change-box" v-show="pageList.pagebtn3" style="padding-bottom: 2rem">
+      <p class="title">家族势力任务</p>
+      <div class="content" style="padding: 0.6rem 0.2rem 0.5rem;">
+        <div class="forceTask">
+          <div v-for="(item,key) in page3.forceTask">
+            <p>任务{{key == 0 ? '一': key == 1 ? '二' : key == 2 ? '三': key == 3 ? '四' : '五' }}</p>
+            <div>{{item.name}}
+              <span v-if="item.total">
+                （{{item.count}}/{{item.total}}），势力值+{{item.value}}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content" style="margin-top: 0.3rem;padding: 0.6rem 0.2rem 0.5rem;">
+        <div class="familyContent">
+          <li @click="familyContentGift(1)">
+            <div class="gift">
+              <img src="images/奖杯 NO.1.png">
+            </div>
+            <p>NO1 奖励</p>
+          </li>
+          <li @click="familyContentGift(2)">
+            <div class="gift">
+              <img src="images/奖杯 NO.2.png">
+            </div>
+            <p>NO2 奖励</p>
+          </li>
+          <li @click="familyContentGift(3)">
+            <div class="gift">
+              <img src="images/奖杯  NO.3.png">
+            </div>
+            <p>NO3 奖励</p>
+          </li>
+          <li @click="familyContentGift(4)">
+            <div class="gift">
+              <img src="images/奖杯NO.4-10.png">
+            </div>
+            <p>NO4-10奖励</p>
+          </li>
+        </div>
+        <p class="familyText" style="margin-top: 0.3rem;">点击奖杯即可预览奖励详情</p>
+        <div class="familyTree">
+          <div class="topthreebox">
+            <ul>
+              <li>
+                <img src="./images/排名皇冠 (2).png" alt="">
+                <p>{{page3.threeList[1] ? page3.threeList[1].name : '暂未有上榜'}}</p>
+                <p>{{page3.threeList[1] ?page3.threeList[1].num : '???'}}</p>
+              </li>
+              <li>
+                <img src="./images/排名皇冠 (1).png" alt="">
+                <p>{{page3.threeList[0] ? page3.threeList[0].name : '暂未有上榜'}}</p>
+                <p>{{page3.threeList[0] ?page3.threeList[0].num : '???'}}</p>
+              </li>
+              <li>
+                <img src="./images/排名皇冠 (3).png" alt="">
+                <p>{{page3.threeList[2] ? page3.threeList[2].name : '暂未有上榜'}}</p>
+                <p>{{page3.threeList[2] ?page3.threeList[2].num : '???'}}</p>
+              </li>
+            </ul>
+          </div>
+          <div class="familyTitle">
+            <li>排名</li>
+            <li>族名</li>
+            <li>总势力值</li>
+          </div>
+          <div class="familycontent" v-for="(item,key) in page3.familyList">
+            <li>
+              <p>{{key + 4}}</p>
+            </li>
+            <li>
+              <p>{{item.name}}</p>
+            </li>
+            <li>
+              <p>{{item.num}}</p>
+            </li>
+          </div>
+        </div>
+        <p class="title" style="position: fixed;bottom: 1.1rem;left: calc(50% - 1.5rem);z-index: 9;top: auto;">我的排名</p>
+        <div class="content" style="padding: 0.4rem 0.1rem 0.2rem;position: fixed;bottom: 0rem;width: 98%;left: 1%;">
+          <div v-if="page3.my" class="myFamily">
+            <li>
+              <img :src="picHttp+page3.my.pic+'.png'">
+            </li>
+            <li>
+              <p>{{page3.my.name}}</p>
+              <p>我的家族排名{{page3.my.number}}</p>
+            </li>
+            <li>
+              <p>我的家族势力值{{page3.my.num}}</p>
+              <p>累计贡献值{{page3.my.myNum}}</p>
+            </li>
+          </div>
+        </div>
+        <p class="tip">
+          1、所属家族用户完成势力任务的势力值将贡献到家族总势力值中进行榜单的势力争夺<br>
+          2、势力争夺活动奖励将于活动结束后，由系统自动发放
+        </p>
+      </div>
+    </div>
+    <div class="backG_black" v-show="shareShow||giftShow">
+      <div class="lucky-share" v-show="shareShow">
+        <div class="lucky-share-top">
+          <div class="lucky-share-title">分享到:</div>
+          <div class="lucky-share-content">
+            <div @click="share(0)" class="share-click">
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/turnplate/img/share_weChat.png"
+                alt="微信好友">
+              <span>微信好友</span>
+            </div>
+            <div @click="share(1)" class="share-click">
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/turnplate/img/share_QQ.png" alt="QQ好友">
+              <span>QQ好友</span>
+            </div>
+            <div @click="share(2)" class="share-click">
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/turnplate/img/share_WeCircle.png"
+                alt="朋友圈">
+              <span>朋友圈</span>
+            </div>
+            <div @click="share(3)" class="share-click">
+              <img src="https://jiujiu-obs.obs.cn-north-4.myhuaweicloud.com/h5/turnplate/img/share_QSpace.png"
+                alt="QQ空间">
+              <span>QQ空间</span>
+            </div>
+          </div>
+        </div>
+        <div class="lucky-share-bottom" @click="changeShareShow(false)">取消</div>
+      </div>
+      <div class="giftBox" v-show="giftShow">
+        <div class="close" @click="giftShow = false"> </div>
+        <div class="giftBoxTitle">
+          <img :src="'./images/NO'+giftShow+'.png'">
+        </div>
+        <div class="giftBoxContent" v-for="(index,key) in page3.giftReward">
+          <div class="giftBoxContentTitle">
+            <img src="./images//弹窗奖励旁.png">
+            <p>{{index.position}}奖励</p>
+            <img src="./images//弹窗奖励旁.png">
+          </div>
+          <div class="giftBoxContentBox">
+            <div class="bg" v-for="item in index.familyGift">
+              <p class="t">{{item.name}}</p>
+              <div class="c">
+                <img :src="item.img ? item.img : ''">
+              </div>
+              <p>x{{item.num}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="../../js/common_native.js"></script>
+  <script src="../../js/jquery.min.js"></script>
+  <script src="../../js/svga.min.js"></script>
+  <script src="../../js/methods.js"></script>
+  <script src="../../js/giftNameByBackground.js"></script>
+  <script src="DressCarnival.js"></script>
+</body>
+
+</html>

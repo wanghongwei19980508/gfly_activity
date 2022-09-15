@@ -1,0 +1,297 @@
+li{list-style: none;}
+.box {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    z-index:1;
+    padding: 0.2rem;
+}
+.clear {
+    clear: both;
+}
+.backG_black{
+    background: #827979e6;position: absolute;top: 0;width: 100%;height: 100%;
+}
+.loding{
+    position: fixed;left: 0;top: 0;width: 100%;height: 100%;background: #fff;z-index: 9999;
+    display: none;
+}
+.loding>img{
+    top: calc(50% - 16px);;position: absolute;left: calc(50% - 16px);
+}
+.returnofwealthlevelbox{
+    height: 0.8rem;
+}
+.returnbtn{
+    width: 0.6rem;
+    height:0.6rem;
+    background-image: url("img/返回.png");
+    background-size: 100% 100%;
+    float:left;
+}
+.wealthleveltext{
+    float: right;
+    font-size: 0.4rem;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #242424;
+    margin-right: 40%;
+}
+.titlebox{
+    width: 96%;
+    height: 0.6rem;
+    border: 0.01rem solid #DDDDDD;
+    border-radius: 0.33rem;
+    margin: 0 auto;
+}
+.titlebox>ul{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.titlebox>ul>li{
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    float: left;
+    font-size: 0.28rem;
+    font-family: PingFang SC;
+    font-weight: 400;
+    text-align: center;
+    line-height: 0.6rem;
+    border-radius: 0.33rem;
+}
+.wealthbtn{
+    color: #666666;
+}
+.charmbtn{
+    color: #666666;
+}
+.experiencevaluebtn{
+    color: #666666;
+}
+.wealthAdd{
+    background: #FEA340;
+    color: #FFFFFF;
+}
+.charmAdd{
+    background: #975AFF;
+    color: #FFFFFF;
+}
+.experiencevalueAdd{
+    background: #5AD584;
+    color: #FFFFFF;
+}
+.wealthlevelbox{
+    margin-top: 0.4rem;
+}
+
+/* 财富 */
+.wealthbox{}
+.headnamebox{}
+.headlevelbox{
+    height: 1.2rem;
+    text-align: center;
+    position: relative;
+}
+.headlevelbox>img{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.levaltext{
+    width: 1rem;
+    height: 0.4rem;
+    background: #BFBFBF;
+    border-radius: 0.5rem;
+    font-size: 0.26rem;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 0.4rem;
+    position: absolute;
+    left: 43%;
+    top: 70%;
+}
+.nametext{
+    font-size: 0.28rem;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #242424;
+    text-align: center;
+    line-height: 0.7rem;
+}
+.wealthlevelexpbox{
+    width: 60%;
+    height: 0.15rem;
+    background: #F0F0F0;
+    border-radius: 0.2rem;
+    margin: 0rem auto;
+}
+.wealthlevelexpbar{
+    width: 10%;
+    height: 0.15rem;
+    background: #FEA340;
+    border-radius: 0.2rem;
+}
+.wealthlevelexptext{
+    width: 60%;
+    font-size: 0.24rem;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    margin: 0 auto;
+}
+.wealthlevelexptext>p{
+    float: right;
+}
+.wealthlevelexptext>p>span{}
+.wealthcharmexpbox{
+    width: 94%;
+    margin: 0.2rem auto;
+}
+.wealthcharmexpbox>li{
+    height: 0.8rem;
+}
+.wealthcharmexpbox>li:nth-last-of-type(odd){
+    background: #EDEDED;
+}
+.wealthcharmexpbox>li:nth-last-of-type(even){}
+.wealthcharmexpbox>li:first-child{
+    background: #FEA340;
+}
+.wealthcharmexpbox>li:first-child>p{
+    color:#fff;
+}
+.wealthcharmexpbox>li>p{
+    width: 33.333%;
+    float: left;
+    font-size: 0.28rem;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #666666;
+    text-align: center;
+    line-height: 0.8rem;
+}
+.wealthcharmexpbox>li>p:nth-child(2){
+    border-left: 0.01rem solid #DEDEDE;
+    float:left;
+}
+.wealthcharmexpbox>li>p:last-child{
+    border-left: 0.01rem solid #DEDEDE;
+    float: right;
+    letter-spacing: -0.015rem;
+}
+.wealthcharmexpbox>li>p>img{
+    width: 70%;
+    float: left;
+    margin-top: 6%;
+    margin-left: 15%;
+}
+.tipbox{
+    width: 94%;
+    margin: 0.2rem auto;
+}
+.tipbox>p{
+    font-size: 0.26rem;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #242424;
+    line-height: 0.4rem;
+}
+.tipbox>.tiptext{
+    font-size: 0.3rem;
+    font-weight: bold;
+    line-height: 1rem;     
+}
+.tipbox>.tiptext1{
+    font-size: 0.24rem;
+    color: #7F7F7F;
+}
+
+/* 魅力 */
+.charmbox{}
+.charmexpbox{
+    width: 60%;
+    height: 0.15rem;
+    background: #F0F0F0;
+    border-radius: 0.2rem;
+    margin: 0rem auto;
+}
+.charmexpbar{
+    width: 10%;
+    height: 0.15rem;
+    background: #975AFF;
+    border-radius: 0.2rem;
+}
+.charmexptext{
+    width: 60%;
+    font-size: 0.24rem;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    margin: 0 auto;
+}
+.charmexptext>p{
+    float: right;
+}
+.charmexptext>p>span{}
+.glamouexpbox>li:first-child{
+    background:#975AFF;
+}
+
+/* 经验值 */
+.experiencevaluebox{}
+.experiencevalueexpbox{
+    width: 60%;
+    height: 0.15rem;
+    background: #F0F0F0;
+    border-radius: 0.2rem;
+    margin: 0rem auto;
+}
+.experiencevalueexpbar{
+    width: 10%;
+    height: 0.15rem;
+    background: #5AD584;
+    border-radius: 0.2rem;
+}
+.experiencevalueexptext{
+    width: 60%;
+    font-size: 0.24rem;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    margin: 0 auto;
+}
+.experiencevalueexptext>p{
+    float: right;
+}
+.experiencevalueexptext>p>span{}
+.expbox>li:nth-last-of-type(odd){
+    background: #fff;
+}
+.expbox>li:nth-last-of-type(even){
+    background: #EDEDED;
+}
+.expbox>li:first-child{
+    background:#5AD584;
+}
+.expbox>li>p>img{
+    width: 50%;
+    float: left;
+    margin-top: 9%;
+    margin-left: 25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

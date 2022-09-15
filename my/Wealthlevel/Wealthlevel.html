@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <title>财富等级</title>
+    <script src="../../js/rem-count.js"></script>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="Wealthlevel.css">
+    <script>
+        //获取浏览器页面可见高度和宽度
+        var ua = navigator.userAgent.toLowerCase()
+        if (/iphone|ipad|ipod/.test(ua)) {
+
+        }else {
+            loading();
+        }
+
+        function loading() {
+            var _PageHeight = document.documentElement.clientHeight,
+                _PageWidth = document.documentElement.clientWidth;
+            //			计算loading框距离顶部和左部的距离（loading框的宽度为215px，高度为61px）
+            var _LoadingTop = _PageHeight > 61 ? (_PageHeight - 61) / 2 : 0,
+                _LoadingLeft = _PageWidth > 215 ? (_PageWidth - 215) / 2 : 0;
+            //			在页面未加载完毕之前显示的loading Html自定义内容
+            var loading = '<div class="loading" id="loading" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;background: #fff;z-index: 9999;"><img src="http://doudoujiaoyou.oss-cn-beijing.aliyuncs.com/h5/activity/preferential/loding.gif" style="top: calc(50% - 16px);;position: absolute;left: calc(50% - 16px);"> </div></div>';
+
+            document.write(loading);
+            //监听加载状态改变
+
+            document.onreadystatechange = completeLoading;
+
+            function completeLoading() {
+                if (document.readyState == "complete") {
+                    var loadingMask = document.getElementById('loading');
+                    loadingMask.parentNode.removeChild(loadingMask);
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="box">
+        <div class="returnofwealthlevelbox">
+            <div class="returnbtn"></div>
+            <p class="wealthleveltext">财富等级</p>
+        </div>
+        <div class="titlebox">
+            <ul>
+                <li class="wealthbtn wealthAdd">财富</li>
+                <li class="charmbtn">魅力</li>
+                <li class="experiencevaluebtn">经验值</li>
+            </ul>
+        </div>
+        <div class="wealthlevelbox">
+            <div class="wealthbox">
+                <div class="headnamebox">
+                    <div class="headlevelbox">
+                        <img src="img/LOGO02.png" alt="">
+                        <p class="levaltext">Lv0</p>
+                    </div>
+                    <p class="nametext">兔子女神阿兔</p>
+                </div>
+                <div class="wealthlevelexpbox">
+                    <div class="wealthlevelexpbar"></div>
+                </div>
+                <div class="wealthlevelexptext">经验值<p>距离升级：<span>000</span></p></div>
+                <div class="wealthcharmexpbox">
+                    <li>
+                        <p>财富徽章</p>
+                        <p>财富称号</p>
+                        <p>财富总值</p>
+                    </li>
+                    <li>
+                        <p><img src="img/荣耀贵族.png" alt=""></p>
+                        <p>荣耀贵族</p>
+                        <p>1,000</p>
+                    </li>
+                    <li>
+                        <p><img src="img/显赫爵公.png" alt=""></p>
+                        <p>显赫爵公</p>
+                        <p>10,000</p>
+                    </li>
+                    <li>
+                        <p><img src="img/荣耀城主.png" alt=""></p>
+                        <p>荣耀城主</p>
+                        <p>100,000</p>
+                    </li>
+                    <li>
+                        <p><img src="img/尊贵诸侯.png" alt=""></p>
+                        <p>尊贵诸侯</p>
+                        <p>1,000,000</p>
+                    </li>
+                    <li>
+                        <p><img src="img/盖世枭雄.png" alt=""></p>
+                        <p>盖世枭雄</p>
+                        <p>10,000,000</p>
+                    </li>
+                    <li>
+                        <p><img src="img/万古帝君.png" alt=""></p>
+                        <p>万古帝君</p>
+                        <p>100,000,000</p>
+                    </li>
+                    <li>
+                        <p><img src="img/永恒帝尊.png" alt=""></p>
+                        <p>永恒帝尊</p>
+                        <p>1,000,000,000</p>
+                    </li>
+                </div>
+                <div class="tipbox">
+                    <p class="tiptext">什么是财富等级?</p>
+                    <p>财富等级是用户在星恋语音中财力的象征，等级越高，财富称号越厉害！只要在房间中送出礼物，就能提升财富等级。</p>
+                    <p class="tiptext1">*蓝钻礼物和金豆礼物都可以升级哦 </p>
+                    <p class="tiptext">财富等级如何升级？</p>
+                    <p>每在房间中送出价值1000蓝钻礼物或1000金豆的礼物，即可提升1个小级。</p>
+                    <p  class="tiptext1">*100蓝钻=1元人民币</p>
+                    <p class="tiptext">财富等级如何展示？</p>
+                    <p>
+                        除了在个人详情页和房间内的卡片上有展示等级之外，还会在以下情况中展示给大家看哦~<br>
+                        1、魅力值或财富值从第3个大级起，每次升大级，都会在房间顶部出现升级提示，房间所有人都能看到，快点升级来接受大家的祝贺吧！<br>
+                        2、魅力值或财富值的标识还会在房间聊天公屏上直接显示出来，房间所有人都能看到你的尊贵啦~ <br>
+                        3、魅力值或财富值，只要其中一个达到第3个大级时，进房间有流光特效展示；<br>
+                    </p>
+                    </li>
+                </div>
+            </div>
+            <div class="charmbox" style="display: none;">
+                <div class="headnamebox">
+                    <div class="headlevelbox">
+                        <img src="img/LOGO02.png" alt="">
+                        <p class="levaltext">Lv0</p>
+                    </div>
+                    <p class="nametext">兔子女神阿兔</p>
+                </div>
+                <div class="charmexpbox">
+                    <div class="charmexpbar"></div>
+                </div>
+                <div class="charmexptext">经验值<p>距离升级：<span>000</span></p></div>
+                <div class="wealthcharmexpbox glamouexpbox">
+                    <li>
+                        <p>魅力等级</p>
+                        <p>魅力称号</p>
+                        <p>魅力总值</p>
+                    </li>
+                    <li>
+                        <p><img src="img/小有名气.png" alt=""></p>
+                        <p>小有名气</p>
+                        <p>1,000</p>
+                    </li>
+                    <li>
+                        <p><img src="img/才华横溢.png" alt=""></p>
+                        <p>才华横溢</p>
+                        <p>10,000</p>
+                    </li>
+                    <li>
+                        <p><img src="img/名声大振.png" alt=""></p>
+                        <p>名声大振</p>
+                        <p>100,000</p>
+                    </li>
+                    <li>
+                        <p><img src="img/人气之星.png" alt=""></p>
+                        <p>人气之星</p>
+                        <p>1,000,000</p>
+                    </li>
+                    <li>
+                        <p><img src="img/光辉夺目.png" alt=""></p>
+                        <p>光辉夺目</p>
+                        <p>10,000,000</p>
+                    </li>
+                    <li>
+                        <p><img src="img/举世闻名.png" alt=""></p>
+                        <p>举世闻名</p>
+                        <p>100,000,000</p>
+                    </li>
+                    <li>
+                        <p><img src="img/天下无双.png" alt=""></p>
+                        <p>天下无双</p>
+                        <p>1,000,000,000</p>
+                    </li>
+                </div>
+                <div class="tipbox">
+                    <p  class="tiptext">什么是魅力等级？</p>
+                    <p>魅力等级是用户在星恋语音中魅力的象征，等级越高，魅力称号越厉害！只要在房间中收到礼物，就能提升魅力等级。</p>
+                    <p class="tiptext1">*蓝钻礼物和金豆礼物都可以升级哦 </p>
+                    <p  class="tiptext">魅力等级如何升级？</p>
+                    <p>每在房间中收到价值1000蓝钻礼物或1000金豆的礼物，即可提升1个小级。  </p>
+                    <p class="tiptext1">*100蓝钻=1元人民币</p>
+                    <p  class="tiptext">魅力等级如何展示？</p>
+                    <p>
+                        除了在个人详情页和房间内的卡片上有展示等级之外，还会在以下情况中展示给大家看哦~    <br>
+                        1、魅力值或财富值从第3个大级起，每次升大级，都会在房间顶部出现升级提示，房间所有人都能看到，快点升级来接受大家的祝贺吧！ <br>
+                        2、魅力值或财富值的标识还会在房间聊天公屏上直接显示出来，房间所有人都能看到你的尊贵啦~ <br>
+                        3、魅力值或财富值，只要其中一个达到第3个大级时，进房间有流光特效展示；<br>
+                    </p>
+                </div>
+            </div>
+            <div class="experiencevaluebox" style="display: none;">
+                <div class="headnamebox">
+                    <div class="headlevelbox">
+                        <img src="img/LOGO02.png" alt="">
+                        <p class="levaltext">Lv0</p>
+                    </div>
+                    <p class="nametext">兔子女神阿兔</p>
+                </div>
+                <div class="experiencevalueexpbox">
+                    <div class="experiencevalueexpbar"></div>
+                </div>
+                <div class="experiencevalueexptext">经验值<p>距离升级：<span>000</span></p></div>
+                <div class="wealthcharmexpbox expbox">
+                    <li>
+                        <p>等级标志</p>
+                        <p>等级</p>
+                        <p>经验总值</p>
+                    </li>
+                    <li>
+                        <p><img src="img/Lv10.png" alt=""></p>
+                        <p>Lv.1-10</p>
+                        <p>0~479</p>
+                    </li>
+                    <li>
+                        <p><img src="img/Lv16.png" alt=""></p>
+                        <p>Lv.11-20</p>
+                        <p>480~3,959</p>
+                    </li>
+                    <li>
+                        <p><img src="img/Lv26.png" alt=""></p>
+                        <p>Lv.21-30</p>
+                        <p>3,960~9,519</p>
+                    </li>
+                    <li>
+                        <p><img src="img/Lv36.png" alt=""></p>
+                        <p>Lv.31-40</p>
+                        <p>95,20~15,209</p>
+                    </li>
+                    <li>
+                        <p><img src="img/Lv46.png" alt=""></p>
+                        <p>Lv.41-50</p>
+                        <p>15,210~22,872</p>
+                    </li>
+                    <li>
+                        <p><img src="img/Lv56.png" alt=""></p>
+                        <p>Lv.51-60</p>
+                        <p>22,873~43,280</p>
+                    </li>
+                    <li>
+                        <p><img src="img/Lv66.png" alt=""></p>
+                        <p>Lv.61-70</p>
+                        <p>43,281~68,112</p>
+                    </li>
+                    <li>
+                        <p><img src="img/Lv76.png" alt=""></p>
+                        <p>Lv.71-80</p>
+                        <p>68,113~123,912</p>
+                    </li>
+                    <li>
+                        <p><img src="img/Lv86.png" alt=""></p>
+                        <p>Lv.81-90</p>
+                        <p>123,913~187,315</p>
+                    </li>
+                    <li>
+                        <p><img src="img/Lv96.png" alt=""></p>
+                        <p>Lv.91-100</p>
+                        <p>187,316~221,521</p>
+                    </li>
+                </div>
+                <div class="tipbox">
+                    <p class="tiptext">等级说明</p>
+                    <p>经验等级是你在星恋语音开启游戏人生之后的成长属性，随着你的等级提升，你的等级标志会有相应的颜色变化。</p>
+                    <p  class="tiptext">如何提升等级？</p>
+                    <p>每天完成我的任务，累计在线60分钟，在语音房单次玩满15分钟均可获得经验，提升等级。</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <script type="text/javascript" src="../../js/common_native.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/svga.min.js"></script>
+    <script src="../../js/methods.js"></script>
+    <script src="../../js/giftNameByBackground.js"></script>
+    <script src="Wealthlevel.js"></script>
+</body>
+</html>

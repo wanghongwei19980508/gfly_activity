@@ -1,0 +1,4316 @@
+li {
+  list-style: none;
+}
+
+.box {
+  width: 100%;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/背景.png");
+  background-size: 100% auto;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.clear {
+  clear: both;
+}
+
+.backG_black {
+  background: #827979e6;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.loding {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 9999;
+  display: none;
+}
+
+.loding>img {
+  top: calc(50% - 16px);
+  ;
+  position: absolute;
+  left: calc(50% - 16px);
+}
+
+/* 头图 */
+.top {
+  background-image: url("https://jiujiu-obs.obs.myhuaweicloud.com/h5/activity/huodong/2022kaixueji/头图.png");
+  width: 100%;
+  height: 9.8rem;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+/*.backgroundImg{*/
+/*    width: 100%;*/
+/*    background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/背景.png");*/
+/*    background-size:100% 100%; */
+/*} */
+/* 按钮 */
+.pagebox {
+  width: 98%;
+  height: 3.5rem;
+  margin: -5.3rem auto 0.2rem;
+  list-style: none;
+}
+
+.pagebox>li {
+  width: 25%;
+  float: left;
+  margin-bottom: 0.2rem;
+}
+
+.pagebox>li>div {
+  width: 1.56rem;
+  height: 1.2rem;
+  line-height: 0.59rem;
+  font-size: 0.33rem;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+}
+
+.pagebtn0 {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/福利目标.png");
+  background-size: 100% 100%;
+}
+
+.pagebtn1 {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/神秘寻宝.png");
+  background-size: 100% 100%;
+}
+
+.pagebtn2 {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/神秘礼包.png");
+  background-size: 100% 100%;
+}
+
+.pagebtn3 {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/VIP折扣.png");
+  background-size: 100% 100%;
+}
+
+.pagebtn4 {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/砸金蛋.png");
+  background-size: 100% 100%;
+}
+
+.pagebtn5 {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/超值返利.png");
+  background-size: 100% 100%;
+}
+
+.pagebtn6 {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/充值榜单.png");
+  /*background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/消费榜单.png");*/
+  background-size: 100% 100%;
+}
+
+.pagebtn7 {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/福星高照.png");
+  background-size: 100% 100%;
+}
+
+.pagebtn0Add {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/福利目标1.png");
+  background-size: 100% 100%;
+}
+
+.pagebtn1Add {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/神秘寻宝1.png");
+  background-size: 100% 100%;
+}
+
+.pagebtn2Add {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/神秘礼包1.png");
+  background-size: 100% 100%;
+}
+
+.pagebtn3Add {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/VIP折扣1.png");
+  background-size: 100% 100%;
+}
+
+.pagebtn4Add {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/砸金蛋1.png");
+  background-size: 100% 100%;
+}
+
+.pagebtn5Add {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/超值返利1.png");
+  background-size: 100% 100%;
+}
+
+.pagebtn6Add {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/充值榜单1.png");
+  /*background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/消费榜单1.png");*/
+  background-size: 100% 100%;
+}
+
+.pagebtn7Add {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/福星高照1.png");
+  background-size: 100% 100%;
+}
+
+/* 滚轴背景 */
+.rollerbox {
+  width: 98%;
+  height: 1.4rem;
+  margin: 0 auto;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/目标背景.png");
+  background-size: 100% 100%;
+  padding: 0.45rem 0.5rem 0rem 0.7rem;
+  margin-top: 0.2rem;
+}
+
+/* 目标背景 */
+.welfareObjectives-box {
+  width: 98.9%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-top: -0.15rem;
+}
+
+.welfareObjectives-content {
+  width: 9rem;
+  margin: 0 auto;
+}
+
+.welfareObjectives-content>li {
+  width: 1.8rem;
+  float: left;
+  /* margin-top: 0.3rem; */
+}
+
+.welfareObjectives-content>li>div {
+  width: 1.74rem;
+  height: 0.79rem;
+  line-height: 0.79rem;
+  font-size: 0.26rem;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+}
+
+.welfareO {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/目标按钮.png");
+  background-size: 100% 100%;
+  color: #CB4E3A;
+}
+
+.welfareOAdd {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/目标按钮1.png");
+  background-size: 100% 100%;
+  color: #fff;
+}
+
+/* 内容框 */
+.content {
+  width: 94%;
+  /*background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/内容框.png");*/
+  border-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/内容框.png") 340 0 250 0 fill / 180px 0px stretch;
+  background-size: 100% 100%;
+  margin: 0 auto;
+  padding: 0.6rem 0.4rem 0.7rem;
+}
+
+/* 福利目标 */
+.objectivebox {
+  margin-left: 28%;
+  height: 0.4rem;
+}
+
+.objectivebox>p {
+  width: 55%;
+  margin-left: 0%;
+  font-size: 0.24rem;
+  font-weight: normal;
+  color: #db5959;
+  text-align: center;
+  line-height: 0.3rem;
+}
+
+.objnum {}
+
+.objpercent {}
+
+.currenttargetrewardbox {
+  height: 0.56rem;
+}
+
+.currenttargetrewardbox>div {
+  float: left;
+  margin-left: 0.3rem;
+}
+
+.currenttargetrewardtext {
+  text-align: center;
+}
+
+.currenttargetrewardtext>img {
+  width: 4.2rem;
+  height: 0.72rem;
+  margin-top: -1.4rem;
+}
+
+.progressbox {
+  width: 60%;
+  height: 0.3rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/进度条背景1.png");
+  background-size: 100% 100%;
+  margin-top: 0.08rem;
+}
+
+.progressbar {
+  width: 0%;
+  height: 0.3rem;
+  background: linear-gradient(0deg, #0065AE, #7DB4D9);
+  border-radius: 0.5rem;
+  opacity: 0.7;
+}
+
+.targetrewardbtn {
+  width: 1rem;
+  height: 0.55rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/弹窗背景1.png");
+  background-size: 100% 100%;
+  font-size: 0.24rem;
+  font-weight: normal;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 0.55rem;
+}
+
+.howtoplaybtn {
+  width: 0.56rem;
+  height: 0.56rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/玩法说明.png");
+  background-size: 100% 100%;
+  margin-top: -0.03rem;
+}
+
+.targetrewardbox {
+  height: 1.7rem;
+  margin-top: 0.1rem;
+  margin-left: 0.2rem;
+}
+
+.targetrewardbox>li {
+  width: 1.84rem;
+  height: 1.7rem;
+  float: left;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/奖励背景.png");
+  background-size: 100% 100%;
+  margin-right: 2.5%;
+}
+
+.targetrewardlist {
+  margin: 0.03rem auto 0rem;
+  text-align: center;
+}
+
+.targetrewardlist>img {
+  width: 1rem;
+  margin-top: 0.2rem;
+}
+
+.targetrewardlist>p {
+  color: #CB4E3A;
+  line-height: 0.05rem;
+  font-size: 0.24rem;
+  text-align: center;
+  z-index: -1;
+  font-family: MicrosoftYaHei;
+  letter-spacing: -0.02rem;
+}
+
+.cumulativeloginbox {}
+
+.cumulativeloginlist {
+  width: 96%;
+  height: 2.1rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 0.3rem;
+  position: relative;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/框背景.png");
+  background-size: 100% 100%;
+}
+
+.cumulativeloginlist>div:first-child {
+  width: 90%;
+  height: 0.5rem;
+  margin: 0 auto;
+  background: linear-gradient(0deg, #FF5841, #FF3B30, #FF3B30, #FF5841);
+  border: 0.01rem solid #FFFAE1;
+  border-radius: 0.5rem;
+}
+
+.cumulativeloginlist>div>p {
+  font-size: 0.28rem;
+  color: #fff;
+  text-align: center;
+  word-break: keep-all;
+  white-space: nowrap;
+  line-height: 0.46rem;
+}
+
+.cumulativeloginlist>div:first-child>p>span {}
+
+.cumulativeloginlist>div:last-child {
+  width: 30%;
+  height: 0.4rem;
+  background: linear-gradient(0deg, #FF5841, #FF3B30, #FF3B30, #FF5841);
+  border: 0.01rem solid #FFFAE1;
+  border-radius: 0.5rem;
+  float: right;
+  margin-right: 2%;
+}
+
+.cumulativeloginlist>div:last-child>p {
+  font-size: 0.24rem;
+  text-align: center;
+  line-height: 0.36rem;
+}
+
+.cumulativelogincontent {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin-top: 0.1rem;
+  padding-left: 0.2rem;
+}
+
+.cumulativelogincontent>li {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+}
+
+.cumulativelogincontent>li>img {
+  width: 0.7rem;
+}
+
+.scene-littleImg {
+  margin-top: 0.15rem !important;
+}
+
+.car-littleImg {
+  width: 1.5rem !important;
+}
+
+.cumulativelogincontent>li>p {
+  font-size: 0.24rem;
+  color: #fff;
+  margin-top: 0.1rem;
+  line-height: 0.35rem;
+}
+
+.loginbtn {
+  width: 1.29rem;
+  height: 0.53rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/未选中.png");
+  background-size: 100% 100%;
+  font-size: 0.26rem;
+  color: #fff;
+  line-height: 0.53rem;
+  text-align: center;
+  margin-top: 0.2rem;
+  float: right;
+  margin-right: 0.4rem;
+}
+
+.loginAdd {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/选中.png");
+  background-size: 100% 100%;
+  color: #FFFFFF;
+}
+
+.rechargebtn {
+  width: 1.29rem;
+  height: 0.53rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/未选中.png");
+  background-size: 100% 100%;
+  font-size: 0.26rem;
+  color: #fff;
+  line-height: 0.53rem;
+  text-align: center;
+  margin-top: 0.2rem;
+  float: right;
+  margin-right: 0.4rem;
+}
+
+.rechargeAdd {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/选中.png");
+  background-size: 100% 100%;
+  color: #FFFFFF;
+}
+
+.consumeDbtn {
+  width: 1.29rem;
+  height: 0.53rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/未选中.png");
+  background-size: 100% 100%;
+  font-size: 0.26rem;
+  color: #fff;
+  line-height: 0.53rem;
+  text-align: center;
+  margin-top: 0.2rem;
+  float: right;
+  margin-right: 0.4rem;
+}
+
+.consumeDAdd {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/选中.png");
+  background-size: 100% 100%;
+  color: #FFFFFF;
+}
+
+.consumeGbtn {
+  width: 1.29rem;
+  height: 0.53rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/未选中.png");
+  background-size: 100% 100%;
+  font-size: 0.26rem;
+  color: #fff;
+  line-height: 0.53rem;
+  text-align: center;
+  margin-top: 0.2rem;
+  float: right;
+  margin-right: 0.4rem;
+}
+
+.consumeGAdd {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/选中.png");
+  background-size: 100% 100%;
+  color: #FFFFFF;
+}
+
+.consumePbtn {
+  width: 1.29rem;
+  height: 0.53rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/未选中.png");
+  background-size: 100% 100%;
+  font-size: 0.26rem;
+  color: #fff;
+  line-height: 0.53rem;
+  text-align: center;
+  margin-top: 0.2rem;
+  float: right;
+  margin-right: 0.4rem;
+}
+
+.consumePAdd {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/选中.png");
+  background-size: 100% 100%;
+  color: #FFFFFF;
+}
+
+/* 神秘寻宝 */
+.treasurebox {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 0.2rem;
+}
+
+.treasurecontent {
+  width: 99%;
+  height: 1.26rem;
+  margin-bottom: 0.1rem;
+}
+
+.treasurecontent1>li:last-child {
+  float: right;
+}
+
+.greenSquare {
+  width: 20%;
+  height: 1.26rem;
+  float: left;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/转盘背景.png");
+  background-size: 100% 100%;
+}
+
+.greenSquare1 {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/转盘背景1.png");
+  background-size: 100% 100%;
+}
+
+.green-lighting {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/转盘背景2.png");
+  background-size: 100% 100%;
+}
+
+.treasurelist {
+  margin: 0rem auto 0rem;
+  text-align: center;
+}
+
+.treasurelist>img {
+  width: 0.7rem;
+}
+
+.treasurelist>p {
+  color: #fff;
+  line-height: 0.6rem;
+  font-size: 0.24rem;
+  text-align: center;
+  z-index: -1;
+  font-family: MicrosoftYaHei;
+  margin-top: -0.15rem;
+}
+
+.Squaretext {
+  letter-spacing: -0.02rem !important;
+}
+
+/* 寻宝纪录和获奖公告背景 */
+.treasurehuntawardsbox {
+  width: 58%;
+  height: 3.78rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/寻宝纪录背景.png");
+  background-size: 100% 100%;
+  position: absolute;
+  top: 1.4rem;
+  left: 20%;
+}
+
+.treasurehuntawardsbox>p {
+  font-size: 0.3rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 0.5rem;
+  text-align: center;
+  padding-top: 0.2rem;
+}
+
+.treasurehuntawardscontent {
+  width: 96%;
+  height: 2.78rem;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.treasurehuntawardscontent>div>p {
+  height: 0.4rem;
+  font-size: 0.24rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 0.4rem;
+  text-align: center;
+}
+
+.treasurehuntawardscontent>div>p>span {
+  height: 0.4rem;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.treasurehuntawardscontent>div>p>span:first-child {
+  width: 40%;
+  color: bisque;
+  text-align: right;
+}
+
+.treasurehuntawardscontent>div>p>span:nth-child(2) {
+  color: #fff;
+}
+
+.treasurehuntawardscontent>div>p>span:last-child {
+  width: 40%;
+  color: bisque;
+  text-align: left;
+}
+
+/* .treasurehuntbox{
+    width: 58%;
+    height: 3.78rem;
+    background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/寻宝纪录背景.png");
+    background-size: 100% 100%;
+    position:absolute;
+    top:1.4rem;
+    left:20%;
+}
+.treasurehuntbox>p{
+    font-size: 0.3rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 0.5rem;
+    text-align: center;
+    padding-top:0.2rem;
+}
+.treasurehuntcontent{
+    width:96%;
+    height: 2.78rem;
+    margin:0 auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.treasurehuntcontent>div>p{
+    height:0.4rem;
+    font-size: 0.24rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 0.4rem;
+    text-align: center;
+}
+.treasurehuntcontent>div>p>span{
+    height: 0.4rem;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.treasurehuntcontent>div>p>span:first-child{
+    width: 40%;
+    color: bisque;
+    text-align: right;
+}
+.treasurehuntcontent>div>p>span:nth-child(2){
+    color:#fff;
+} 
+.treasurehuntcontent>div>p>span:last-child{
+    width: 40%;
+    color: bisque;
+    text-align: left;
+} */
+.treasuretimebox {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin-top: 0.2rem;
+}
+
+.treasuretimelist {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+}
+
+.treasuretimelist>img {
+  width: 0.74rem;
+  height: 0.58rem;
+  margin-left: 25%;
+}
+
+.treasuretimelist>span {
+  font-size: 0.28rem;
+  font-family: Adobe Heiti Std;
+  font-weight: normal;
+  color: #8A1919;
+  line-height: 0.5rem;
+  letter-spacing: 0.05rem;
+}
+
+.treasuretimenum {}
+
+.treasurebtnbox {
+  width: 96%;
+  margin: 0 auto;
+  height: 1.1rem;
+  margin-top: 0.2rem;
+}
+
+.treasurebtnbox>div {}
+
+.onetenbtn {
+  width: 2.74rem;
+  height: 0.99rem;
+  line-height: 0.9rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/选中1.png");
+  background-size: 100% 100%;
+  font-size: 0.3rem;
+  font-family: Adobe Heiti Std;
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+}
+
+.treasureonebtn {
+  float: left;
+}
+
+.treasuretenbtn {
+  float: right;
+}
+
+
+/* 神秘礼包 */
+.giftbagbox {}
+
+.giftbaglist {
+  width: 96%;
+  height: 2.2rem;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  margin-top: 0.1rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/框背景1.png");
+  background-size: 100% 100%;
+  padding-top: 0.2rem;
+}
+
+.skillbagbox {
+  height: 0.8rem;
+  font-size: 0.28rem;
+  color: #fff;
+  line-height: 0.4rem;
+}
+
+.skillbagbox>div {
+  float: left;
+}
+
+.skillbagbox>div:first-child {
+  width: 13.5%;
+  float: left;
+}
+
+.skillbagbox>div:first-child>p {
+  line-height: 0.6rem;
+}
+
+.skillbagbox>div:nth-child(2) {
+  width: 36%;
+  float: left;
+  background: linear-gradient(0deg, #FF5841, #FF3B30, #FF3B30, #FF5841);
+  border: 0.01rem solid #FFFAE1;
+  border-radius: 0.3rem;
+  margin-left: 5%;
+}
+
+.skillbagbox>div>p {
+  font-size: 0.28rem;
+  color: #fff;
+  line-height: 0.5rem;
+  text-align: center;
+}
+
+.skillbagbox>div:last-child {
+  width: 38%;
+  float: right;
+  background: linear-gradient(0deg, #FF5841, #FF3B30, #FF3B30, #FF5841);
+  border: 0.01rem solid #FFFAE1;
+  border-radius: 0.5rem;
+}
+
+.skillbagbox>div:last-child>p {
+  line-height: 0.35rem;
+  font-size: 0.28rem;
+  text-align: center;
+  letter-spacing: -0.01rem;
+}
+
+.skillbagbox>div:last-child>p:first-child {
+  text-decoration: line-through;
+  font-size: 0.24rem;
+}
+
+.giftbagcontent {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.giftbagcontent>li {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+}
+
+.giftbagcontent>li>img {
+  width: 0.7rem;
+}
+
+.giftbagcontent>li>p {
+  font-size: 0.24rem;
+  color: #fff;
+  margin-top: -0.07rem;
+}
+
+.purchasebtn {
+  width: 1.29rem;
+  height: 0.53rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/未选中.png");
+  background-size: 100% 100%;
+  font-size: 0.26rem;
+  color: #fff;
+  line-height: 0.53rem;
+  text-align: center;
+  margin-top: 0.15rem;
+  margin-left: 27%;
+}
+
+.purchaseAdd {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/选中.png");
+  background-size: 100% 100%;
+  font-size: 0.26rem;
+  color: #FFFFFF;
+}
+
+/* VIP折扣 */
+.vipdiscountbox {}
+
+.vipdiscountlist {
+  width: 96%;
+  height: 2.2rem;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  margin-top: 0.3rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/框背景1.png");
+  background-size: 100% 100%;
+  padding-top: 0.2rem;
+}
+
+.vipdiscountlist1 {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/框背景.png");
+  background-size: 100% 100%;
+  padding-top: 0rem;
+}
+
+.viprewardbox {
+  height: 0.8rem;
+  font-size: 0.28rem;
+  color: #fff;
+  line-height: 0.45rem;
+}
+
+.vipdiscountlist1>.viprewardbox {
+  width: 75%;
+  height: 0.5rem;
+  margin: 0 auto;
+  background: linear-gradient(0deg, #FF5841, #FF3B30, #FF3B30, #FF5841);
+  border: 0.01rem solid #FFFAE1;
+  border-radius: 0.3rem;
+}
+
+.openvip {
+  font-weight: 400 !important;
+  color: #fff !important;
+  text-align: center !important;
+}
+
+.viprewardbox>div {
+  float: left;
+}
+
+.viprewardbox>div:first-child {
+  width: 13.5%;
+  float: left;
+}
+
+.viprewardbox>div:first-child>p {
+  line-height: 0.6rem;
+}
+
+.viprewardbox>div:nth-child(2) {
+  width: 36%;
+  float: left;
+  background: linear-gradient(0deg, #FF5841, #FF3B30, #FF3B30, #FF5841);
+  border: 0.01rem solid #FFFAE1;
+  border-radius: 0.3rem;
+  margin-left: 5%;
+}
+
+.viprewardbox>div>p {
+  line-height: 0.5rem;
+  font-size: 0.28rem;
+  text-align: center;
+  letter-spacing: -0.01rem;
+}
+
+.viprewardbox>div:last-child {
+  width: 38%;
+  float: right;
+  background: linear-gradient(0deg, #FF5841, #FF3B30, #FF3B30, #FF5841);
+  border: 0.01rem solid #FFFAE1;
+  border-radius: 0.5rem;
+}
+
+.viprewardbox>div:last-child>p {
+  line-height: 0.35rem;
+  font-size: 0.28rem;
+  text-align: center;
+  letter-spacing: -0.01rem;
+}
+
+.viprewardbox>div:last-child>p:first-child {
+  text-decoration: line-through;
+  font-size: 0.24rem;
+}
+
+.vipdiscountcontent {
+  width: 100%;
+  margin-top: 0.1rem;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-left: 0.2rem;
+}
+
+.vipdiscountcontent>li {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+}
+
+.vipdiscountcontent>li:last-child {
+  width: 36%;
+  float: right;
+}
+
+.vipdiscountcontent>li>img {
+  width: 0.7rem;
+}
+
+.vipdiscountcontent>li>p {
+  font-size: 0.24rem;
+  color: #fff;
+  margin-top: 0.1rem;
+}
+
+.buybtntext {
+  margin-left: -1%;
+}
+
+.vipdiscountcontent1 {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.vipdiscountcontent1>li {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+}
+
+.vipdiscountcontent1>li>img {
+  width: 0.7rem;
+  margin-top: -0.1rem;
+}
+
+.vipdiscountcontent1>li>p {
+  font-size: 0.24rem;
+  color: #fff;
+  /*margin-top: 0.1rem;*/
+}
+
+.buybtn {
+  width: 1.29rem;
+  height: 0.53rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/未选中.png");
+  background-size: 100% 100%;
+  font-size: 0.26rem;
+  color: #fff;
+  line-height: 0.53rem;
+  text-align: center;
+  margin-top: 0.2rem;
+  margin-left: 15%;
+}
+
+.buyAdd {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/选中.png");
+  background-size: 100% 100%;
+  color: #FFFFFF;
+}
+
+.buyvipbtn {
+  width: 1.29rem;
+  height: 0.53rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/未选中.png");
+  background-size: 100% 100%;
+  font-size: 0.26rem;
+  color: #fff;
+  line-height: 0.53rem;
+  text-align: center;
+  margin-top: 0.1rem;
+  margin-left: 36%;
+}
+
+.buyvipAdd {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/选中.png");
+  background-size: 100% 100%;
+  color: #FFFFFF;
+}
+
+.tobuyvipvip {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/选中.png");
+  background-size: 100% 100%;
+  color: #FFFFFF;
+}
+
+
+/* 砸金蛋 */
+.eggbox {
+  width: 100%;
+  height: 6.5rem;
+  margin: 0 auto;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/砸蛋背景.png");
+  background-size: 100% 100%;
+  position: relative;
+  border-radius: 0.1rem;
+  margin-top: 0.1rem;
+}
+
+.eggbox>p {
+  font-size: 0.26rem;
+  font-family: Adobe Heiti Std;
+  font-weight: normal;
+  color: #073949;
+  text-align: center;
+  padding-top: 0.2rem;
+  line-height: 0.5rem;
+}
+
+.eggcontent {
+  height: 0.6rem;
+  margin-top: 0.1rem;
+}
+
+.eggcontent>div {
+  float: left;
+}
+
+.egghowtoplaybtn {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/玩法说明.png");
+  background-size: 100% 100%;
+  margin-left: 4%;
+  margin-top: -0.05rem;
+}
+
+.eggcontent>.winningrecordbtn {
+  width: 1.35rem;
+  height: 0.55rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/弹窗背景.png");
+  background-size: 100% 100%;
+  font-size: 0.24rem;
+  font-weight: normal;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 0.55rem;
+  float: right;
+  margin-right: 5%;
+}
+
+.egglist {
+  width: 92%;
+  height: 0.5rem;
+  background: #A5272A;
+  border-radius: 0.5rem;
+  font-size: 0.24rem;
+  font-family: Adobe Heiti Std;
+  font-weight: normal;
+  color: #FFFFFF;
+  line-height: 0.5rem;
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 0.4rem;
+}
+
+.egglist>ul {
+  padding-left: 0.2rem;
+  width: 100%;
+  height: 0.5rem;
+}
+
+.egglist>ul>li {}
+
+.egglist>ul>li>span {
+  color: bisque;
+}
+
+.eggimgbox {
+  width: 2.98rem;
+  height: 3.11rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/蛋.png");
+  background-size: 100% 100%;
+  margin: 0 auto;
+  margin-left: 1.5rem;
+}
+
+.rewardstorebox {
+  width: 90%;
+  position: absolute;
+  top: 79%;
+  left: 5%;
+}
+
+.rewardstorebox>li {
+  float: left;
+}
+
+.rewardstorebox>li:last-child {
+  float: right;
+}
+
+.rewardstorebox>li>img {
+  width: 0.87rem;
+  height: 0.84rem;
+  margin-left: 20%;
+}
+
+.rewardstorebox>li:last-child>img {
+  width: 0.86rem;
+  height: 0.81rem;
+}
+
+.rewardstorebox>li>p {
+  font-size: 0.3rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  -webkit-text-stroke: 0.01rem #FFA933;
+  line-height: 0.4rem;
+}
+
+.hammerbox {
+  width: 96%;
+  height: 2.5rem;
+  opacity: 0.8;
+  border-radius: 0.2rem;
+  margin: 0 auto;
+  margin-top: 0.2rem;
+  padding-top: 0.2rem;
+}
+
+.hammercontent {
+  height: 0.8rem;
+}
+
+.hammercontent>li {
+  width: 0.8rem;
+  height: 0.8rem;
+  border: 0.05rem solid #8A1919;
+  border-radius: 0.2rem;
+  float: left;
+  padding: 0.05rem 0 0.05rem 0.05rem;
+}
+
+.hammerLingqu {
+  background: #0ff;
+}
+
+.hammercontent>li:first-child {
+  margin-left: 20%;
+}
+
+.hammercontent>li:nth-child(2) {
+  margin-left: 4%;
+}
+
+.hammercontent>li:nth-child(3) {
+  margin-left: 8%;
+}
+
+.hammercontent>li:last-child {
+  padding-left: 0rem;
+  margin-left: 12%;
+}
+
+.hammercontent>li>span {
+  display: inline-block;
+  font-size: 0.24rem;
+  font-family: Adobe Heiti Std;
+  font-weight: normal;
+  color: #8A1919;
+  text-align: left;
+  padding-top: 0.27rem;
+}
+
+.hammercontent>li>img {
+  width: 0.4rem;
+  height: 0.55rem;
+}
+
+.hammercontent>li:first-child>img {
+  margin-left: -0.1rem;
+}
+
+.hammercontent>li:nth-child(2)>img {
+  margin-left: -0.25rem;
+}
+
+.hammercontent>li:nth-child(3)>img {
+  margin-left: -0.25rem;
+}
+
+.hammercontent>li:last-child>img {
+  margin-left: -0.3rem;
+}
+
+.hammerprogressbox {
+  height: 0.9rem;
+  padding-top: 0.1rem;
+}
+
+.hammerprogressbox>div {
+  float: left;
+}
+
+.hammerprogressbox>div:first-child {
+  width: 0.8rem;
+  height: 0.8rem;
+  border: 0.05rem solid #8A1919;
+  border-radius: 0.2rem;
+  font-size: 0.28rem;
+  font-family: Adobe Heiti Std;
+  font-weight: normal;
+  color: #8A1919;
+  text-align: center;
+  line-height: 0.7rem;
+  margin-left: 0.1rem;
+}
+
+.hammerprogressbox>div:last-child {
+  width: 80%;
+  height: 0.8rem;
+  margin-left: 3%;
+}
+
+.hammerprogressbox>div:last-child>ul {
+  height: 0.45rem;
+}
+
+.hammerprogressbox>div:last-child>ul>li {
+  width: 0.28rem;
+  height: 0.4rem;
+  float: left;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/箭头1.png");
+  background-size: 100% 100%;
+  z-index: 1;
+}
+
+.hammerprogressbox>div:last-child>ul>li:first-child {
+  margin-left: 8.5%;
+  transform: rotate(60deg);
+}
+
+.hammerprogressbox>div:last-child>ul>li:nth-child(2) {
+  margin-left: 15.5%;
+  transform: rotate(54deg);
+}
+
+.hammerprogressbox>div:last-child>ul>li:nth-child(3) {
+  margin-left: 20.5%;
+  transform: rotate(9deg);
+}
+
+.hammerprogressbox>div:last-child>ul>li:last-child {
+  float: right;
+  margin-right: 6%;
+  transform: rotate(-47deg);
+}
+
+.hammerprogress {
+  width: 100%;
+  height: 0.3rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/进度条背景1.png");
+  background-size: 100% 100%;
+  margin-top: 0.08rem;
+}
+
+.hammerbar {
+  width: 0%;
+  height: 0.3rem;
+  background: linear-gradient(0deg, #0065AE, #7DB4D9);
+  border-radius: 0.5rem;
+  opacity: 0.7;
+}
+
+.hammereggbox {}
+
+.hammereggbox>li {
+  float: left;
+  font-size: 0.24rem;
+  font-family: Adobe Heiti Std;
+  font-weight: normal;
+  color: #8A1919;
+  margin-top: 0.2rem;
+}
+
+.hammereggbox>li:first-child {
+  margin-left: -0.05rem;
+}
+
+.hammereggbox>li:nth-child(2) {
+  margin-left: 9%;
+}
+
+.hammereggbox>li:nth-child(3) {
+  margin-left: 11%;
+}
+
+.hammereggbox>li:nth-child(4) {
+  margin-left: 14%;
+}
+
+.hammereggbox>li:last-child {
+  float: right;
+  margin-right: 4%;
+}
+
+.hammereggbtnbox {
+  width: 96%;
+  margin: 0 auto;
+  height: 0.99rem;
+  margin-top: 0.2rem;
+}
+
+.hammereggbtnbox>div {}
+
+.hammereggonebtn {
+  float: left;
+}
+
+.hammereggtenbtn {
+  float: right;
+}
+
+.hammereggtext {
+  font-size: 0.26rem;
+  font-family: Adobe Heiti Std;
+  font-weight: normal;
+  color: #8A1919;
+  line-height: 0.5rem;
+  text-align: center;
+}
+
+.hammereggnum {}
+
+
+/* 超值返利 */
+.premiumrebatebox {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 0.2rem;
+}
+
+.premiumrebatecontent {
+  width: 99%;
+  height: 1.26rem;
+  margin-bottom: 0.1rem;
+}
+
+.premiumrebatecontent1>li:last-child {
+  float: right;
+}
+
+.moneySquare {
+  width: 20%;
+  height: 1.26rem;
+  float: left;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/转盘背景.png");
+  background-size: 100% 100%;
+}
+
+.moneySquare1 {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/转盘背景1.png");
+  background-size: 100% 100%;
+}
+
+.money-lighting {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/转盘背景2.png");
+  background-size: 100% 100%;
+}
+
+.premiumrebatelist {
+  margin: 0rem auto 0rem;
+  text-align: center;
+}
+
+.premiumrebatelist>img {
+  width: 0.7rem;
+}
+
+.premiumrebatelist>p {
+  color: #ffffff;
+  line-height: 0.6rem;
+  font-size: 0.24rem;
+  text-align: center;
+  z-index: -1;
+  font-family: MicrosoftYaHei;
+  margin-top: -0.15rem;
+}
+
+/* .awardannouncementbox{
+    width: 58%;
+    height: 3.78rem;
+    background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/寻宝纪录背景.png");
+    background-size: 100% 100%;
+    position: absolute;
+    top: 1.4rem;
+    left: 20%;
+}
+.awardannouncementbox>p{
+    font-size: 0.3rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 0.5rem;
+    text-align: center;
+    padding-top:0.2rem;
+}
+.awardannouncementcontent{
+    width:96%;
+    height:2.78rem;
+    margin:0 auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.awardannouncementcontent>div>p{
+    height: 0.4rem;
+    font-size: 0.24rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 0.4rem;
+    text-align: center;
+}
+.awardannouncementcontent>div>p>span{
+    height: 0.4rem;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.awardannouncementcontent>div>p>span:first-child{
+    width: 40%;
+    color: bisque;
+    text-align: right;
+}
+.awardannouncementcontent>div>p>span:nth-child(2){
+    color:#fff;
+} 
+.awardannouncementcontent>div>p>span:last-child{
+    width: 40%;
+    color: bisque;
+    text-align: left;
+} */
+
+
+.treasuretimenum {}
+
+.rechargehowtoplaybox {
+  height: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.rechargehowtoplaybox>div {
+  float: left;
+  font-size: 0.26rem;
+  font-family: Adobe Heiti Std;
+  font-weight: normal;
+  color: #8A1919;
+  line-height: 0.4rem;
+  margin-left: 27%;
+}
+
+.rechargehowtoplaybox>.rechargehowtoplaybtn {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/玩法说明.png");
+  background-size: 100% 100%;
+  margin-top: -0.03rem;
+  float: right;
+  margin-left: 0rem;
+  margin-right: 0.4rem;
+}
+
+.rechargebox {
+  width: 96%;
+  height: 1.5rem;
+  border: 2px solid #8A1919;
+  border-radius: 0.2rem;
+  margin: 0.2rem auto;
+}
+
+.rechargecontent {
+  float: left;
+}
+
+.rechargecontent>div {
+  height: 0.7rem;
+}
+
+.rechargecontent>div>div {
+  float: left;
+  font-size: 0.26rem;
+  font-family: PingFang SC;
+  color: #8A1919;
+  line-height: 0.4rem;
+  margin-left: 0.1rem;
+  margin-top: 0.2rem;
+}
+
+.rechargecontent>div>div:first-child {
+  font-weight: bold;
+}
+
+.rechargecontent>p {
+  font-size: 0.26rem;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #8A1919;
+  line-height: 0.4rem;
+  text-align: center;
+  margin-top: 0.1rem;
+}
+
+.moatairbox {
+  width: 2.8rem;
+  height: 0.3rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/进度条背景1.png");
+  background-size: 100% 100%;
+  margin-top: 0.25rem !important;
+}
+
+.moatairbar {
+  width: 0%;
+  height: 0.3rem;
+  background: linear-gradient(0deg, #0065AE, #7DB4D9);
+  border-radius: 0.5rem;
+  opacity: 0.7;
+}
+
+.luckdrawbtnbox {
+  width: 96%;
+  margin: 0 auto;
+  height: 0.99rem;
+  margin-top: 0.2rem;
+}
+
+.rechargegiftbtn {
+  width: 0.98rem;
+  height: 0.87rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/宝箱.png");
+  background-size: 100% 100%;
+  float: right;
+  margin-top: 0.25rem;
+  margin-right: 0.1rem;
+}
+
+.luckdrawbtnbox>div {}
+
+.luckdrawonebtn {
+  float: left;
+}
+
+.luckdrawtenbtn {
+  float: right;
+}
+
+.luckdrawtext {
+  font-size: 0.26rem;
+  font-family: Adobe Heiti Std;
+  font-weight: normal;
+  color: #8A1919;
+  line-height: 0.5rem;
+  text-align: center;
+}
+
+.luckdrawnum {}
+
+
+
+
+/* 充值榜单 */
+.investlistbox {
+  height: 4.5rem;
+}
+
+.investlistbox>div {
+  width: 50%;
+  height: 4rem;
+  float: left;
+}
+
+.investlistcontent {}
+
+.investlistcontent>div {}
+
+.investlistcontent>p {
+  width: 90%;
+  font-size: 0.32rem;
+  font-weight: bold;
+  color: #FF3E32;
+  line-height: 0.5rem;
+  text-align: center;
+  margin: 0rem auto 0.1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.investlistcontent>div:last-child {
+  width: 2.47rem;
+  height: 0.46rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/积分背景.png");
+  background-size: 100% 100%;
+  border-radius: 0.2rem;
+  FONT-VARIANT: JIS04;
+  font-size: 0.26rem;
+  font-family: PingFang SC;
+  color: #FFFFFF;
+  line-height: 0.42rem;
+  text-align: center;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.integralnum {}
+
+.investlistframeimg {
+  width: 3.45rem;
+  height: 3.42rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/头像框.png");
+  background-size: 100% 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.investlistheadimg {
+  width: 1.7rem;
+  height: 1.7rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/占位.png");
+  background-size: 100% 100%;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 0.4rem;
+  position: absolute;
+  left: 22%;
+  top: 14%;
+}
+
+.rankinglistcontent {}
+
+.rankinglistcontent>div:first-child {
+  margin-top: 0.2rem;
+  height: 1.2rem;
+}
+
+.trophybtn {
+  width: 30%;
+  height: 1.2rem;
+  float: left;
+  margin-left: 10%;
+}
+
+.trophybtn>img {
+  width: 0.62rem;
+  height: 0.82rem;
+  margin-left: 0.1rem;
+}
+
+.trophybtn>p {
+  font-size: 0.24rem;
+  font-weight: bold;
+  color: #FF3E32;
+  line-height: 0.4rem;
+}
+
+.myrankingbtn {
+  width: 1.35rem;
+  height: 1.09rem;
+  float: right;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/排名背景.png");
+  background-size: 100% 100%;
+  /* background: #058428;
+    border: 0.01rem solid #F6CFA9; */
+  border-radius: 0.2rem;
+  font-size: 0.26rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 0.45rem;
+  text-align: center;
+  padding: 0.1rem;
+  margin-right: 0.4rem;
+}
+
+.myrankingnum {}
+
+.rankinglistcontent>p {
+  font-size: 0.28rem;
+  font-weight: bold;
+  color: #FF3E32;
+  line-height: 0.35rem;
+  text-align: center;
+  margin-top: 0.2rem;
+}
+
+.rechargeamountnum {
+  font-weight: 400;
+  /* color: #FF144F; */
+}
+
+.rankinglistcontent>div:last-child {}
+
+.rankinglist {
+  width: 96%;
+  height: 1.8rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 0.2rem;
+  position: relative;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/框背景3.png");
+  background-size: 100% 100%;
+}
+
+.rankinglist>div:first-child {
+  width: 60%;
+  height: 0.4rem;
+  margin: 0 auto;
+  background: linear-gradient(0deg, #FF5841, #FF3B30, #FF3B30, #FF5841);
+  border: 0.01rem solid #FFFAE1;
+  border-radius: 0.2rem;
+}
+
+.rankinglist>div>p {
+  font-size: 0.26rem;
+  color: #fff;
+  text-align: center;
+  word-break: keep-all;
+  white-space: nowrap;
+  line-height: 0.3rem;
+}
+
+.rankinglist>div:nth-child(2) {
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 70%;
+  margin: 0 auto;
+  float: left;
+  margin-left: 0.2rem;
+}
+
+.rankinglist>.arrow {
+  float: right;
+  width: 0.55rem;
+  height: 0.5rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/箭头.png");
+  background-size: 100% 100%;
+  margin-left: 0rem;
+  margin-top: 0.4rem;
+  margin-right: 0.1rem;
+}
+
+.rankinglist>div>ul {
+  width: 5rem;
+}
+
+.rankinglist1 {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/框背景2.png");
+  background-size: 100% 100%;
+}
+
+.rankinglist1>div {
+  width: 70%;
+}
+
+.rankinglist1>div>ul {
+  width: 5.2rem;
+}
+
+.rankingcontent {
+  width: 25%;
+  float: left;
+  margin: 0 auto;
+}
+
+.rankingcontent2 {
+  width: 50%;
+}
+
+.rankingcontent>img {
+  width: 0.8rem;
+  margin-top: 0.1rem;
+}
+
+/*唯我独尊标签*/
+.weiwoduzun {
+  width: 2rem;
+  height: 0.8rem;
+  background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/4_00000.png");
+  background-size: 100% 100%;
+  animation: weiwoduzun 1.5s linear infinite forwards;
+  margin: 0 auto;
+}
+
+@keyframes weiwoduzun {
+  7.7% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/4_00001.png");
+    background-size: 100% 100%;
+  }
+
+  15.4% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/4_00002.png");
+    background-size: 100% 100%;
+  }
+
+  23.1% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/4_00003.png");
+    background-size: 100% 100%;
+  }
+
+  30.8% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/4_00004.png");
+    background-size: 100% 100%;
+  }
+
+  38.5% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/4_00005.png");
+    background-size: 100% 100%;
+  }
+
+  46.2% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/4_00006.png");
+    background-size: 100% 100%;
+  }
+
+  53.9% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/4_00007.png");
+    background-size: 100% 100%;
+  }
+
+  61.6% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/4_00008.png");
+    background-size: 100% 100%;
+  }
+
+  69.3% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/4_00009.png");
+    background-size: 100% 100%;
+  }
+
+  77% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/4_00010.png");
+    background-size: 100% 100%;
+  }
+
+  84.7% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/4_00011.png");
+    background-size: 100% 100%;
+  }
+
+  92.4% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/4_00012.png");
+    background-size: 100% 100%;
+  }
+}
+
+.rankingcontent2>img {
+  width: 2.56rem;
+  height: 0.98rem;
+  margin-top: -0.1rem;
+}
+
+.rankingcontent>p {
+  color: #fff;
+  line-height: 0.4rem;
+  font-size: 0.24rem;
+  text-align: center;
+  z-index: -1;
+  font-family: MicrosoftYaHei;
+  margin-top: -0.1rem;
+}
+
+.rankinglistbox {
+  width: 96%;
+  height: 4rem;
+  margin: 0 auto;
+}
+
+.rankinglistbox>li {
+  width: 50%;
+  float: left;
+}
+
+.rankingcontent1 {
+  width: 25%;
+  background-image: none;
+}
+
+.rankingcontent3 {
+  width: 50%;
+}
+
+.rankingcontent1>p {
+  color: #fff;
+  margin-top: -0.05rem;
+}
+
+.rankingtip {
+  font-size: 0.26rem;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #FF3E32;
+  line-height: 0.4rem;
+  text-align: left;
+  margin: 0.1rem 0.4rem;
+}
+
+/* 福星高照 */
+.starascendantbox {
+  height: 6.5rem;
+}
+
+.starascendantbox>li {
+  width: 20%;
+  float: left;
+  padding-left: 0.2rem;
+}
+
+.starascendantbox>li:last-child {
+  float: right;
+  ;
+  padding-left: 0rem;
+}
+
+.starascendantlist {}
+
+.starascendantbox>.starascendantlist1 {
+  width: 60%;
+}
+
+.tianxuanfuxing {
+  width: 3.23rem;
+  height: 2.05rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/天选福星logo.png");
+  background-size: 100% 100%;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+}
+
+.starascendantlist>div {
+  width: 1.06rem;
+  height: 0.57rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/弹窗背景1.png");
+  background-size: 100% 100%;
+  font-size: 0.24rem;
+  font-weight: normal;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 0.57rem;
+  margin-top: 0.2rem;
+}
+
+.starascendantimg {}
+
+.starascendantframeimg {
+  width: 3.45rem;
+  height: 3.42rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/头像框.png");
+  background-size: 100% 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.starascendantheadimg {
+  width: 1.7rem;
+  height: 1.7rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/占位.png");
+  background-size: 100% 100%;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 0.4rem;
+  position: absolute;
+  left: 22%;
+  top: 14%;
+}
+
+.starascendanttitle {
+  font-size: 0.32rem;
+  font-family: 24-Regular;
+  font-weight: bold;
+  color: #FF3D31;
+  line-height: 0.5rem;
+  text-align: center;
+}
+
+.firstprizebox {
+  width: 75%;
+  height: 1.5rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/框背景4.png");
+  background-size: 100% 100%;
+  margin: 0.26rem auto;
+}
+
+.firstprizebox>p {
+  width: 0.5rem;
+  float: left;
+  font-size: 0.4rem;
+  font-family: Adobe Heiti Std;
+  color: #fff;
+  line-height: 0.45rem;
+  margin-left: 0.2rem;
+  /* -webkit-text-stroke: 0.01rem #FFFFFF; */
+  margin-left: 5%;
+  padding-top: 0.05rem;
+}
+
+.firstprizecontent {
+  width: 1.38rem;
+  height: 1.54rem;
+  float: left;
+}
+
+.firstprizecontent>img {
+  width: 0.8rem;
+  margin-top: 0.2rem;
+  margin-left: 20%;
+}
+
+.firstprizecontent>p {
+  color: #fff;
+  line-height: 0.6rem;
+  font-size: 0.24rem;
+  text-align: center;
+  z-index: -1;
+  font-family: MicrosoftYaHei;
+  margin-top: -0.15rem;
+}
+
+.firstprizecontent1 {
+  width: 2.56rem;
+  height: 1.5rem;
+}
+
+.firstprizecontent1>img {
+  width: 2.56rem;
+  height: 0.98rem;
+  margin-top: 0rem;
+  margin-left: 0%;
+}
+
+.stardaybox {
+  width: 90%;
+  height: 0.56rem;
+  margin: 0 auto;
+}
+
+.stardaybox>li {
+  float: left;
+  width: 20%;
+  height: 0.56rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/天背景.png");
+  background-size: 100% 100%;
+  font-size: 0.24rem;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 0.56rem;
+  text-align: center;
+  margin-left: 6.5%;
+}
+
+.stardaybox>li:first-child {
+  margin-left: 0%;
+}
+
+.stardaybox>li:nth-child(6) {
+  margin-left: 30%;
+}
+
+.stardaybtn {}
+
+.stardaybox>.stardayAdd {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/天背景1.png");
+  background-size: 100% 100%;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  height: 1.22rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.footer-p {
+  border-radius: 0.2rem;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.footer-p>p {
+  font-size: 0.24rem;
+  line-height: 0.4rem;
+  color: #fff
+}
+
+/* 目标奖励弹窗 */
+.targetrewardpopup {
+  position: absolute;
+  width: 96%;
+  top: 23%;
+  left: 2%;
+}
+
+.titlebg {
+  width: 100%;
+  height: 1.41rem;
+}
+
+.titletext {
+  width: 4.41rem;
+  height: 1.21rem;
+  float: left;
+  margin-left: 17%;
+}
+
+.closebtn {
+  width: 0.96rem;
+  height: 0.96rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/关闭.png");
+  background-size: 100% 100%;
+  float: right;
+  margin-right: 3%;
+  margin-top: 2%;
+}
+
+.targetrewardtitle {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/1全目标奖励.png");
+  background-size: 100% 100%;
+}
+
+.targetrewardclose {}
+
+.popupbox {
+  width: 100%;
+  height: 80%;
+  /*background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/弹窗框.png");*/
+  border-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/弹窗框.png") 380 0 300 0 fill / 200px 0px stretch;
+  background-size: 100% 100%;
+  margin: 0 auto;
+  padding: 0.5rem 0.6rem 0.7rem 0.5rem;
+}
+
+.targetrewardcase {
+  font-size: 0.24rem;
+  font-weight: normal;
+  margin-bottom: -0.05rem;
+  margin-left: 30%;
+  line-height: 0.4rem;
+  padding-top: 0.2rem;
+}
+
+.targetrewardcase>p {
+  width: 85%;
+  height: 0.4rem;
+  color: #870F1E;
+  margin-left: 0%;
+  text-align: center;
+}
+
+.trcnum {}
+
+.trcpercent {}
+
+.schedulebox {
+  height: 0.4rem;
+  margin-bottom: 0.2rem;
+}
+
+.schedulebox>div {
+  float: left;
+}
+
+.scheduletext {
+  font-size: 0.32rem;
+  font-weight: normal;
+  color: #870F1E;
+  margin-left: 0.5rem;
+  font-weight: bold;
+  line-height: 0.4rem;
+}
+
+.scheduleprogressbox {
+  width: 60%;
+  height: 0.3rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/进度条背景1.png");
+  background-size: 100% 100%;
+  margin-left: 0.2rem;
+  margin-top: 0.1rem;
+}
+
+.schedulebar {
+  width: 0%;
+  height: 0.3rem;
+  background: linear-gradient(0deg, #0065AE, #7DB4D9);
+  border-radius: 0.5rem;
+  opacity: 0.7;
+}
+
+.scheduleachievedbox {}
+
+.scheduleachievedlist {
+  width: 95%;
+  height: 2rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 0.2rem;
+  position: relative;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/框背景16.png");
+  background-size: 100% 100%;
+  padding-left: 0.1rem;
+}
+
+.scheduleachievedlist>div {
+  width: 90%;
+  height: 0.5rem;
+  margin: 0 auto;
+  background: linear-gradient(0deg, #870F1E, #5D0711, #5D0711, #870F1E);
+  border: 0.01rem solid #FFFAE1;
+  border-radius: 0.3rem;
+}
+
+.scheduleachievedlist>div>p {
+  font-size: 0.28rem;
+  color: #fff;
+  text-align: center;
+  word-break: keep-all;
+  white-space: nowrap;
+  line-height: 0.46rem;
+}
+
+.scheduleachievedlist>div>p>span {}
+
+.scheduleachievednum {}
+
+.scheduleachievedcontent {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin-top: 0.15rem;
+}
+
+.scheduleachievedcontent>li {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+}
+
+.scheduleachievedcontent>li>img {
+  width: 0.7rem;
+}
+
+.scheduleachievedcontent>li>p {
+  font-size: 0.24rem;
+  color: #FFFFFF;
+}
+
+.scheduleachievedbtn {
+  width: 1.29rem;
+  height: 0.53rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/未选中.png");
+  background-size: 100% 100%;
+  font-size: 0.26rem;
+  color: #fff;
+  line-height: 0.53rem;
+  text-align: center;
+  margin-top: 0.3rem;
+}
+
+.scheduleachievedAdd {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/选中2.png");
+  background-size: 100% 100%;
+  color: #A60C0E;
+}
+
+.titlebg1 {
+  width: 100%;
+  height: 0.49rem;
+  margin-top: -0.2rem;
+}
+
+
+/* 奖励预览弹窗 */
+.rewardpreviewbox {
+  position: absolute;
+  width: 96%;
+  top: 23%;
+  left: 2%;
+}
+
+.rewardpreviewtitle {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/1奖励预览.png");
+  background-size: 100% 100%;
+}
+
+.rewardpreviewclose {}
+
+.rewardpreviewlist {
+  width: 96%;
+  height: 12rem;
+  margin: 0 auto;
+}
+
+.rewardpreviewlist>li {
+  width: 48%;
+  height: 1.5rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/框背景9.png");
+  background-size: 100% 100%;
+  border-radius: 0.2rem;
+  float: left;
+  margin-top: 0.2rem;
+  margin-left: 0.8%;
+}
+
+.rewardpreviewlist>li>img {
+  width: 0.8rem;
+  margin-left: 37%;
+  padding-top: 0.2rem;
+}
+
+.rewardpreviewlist>li:nth-child(2)>img {
+  width: 1.2rem;
+  padding-top: 0.2rem;
+  margin-left: 30%;
+}
+
+.rewardpreviewlist>li:nth-child(3)>img {
+  width: 1.5rem;
+  margin-left: 25%;
+  padding-top: 0.3rem;
+}
+
+.rewardpreviewlist>li:nth-child(4)>img {
+  width: 1.2rem;
+  margin-left: 30%;
+  padding-top: 0.25rem;
+}
+
+.rewardpreviewlist>li:nth-child(5)>img {}
+
+.rewardpreviewlist>li:nth-child(6)>img {}
+
+.rewardpreviewlist>li:nth-child(7)>img {}
+
+.rewardpreviewlist>li:nth-child(8)>img {}
+
+.rewardpreviewlist>li:nth-child(9)>img {}
+
+.rewardpreviewlist>li:nth-child(10)>img {}
+
+.rewardpreviewlist>li:last-child>img {
+  width: 1.98rem;
+  margin-left: 20%;
+  padding-top: 0.2rem;
+}
+
+.rewardpreviewlist>li>p {
+  font-size: 0.24rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.4rem;
+}
+
+.junlintianxia {
+  width: 2.56rem;
+  height: 0.98rem;
+  background: url("http://top.cnsltx.com/httpServer/html5/activity/guoqin/gif/5_00000.png");
+  background-size: 100% 100%;
+  animation: junlintianxia 1.5s linear infinite forwards;
+  margin: 0 auto;
+}
+
+@keyframes junlintianxia {
+  9% {
+    background: url("http://top.cnsltx.com/httpServer/html5/activity/guoqin/gif/5_00001.png");
+    background-size: 100% 100%;
+  }
+
+  18% {
+    background: url("http://top.cnsltx.com/httpServer/html5/activity/guoqin/gif/5_00002.png");
+    background-size: 100% 100%;
+  }
+
+  27% {
+    background: url("http://top.cnsltx.com/httpServer/html5/activity/guoqin/gif/5_00003.png");
+    background-size: 100% 100%;
+  }
+
+  36% {
+    background: url("http://top.cnsltx.com/httpServer/html5/activity/guoqin/gif/5_00004.png");
+    background-size: 100% 100%;
+  }
+
+  45% {
+    background: url("http://top.cnsltx.com/httpServer/html5/activity/guoqin/gif/5_00005.png");
+    background-size: 100% 100%;
+  }
+
+  54% {
+    background: url("http://top.cnsltx.com/httpServer/html5/activity/guoqin/gif/5_00006.png");
+    background-size: 100% 100%;
+  }
+
+  63% {
+    background: url("http://top.cnsltx.com/httpServer/html5/activity/guoqin/gif/5_00007.png");
+    background-size: 100% 100%;
+  }
+
+  72% {
+    background: url("http://top.cnsltx.com/httpServer/html5/activity/guoqin/gif/5_00008.png");
+    background-size: 100% 100%;
+  }
+
+  81% {
+    background: url("http://top.cnsltx.com/httpServer/html5/activity/guoqin/gif/5_00009.png");
+    background-size: 100% 100%;
+  }
+
+  90% {
+    background: url("http://top.cnsltx.com/httpServer/html5/activity/guoqin/gif/5_00010.png");
+    background-size: 100% 100%;
+  }
+
+  100% {
+    background: url("http://top.cnsltx.com/httpServer/html5/activity/guoqin/gif/5_00011.png");
+    background-size: 100% 100%;
+  }
+}
+
+/* 砸蛋商店弹窗 */
+.eggsmashingshopbox {
+  height: 80%;
+  position: absolute;
+  width: 96%;
+  top: 23%;
+  left: 2%;
+}
+
+.eggsmashingshoptitle {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/1砸蛋商店.png");
+  background-size: 100% 100%;
+}
+
+.eggsmashingshopclose {}
+
+.diamondcoinbox {
+  height: 1rem;
+  padding-top: 0.3rem;
+}
+
+.diamondcoinbox>li {
+  height: 0.63rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/框背景10.png");
+  background-size: 100% 100%;
+  border-radius: 0.3rem;
+  font-size: 0.24rem;
+  font-family: Adobe Heiti Std;
+  font-weight: normal;
+  color: #fff;
+  line-height: 0.63rem;
+  float: left;
+  padding-left: 0.2rem;
+  margin-left: 0.2rem;
+}
+
+.diamondcoinbox>li:last-child {
+  float: right;
+  margin-right: 0.2rem;
+}
+
+.diamondcoinbox>li>img {
+  width: 0.5rem;
+  padding-top: 0.06rem;
+}
+
+.diamondcoinbox>li>span {
+  padding: 0.2rem 0.2rem 0.2rem 0.05rem;
+}
+
+.diamnondnum {}
+
+.eggcoinnum {}
+
+.commoditybox {
+  height: 90%;
+  overflow-y: scroll;
+}
+
+.commoditylist {
+  width: 100%;
+  height: 2.7rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 0.3rem;
+  position: relative;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/框背景5.png");
+  background-size: 100% 100%;
+}
+
+.commoditylist>div {
+  width: 60%;
+  height: 0.4rem;
+  margin: 0 auto;
+  background: linear-gradient(0deg, #FF5841, #FF3B30, #FF3B30, #FF5841);
+  border: 0.01rem solid #FFFAE1;
+  border-radius: 0.2rem;
+}
+
+.commoditylist>div>p {
+  font-size: 0.28rem;
+  color: #fff;
+  text-align: center;
+  word-break: keep-all;
+  white-space: nowrap;
+  line-height: 0.4rem;
+}
+
+.commoditycontent {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.commoditycontentlist {
+  margin-top: 0.4rem;
+}
+
+.commoditycontent>li {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+}
+
+.commoditycontent>li:first-child {
+  width: 40%;
+}
+
+.commoditycontent>li:nth-child(2) {
+  width: 32%;
+}
+
+.commoditycontent>li:last-child {
+  width: 25%;
+}
+
+.commoditycontent>li>img {
+  width: 0.7rem;
+}
+
+.commoditycontent>li>p {
+  font-size: 0.24rem;
+  color: #fff;
+  line-height: 0.5rem;
+}
+
+.limitbuynum {}
+
+.buyconditionsbox {}
+
+.buyconditionsbox>img {
+  width: 0.4rem;
+}
+
+.buyconditionsbox>span {
+  font-size: 0.24rem;
+  color: #fff;
+  line-height: 0.4rem;
+}
+
+.buyconditionsbox>div>img {
+  width: 0.4rem;
+}
+
+.buyconditionsbox>div>span {
+  font-size: 0.24rem;
+  color: #fff;
+  line-height: 0.4rem;
+}
+
+.commoditybuybtn {
+  width: 1.29rem;
+  height: 0.53rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/未选中.png");
+  background-size: 100% 100%;
+  font-size: 0.26rem;
+  color: #fff;
+  line-height: 0.53rem;
+  text-align: center;
+  margin-top: 45%;
+  margin-right: 0.2rem;
+}
+
+.commoditybuyAdd {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/选中2.png");
+  background-size: 100% 100%;
+  color: #A60C0E;
+}
+
+.zuimeinvsheng {
+  width: 2.56rem;
+  height: 0.98rem;
+  background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/3_00000.png");
+  background-size: 100% 100%;
+  animation: zuimeinvsheng 1.5s linear infinite forwards;
+  margin: 0 auto;
+}
+
+@keyframes zuimeinvsheng {
+  9% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/3_00001.png");
+    background-size: 100% 100%;
+  }
+
+  18% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/3_00002.png");
+    background-size: 100% 100%;
+  }
+
+  27% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/3_00003.png");
+    background-size: 100% 100%;
+  }
+
+  36% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/3_00004.png");
+    background-size: 100% 100%;
+  }
+
+  45% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/3_00005.png");
+    background-size: 100% 100%;
+  }
+
+  54% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/3_00006.png");
+    background-size: 100% 100%;
+  }
+
+  63% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/3_00007.png");
+    background-size: 100% 100%;
+  }
+
+  72% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/3_00008.png");
+    background-size: 100% 100%;
+  }
+
+  81% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/3_00009.png");
+    background-size: 100% 100%;
+  }
+
+  90% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/3_00010.png");
+    background-size: 100% 100%;
+  }
+
+  100% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/3_00011.png");
+    background-size: 100% 100%;
+  }
+}
+
+.zuishuainansheng {
+  width: 2.56rem;
+  height: 0.98rem;
+  background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/1_00000.png");
+  background-size: 100% 100%;
+  animation: zuishuainansheng 1.5s linear infinite forwards;
+  margin: 0 auto;
+}
+
+@keyframes zuishuainansheng {
+  9% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/1_00001.png");
+    background-size: 100% 100%;
+  }
+
+  18% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/1_00002.png");
+    background-size: 100% 100%;
+  }
+
+  27% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/1_00003.png");
+    background-size: 100% 100%;
+  }
+
+  36% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/1_00004.png");
+    background-size: 100% 100%;
+  }
+
+  45% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/1_00005.png");
+    background-size: 100% 100%;
+  }
+
+  54% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/1_00006.png");
+    background-size: 100% 100%;
+  }
+
+  63% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/1_00007.png");
+    background-size: 100% 100%;
+  }
+
+  72% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/1_00008.png");
+    background-size: 100% 100%;
+  }
+
+  81% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/1_00009.png");
+    background-size: 100% 100%;
+  }
+
+  90% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/1_00010.png");
+    background-size: 100% 100%;
+  }
+
+  95% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/1_00011.png");
+    background-size: 100% 100%;
+  }
+
+  10% {
+    background: url("http://obs.99yuyin.com/h5/activity/huodong/pingxuan/gif/1_00012.png");
+    background-size: 100% 100%;
+  }
+}
+
+/* 壕气返利弹窗 */
+.returntoprofitbox {
+  position: absolute;
+  width: 96%;
+  top: 23%;
+  left: 2%;
+}
+
+.returntoprofittitle {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/1壕气返利.png");
+  background-size: 100% 100%;
+}
+
+.returntoprofitclose {}
+
+.rebatebox {
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 96%;
+  height: 10rem;
+  padding-top: 0.2rem;
+  margin: 0 auto;
+}
+
+.rebatelist {
+  height: 30rem;
+}
+
+.rebatecontent {
+  width: 96%;
+  height: 1.8rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/框背景7.png");
+  background-size: 100% 100%;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-bottom: 0.2rem;
+}
+
+.rebatecontent>li:first-child {
+  width: 25%;
+  float: left;
+  border: 0.05rem solid #fff;
+  border-radius: 0.2rem;
+  margin-top: 4%;
+  margin-left: 5%;
+}
+
+.rebatecontent>li:nth-child(2) {
+  width: 40%;
+  float: left;
+  padding-top: 8%;
+}
+
+.rebatecontent>:last-child {
+  width: 24%;
+  float: right;
+  margin-right: 4%;
+  margin-top: 12%;
+}
+
+.rebatecontent>li>img {
+  width: 0.7rem;
+  margin-top: 0.1rem;
+  margin-left: 27%;
+}
+
+.rebatecontent>li>p {
+  font-size: 0.24rem;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #fff;
+  line-height: 0.4rem;
+  text-align: center;
+}
+
+.rebatebtn {
+  width: 1.29rem;
+  height: 0.53rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/未选中.png");
+  background-size: 100% 100%;
+  font-size: 0.26rem;
+  color: #fff;
+  line-height: 0.53rem;
+  text-align: center;
+}
+
+.rebateAdd {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/选中2.png");
+  background-size: 100% 100%;
+  color: #A60C0E;
+}
+
+
+/* 排行榜弹窗 */
+.chartslistbox {
+  position: absolute;
+  width: 96%;
+  top: 23%;
+  left: 2%;
+}
+
+.chartslisttitle {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/1排行榜.png");
+  background-size: 100% 100%;
+}
+
+.chartslistclose {}
+
+.topthreebox {
+  padding-top: 0.5rem;
+}
+
+.topthreebox>ul {
+  width: 96%;
+  height: 2.68rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/前三名背景.png");
+  background-size: 100% 100%;
+  margin: 0 auto;
+}
+
+.topthreebox>ul>li {
+  float: left;
+}
+
+.topthreebox>ul>li:first-child {
+  width: 30%;
+}
+
+.topthreebox>ul>li:nth-child(2) {
+  width: 40%;
+}
+
+.topthreebox>ul>li:last-child {
+  width: 30%;
+  float: right;
+}
+
+.topthreebox>ul>li>img:first-child {
+  width: 0.51rem;
+  margin-left: 33%;
+}
+
+.topthreebox>ul>li>img:nth-child(2) {
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-left: 33%;
+  border-radius: 50%;
+  margin-top: 0.2rem;
+}
+
+.topthreebox>ul>li:nth-child(2)>img {
+  width: 0.56rem;
+  margin-top: -0.4rem;
+  margin-left: 40%;
+}
+
+.topthreebox>ul>li:nth-child(2)>img:nth-child(2) {
+  margin-left: 33%;
+  width: 0.9rem;
+  height: 0.9rem;
+  margin-top: 0.1rem;
+}
+
+.topthreebox>ul>li>p {
+  font-size: 0.24rem;
+  font-family: SourceHanSansCN;
+  font-weight: 500;
+  color: #fff;
+  line-height: 0.5rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 0.2rem;
+}
+
+.topthreebox>ul>li:nth-child(2)>p {
+  font-size: 0.28rem;
+}
+
+.otherplacestextbox {
+  width: 96%;
+  margin: 0.2rem auto;
+  height: 0.8rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/框背景14.png");
+  background-size: 100% 100%;
+}
+
+.otherplacestextbox>li {
+  width: 20%;
+  font-size: 0.3rem;
+  font-family: PingFang SC;
+  font-weight: 600;
+  color: #fff;
+  line-height: 0.8rem;
+  text-align: center;
+  float: left;
+}
+
+.otherplacestextbox>li:nth-child(2) {
+  width: 55%;
+}
+
+.otherplacestextbox>li:last-child {
+  float: right;
+  margin-right: 0.2rem;
+}
+
+.otherplacesbox {
+  width: 96%;
+  height: 8.5rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/框背景11.png");
+  background-size: 100% 100%;
+  margin: 0 auto;
+}
+
+.otherplacesbox>div {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 8.5rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.2rem;
+}
+
+.otherplaceslist {
+  width: 100%;
+  height: 1.2rem;
+  float: left;
+  font-size: 0.24rem;
+  font-family: PingFang SC;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1rem;
+}
+
+.otherplaceslist>li {
+  width: 20%;
+  float: left;
+  font-size: 0.24rem;
+  font-family: PingFang SC;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1rem;
+  padding-left: 0.2rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.otherplaceslist>li:nth-child(2) {
+  width: 50%;
+  font-weight: 400;
+  color: #fff;
+}
+
+.otherplaceslist>li:nth-child(3) {
+  width: 25%;
+  font-weight: 400;
+  margin-right: 0.2rem;
+  float: right;
+  color: #fff;
+}
+
+.otherplacesheadimg {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  margin-top: 0.2rem;
+  margin-right: 0.2rem;
+  float: left;
+}
+
+.otherplacesheadname {}
+
+.otherplacesline {
+  width: 96%;
+  height: 0.05rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/线.png");
+  background-size: 100% 100%;
+  margin: 0 auto;
+  margin-top: 1.1rem;
+}
+
+.rechargerankingbox {
+  width: 96%;
+  height: 1.2rem;
+  background: #FFFFFF;
+  border-radius: 0.2rem;
+  margin: 0.2rem auto;
+  padding: 0 0.2rem 0 0.2rem;
+}
+
+.rechargerankingbox>p {
+  font-size: 0.26rem;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #fff;
+  line-height: 0.5rem;
+  text-align: center;
+}
+
+.rechargerankingbox>p>span {}
+
+.rechargerankingtip {
+  width: 96%;
+  margin: 0 auto;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/框背景12.png");
+  background-size: 100% 100%;
+  font-size: 0.24rem;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1rem;
+  text-align: center;
+  margin-top: 0.3rem;
+  border-radius: 0.2rem;
+}
+
+/* 奖励弹窗 */
+.awardbox {
+  height: 80%;
+  position: absolute;
+  width: 96%;
+  top: 23%;
+  left: 2%;
+}
+
+.awardtitle {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/1奖励.png");
+  background-size: 100% 100%;
+}
+
+.awardclose {}
+
+.prizesbox {
+  padding-top: 0.2rem;
+}
+
+.prizeslist {
+  width: 96%;
+  margin: 0.2rem auto;
+  height: 0.8rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/框背景12.png");
+  background-size: 100% 100%;
+}
+
+.prizeslist>li {
+  width: 20%;
+  font-size: 0.3rem;
+  font-family: PingFang SC;
+  font-weight: 600;
+  color: #fff;
+  line-height: 0.8rem;
+  text-align: center;
+  float: left;
+}
+
+.prizeslist>li:nth-child(2) {
+  width: 55%;
+}
+
+.prizeslist>li:last-child {
+  float: right;
+  margin-right: 0.2rem;
+}
+
+.prizeslistbox {
+  width: 96%;
+  height: 80%;
+  overflow-y: scroll;
+  position: relative;
+  margin: 0 auto;
+}
+
+.prizeslist1 {
+  width: 100%;
+  margin: 0.2rem auto;
+  height: 1.5rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/框背景13.png");
+  background-size: 100% 100%;
+  padding-left: 0.2rem;
+}
+
+.prizeslist1>li {
+  line-height: 1.5rem;
+}
+
+.prizeslist1>li:nth-child(2) {
+  width: 55%;
+  color: #fff;
+}
+
+.prizeslist1>li:last-child {
+  width: 20%;
+  float: right;
+  margin-right: 0.2rem;
+  line-height: 0.3rem;
+}
+
+.prizeslist2>li {
+  width: 16%;
+}
+
+.prizeslist2>li:nth-child(2) {
+  width: 10%;
+  color: #fff;
+}
+
+.prizeslist2>li:nth-child(3) {
+  width: 20%;
+  line-height: 0.3rem;
+}
+
+.prizeslist2>li:last-child {
+  width: 45%;
+  float: right;
+  margin-right: 7%;
+  line-height: 0.3rem;
+}
+
+.prizescontent {
+  width: 1.1rem;
+  height: 1.1rem;
+  border: 0.05rem solid #fff;
+  border-radius: 0.2rem;
+  margin-top: 17%;
+}
+
+.prizescontent>img {
+  width: 0.7rem;
+}
+
+.prizescontent1 {
+  width: 2.8rem;
+  height: 1.1rem;
+  border: 0.05rem solid #fff;
+  border-radius: 0.2rem;
+  margin-top: 9%;
+}
+
+.prizescontent1>img {
+  width: 2.56rem;
+  margin-top: -0.2rem;
+}
+
+.prizescontent>p {
+  font-size: 0.24rem;
+  font-family: Adobe Heiti Std;
+  font-weight: normal;
+  color: #fff;
+  line-height: 0.3rem;
+  text-align: center;
+}
+
+.prizescontent>p {
+  margin-top: -0.08rem;
+}
+
+.prizeslistdaybox {
+  width: 90%;
+  margin: 0 auto;
+  height: 0.6rem;
+}
+
+.prizeslistdaybox>li {
+  float: left;
+  width: 20%;
+  height: 0.47rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/天背景2.png");
+  background-size: 100% 100%;
+  font-size: 0.24rem;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #fff;
+  line-height: 0.47rem;
+  text-align: center;
+  margin-left: 6.5%;
+  margin-top: 2%;
+}
+
+.prizeslistdaybox>li:first-child {
+  margin-left: 0;
+}
+
+.prizeslistdaybox>li:nth-child(4) {
+  float: right;
+  margin-right: 0;
+}
+
+.prizeslistdaybox>li:nth-child(5) {
+  margin-left: 10%;
+}
+
+.prizeslistdaybtn {}
+
+.prizeslistdaybox>.prizeslistdayAdd {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/天背景3.png");
+  background-size: 100% 100%;
+  color: #FFFFFF;
+}
+
+
+/* 福星弹窗 */
+.luckystarbox {
+  position: absolute;
+  width: 96%;
+  top: 23%;
+  left: 2%;
+}
+
+.luckystartitle {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/1福星.png");
+  background-size: 100% 100%;
+}
+
+.luckystarclose {}
+
+.luckystarimgbox {
+  padding-top: 0.35rem;
+}
+
+.luckystarimgbox>ul {
+  height: 0.56rem;
+  margin-bottom: 0.2rem;
+}
+
+.luckystarimgbox>ul>li {
+  width: 2.08rem;
+  height: 0.56rem;
+  float: left;
+  margin-left: 5%;
+}
+
+.luckystarlistimgbtn {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/福星名单.png");
+  background-size: 100% 100%;
+}
+
+.luckystarlistimgAdd {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/福星名单1.png");
+  background-size: 100% 100%;
+}
+
+.luckystarnumimgbtn {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/福星号.png");
+  background-size: 100% 100%;
+}
+
+.luckystarnumimgAdd {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/福星号1.png");
+  background-size: 100% 100%;
+}
+
+.prizelistbox {
+  position: relative;
+}
+
+.luckystarprizebox {
+  width: 96%;
+  height: 0.8rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/框背景12.png");
+  background-size: 100% 100%;
+  margin: 0.2rem auto;
+}
+
+.luckystarprizebox>li {
+  width: 50%;
+  font-size: 0.3rem;
+  font-family: PingFang SC;
+  font-weight: 600;
+  color: #fff;
+  line-height: 0.8rem;
+  text-align: center;
+  float: left;
+}
+
+.luckystarlistbox {
+  width: 96%;
+  margin: 0.2rem auto;
+  height: 5rem;
+  border-radius: 0.2rem;
+}
+
+.luckystarlistcontent {
+  width: 100%;
+  height: 4.8rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0.2rem;
+}
+
+.luckystarlistcontent>ul>li {
+  float: left;
+  width: 20%;
+  font-size: 0.26rem;
+  font-family: PingFang SC;
+  font-weight: 600;
+  color: #FF3E32;
+  text-align: center;
+}
+
+.luckystarlistcontent>ul>li:last-child {
+  width: 80%;
+  font-weight: 400;
+}
+
+.luckystarlistcontent>ul>li:last-child>div {
+  width: 30%;
+  height: 0.5rem;
+  border: 0.02rem solid #FFFFFF;
+  border-radius: 0.2rem;
+  float: left;
+  margin-left: 3%;
+  margin-top: 0.1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+}
+
+.luckystarlistline {
+  width: 96%;
+  height: 0.05rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/线.png");
+  background-size: 100% 100%;
+  margin: 0.2rem auto;
+}
+
+/* .luckystarlistline1{
+    width: 96%;
+    height: 0.05rem;
+    background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/线.png");
+    background-size: 100% 100%;
+    margin: 0.2rem auto;
+} */
+.myprizenumberbox {
+  width: 96%;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/框背景5.png");
+  background-size: 100% 100%;
+  margin: 0 auto;
+  padding: 0.2rem 0.2rem 0.1rem 0.2rem;
+}
+
+.myprizenumberbox ul {
+  height: 0.5rem;
+  margin-bottom: 0.15rem;
+}
+
+.myprizenumberbox ul li {
+  width: 33%;
+  float: left;
+  text-align: center;
+  font-size: 0.3rem;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #fff;
+}
+
+.myprizenumberbox>ul>li {
+  font-weight: 600;
+}
+
+.myprizenumberlist {
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 96%;
+  height: 1.3rem;
+  margin: 0 auto;
+}
+
+.myprizenumbercontent>ul>.prizenumbertext {
+  width: 1.4rem;
+  height: 0.4rem;
+  background: #ECBE72;
+  border: 0.01rem solid #ECBE72;
+  border-radius: 0.2rem;
+  line-height: 0.4rem;
+  margin-left: 4%;
+  margin-right: 2.5%;
+}
+
+.luckystardaybox {
+  width: 90%;
+  margin: 0.2rem auto;
+  height: 0.6rem;
+}
+
+.luckystardaybox>li {
+  float: left;
+  width: 20%;
+  height: 0.47rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/天背景2.png");
+  background-size: 100% 100%;
+  font-size: 0.24rem;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #fff;
+  line-height: 0.47rem;
+  text-align: center;
+  margin-left: 6.5%;
+  margin-top: 2%;
+}
+
+.luckystardaybox>li:first-child {
+  margin-left: 0;
+}
+
+.luckystardaybox>li:nth-child(4) {
+  float: right;
+  margin-right: 0;
+}
+
+.luckystardaybox>li:nth-child(5) {
+  margin-left: 10%;
+}
+
+.prizeslistdaybtn {}
+
+.luckystardaybox>.luckystardayAdd {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/天背景3.png");
+  background-size: 100% 100%;
+  color: #fff;
+}
+
+/* 祈福任务弹窗 */
+.blessingmissionbox {
+  height: 90%;
+  position: absolute;
+  width: 96%;
+  top: 15%;
+  left: 2%;
+}
+
+.blessingmissiontitle {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/1祈福任务.png");
+  background-size: 100% 100%;
+}
+
+.blessingmissionclose {}
+
+.blessingtaskbox {
+  height: 80%;
+  overflow-y: scroll;
+}
+
+.blessingtaskcontent {
+  padding-top: 0.2rem;
+}
+
+.blessingtasklist {
+  width: 96%;
+  height: 1.5rem;
+  margin: 0.2rem auto;
+  text-align: center;
+  position: relative;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/框背景16.png");
+  background-size: 100% 100%;
+}
+
+.blessingtasklist>div {
+  width: 80%;
+  height: 0.4rem;
+  margin: 0 auto;
+  background: linear-gradient(0deg, #FF5841, #FF3B30, #FF3B30, #FF5841);
+  border: 0.01rem solid #FFFAE1;
+  border-radius: 0.2rem;
+}
+
+.blessingtasklist>div>p {
+  font-size: 0.26rem;
+  color: #fff;
+  text-align: center;
+  word-break: keep-all;
+  white-space: nowrap;
+  line-height: 0.4rem;
+}
+
+.blessingtasklist>div>p>span {}
+
+.blessingtasklistcontent {
+  margin-top: 0.05rem;
+}
+
+.blessingtasklistcontent>li {
+  width: 70%;
+  float: left;
+  font-size: 0.3rem;
+  font-family: PingFang SC;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  line-height: 0.8rem;
+}
+
+.blessingtasklistcontent>li:last-child {
+  width: 20%;
+  float: right;
+  margin-right: 10%;
+}
+
+.blessingtasklistbtn {
+  width: 1.29rem;
+  height: 0.53rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/未选中.png");
+  background-size: 100% 100%;
+  font-size: 0.26rem;
+  color: #fff;
+  line-height: 0.53rem;
+  text-align: center;
+  margin-top: 0.1rem;
+}
+
+.gotofengxiang {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/选中2.png");
+  background-size: 100% 100%;
+  color: #A60C0E;
+}
+
+.blessingtasklistAdd {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/选中2.png");
+  background-size: 100% 100%;
+  color: #FFFFFF;
+}
+
+.myblessingbox {
+  width: 94%;
+  height: 2rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/框背景5.png");
+  background-size: 100% 100%;
+  margin: 0 auto;
+  padding: 0 0.15rem 0rem 0.15rem;
+  margin-top: 0.2rem;
+}
+
+.myblessingbox>div:first-child {
+  width: 45%;
+  height: 0.5rem;
+  background: linear-gradient(0deg, #FF5841, #FF3B30, #FF3B30, #FF5841);
+  border: 0.01rem solid #FFFAE1;
+  border-radius: 0.3rem;
+}
+
+.myblessingbox>div:first-child>p {
+  font-size: 0.3rem;
+  font-family: Adobe Heiti Std;
+  font-weight: normal;
+  color: #FFFFFF;
+  line-height: 0.5rem;
+  text-align: center;
+}
+
+.myblessinglist {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 1.1rem;
+  margin-top: 0.1rem;
+}
+
+.myblessinglist>ul {
+  height: 1.1rem;
+}
+
+.myblessinglistbtn {
+  width: 1.5rem;
+  height: 0.46rem;
+  float: left;
+  margin-left: 4.5%;
+  margin-bottom: 0.2rem;
+  background: #ECBE72;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.myblessinglistAdd {
+  width: 1.5rem;
+  height: 0.46rem;
+  float: left;
+  margin-left: 4.5%;
+  margin-bottom: 0.2rem;
+  padding-left: 0.2rem;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/获奖背景.png");
+  background-size: 100% 100%;
+}
+
+.blessingnum {
+  font-size: 0.26rem;
+  font-family: PingFang SC;
+  font-weight: 600;
+  /* color: #fff; */
+  text-align: center;
+  line-height: 0.46rem;
+}
+
+.blessingtip {
+  font-size: 0.24rem;
+  font-family: SourceHanSansCN;
+  font-weight: 500;
+  color: #fff;
+  line-height: 0.4rem;
+  padding: 0.2rem;
+  margin-top: 0.2rem;
+}
+
+
+/* 福利目标——玩法说明弹窗 */
+.welfareobjexplainbox {
+  position: absolute;
+  width: 96%;
+  top: 23%;
+  left: 2%;
+}
+
+.welfareobjexplaintitle {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/1玩法说明.png");
+  background-size: 100% 100%;
+}
+
+.welfareobjexplainclose {}
+
+.welfareobjexplainlist {
+  padding: 0.2rem;
+}
+
+.welfareobjexplainlist>p {
+  font-size: 0.24rem;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #333333;
+  line-height: 0.5rem;
+}
+
+.welfareobjexplainlist>p>span {}
+
+.welfareobjexplainlist>.welfareobjexplaintext {
+  font-size: 0.32rem;
+  font-family: PingFang SC;
+  font-weight: 600;
+  color: #7C0003;
+  line-height: 0.5rem;
+  letter-spacing: 0.02rem;
+  margin-top: 0.2rem;
+}
+
+
+/* 砸金蛋——玩法说明弹窗 */
+.smasheggsexplainbox {
+  height: 80%;
+  position: absolute;
+  width: 96%;
+  top: 23%;
+  left: 2%;
+}
+
+.smasheggsexplaintitle {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/1玩法说明.png");
+  background-size: 100% 100%;
+}
+
+.smasheggsexplainclose {}
+
+.smasheggsexplainlist {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.smasheggsexplainlist>p {
+  font-size: 0.24rem;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #333333;
+  line-height: 0.5rem;
+}
+
+.smasheggsexplainlist>p>span {}
+
+.smasheggsexplainlist>.smasheggsexplaintext {
+  font-size: 0.32rem;
+  font-family: PingFang SC;
+  font-weight: 600;
+  color: #7C0003;
+  line-height: 0.5rem;
+  letter-spacing: 0.02rem;
+  margin-top: 0.3rem;
+}
+
+.smasheggsexplainlist>p:nth-child(3) {
+  color: #333333;
+  margin-top: 0.3rem;
+}
+
+/* 超值返利——玩法说明弹窗 */
+.premiumrebateexplainbox {
+  position: absolute;
+  width: 96%;
+  top: 23%;
+  left: 2%;
+}
+
+.premiumrebateexplaintitle {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/1玩法说明.png");
+  background-size: 100% 100%;
+}
+
+.premiumrebateexplainclose {}
+
+.premiumrebateexplainlist {
+  padding: 0.2rem;
+}
+
+.premiumrebateexplainlist>p {
+  font-size: 0.24rem;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #333333;
+  line-height: 0.5rem;
+}
+
+.premiumrebateexplainlist>p>span {}
+
+.premiumrebateexplainlist>.premiumrebateexplaintext {
+  font-size: 0.32rem;
+  font-family: PingFang SC;
+  font-weight: 600;
+  color: #7C0003;
+  line-height: 0.5rem;
+  letter-spacing: 0.02rem;
+  margin-top: 0.2rem;
+}
+
+.premiumrebateexplainlist>p:last-child {
+  margin-top: 0.3rem;
+}
+
+/* 福星高照——玩法说明弹窗 */
+.luckystarexplainbox {
+  position: absolute;
+  width: 96%;
+  top: 23%;
+  left: 2%;
+}
+
+.luckystarexplaintitle {
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/1玩法说明.png");
+  background-size: 100% 100%;
+}
+
+.luckystarexplainclose {}
+
+.luckystarexplainlist {
+  padding: 0.2rem;
+}
+
+.luckystarexplainlist>p {
+  font-size: 0.24rem;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #333333;
+  line-height: 0.5rem;
+}
+
+.luckystarexplainlist>p>span {}
+
+.luckystarexplainlist>.luckystarexplaintext {
+  font-size: 0.32rem;
+  font-family: PingFang SC;
+  font-weight: 600;
+  color: #7C0003;
+  line-height: 0.5rem;
+  letter-spacing: 0.02rem;
+}
+
+/* 绿水晶寻宝弹窗  砸金蛋——中奖弹窗   元宝抽奖弹窗 */
+.winthelotterybox {
+  width: 86%;
+  height: 8rem;
+  margin: 0 auto;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/中奖纪录背景.png");
+  background-size: 100% 100%;
+  position: absolute;
+  top: 25%;
+  left: 8%;
+}
+
+.winthelotterycontent {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 2.6rem;
+  margin-top: 80%;
+}
+
+.winthelotterycontent>ul {
+  height: 1.5rem;
+}
+
+.winthelotterycontent>ul>li {
+  margin-top: 0.2rem;
+}
+
+.rewardimgbox {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.winthelotterycontent>ul>li>p {
+  text-align: center;
+  font-size: 0.26rem;
+  line-height: 0.4rem;
+  color: #000;
+}
+
+.winthelotterybtn {
+  width: 2.65rem;
+  height: 0.82rem;
+  margin: 0.2rem auto;
+  background-image: url("http://obs.99yuyin.com/h5/activity/huodong/2022kaixueji/确定.png");
+  background-size: 100% 100%;
+  margin-top: 0.7rem;
+}
+
+
+/* 绿水晶寻宝弹窗 */
+.greencrystalimg {
+  width: 1rem;
+  margin-left: 35%;
+}
+
+/* 砸金蛋——中奖纪录弹窗 */
+.carnormalimg {
+  width: 1.2rem;
+  margin-left: 30%;
+}
+
+.carnormalimg1 {
+  width: 1.5rem;
+  margin-left: 25%;
+}
+
+.bubblenormalimg {
+  width: 1.4rem;
+  height: 0.5rem;
+  margin-left: 25%;
+}
+
+.propnormalimg {
+  width: 1rem;
+  margin-left: 34%;
+}
+
+.propnormalimg1 {
+  width: 0.8rem;
+  margin-left: 35%;
+}
+
+/* 元宝寻宝弹窗 */
+.moneycrystalimg {
+  width: 1rem;
+  margin-left: 35%;
+}
+
+/*分享弹窗*/
+.hack {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.get-ball-btn,
+.get-ball-share,
+.spirit-exchange-btn {
+  width: 1.9rem;
+  height: 0.76rem;
+  line-height: 0.76rem;
+  text-align: center;
+  color: #fff;
+  background-image: url("http://obs://jiujiu-obs/h5/activity/NationalDay/recharge-award-btnN.png");
+  background-size: 100% 100%;
+}
+
+.lucky-share {
+  display: none;
+  width: 100%;
+  height: 4.55rem;
+  background: rgba(255, 255, 255, 1);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.lucky-share-top {
+  width: 100%;
+  height: 3.1rem;
+}
+
+.lucky-share-title {
+  margin: 0.2rem 0 0.4rem 0;
+  width: 100%;
+  font-size: 14px;
+  color: #121212;
+  padding-left: 0.5rem;
+}
+
+.lucky-share-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  color: #121212;
+  font-size: 11px;
+  width: 100%;
+  height: 1.9rem;
+}
+
+.lucky-share-content>div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.lucky-share-content>div>img {
+  display: block;
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.lucky-share-bottom {
+  width: 100%;
+  height: 1.25rem;
+  background-color: #faf6f2;
+  font-size: 17px;
+  color: #00c1f0;
+  text-align: center;
+  line-height: 1.25rem;
+}
+
+.money img:first-of-type {
+  width: 0.3rem;
+  margin-top: 0.08rem;
+}
+
+.money img:last-of-type {
+  width: 0.65rem;
+  margin-top: 0.08rem;
+}
+
+.bubble {
+  margin: 0.4rem 0 0.05rem;
+  text-align: center;
+}
+
+.right img {
+  width: 0.75rem;
+}
+
+.right div:first-of-type img {
+  width: 0.25rem;
+  margin-right: 0.08rem;
+}
+
+.right div:nth-of-type(2) img {
+  margin-top: 0.08rem;
+  width: 0.9rem;
+}
+
+.auto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.15rem auto 0;
+  width: 6.55rem;
+  height: 1.28rem;
+  background-color: #fff;
+  border-radius: 0.2rem;
+}
+
+.auto>div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 50%;
+}
+
+.auto div:first-of-type img {
+  width: 0.6rem;
+  margin-right: 0.2rem;
+}
+
+.auto div:last-of-type img {
+  width: 0.85rem;
+}
+
+.pb-10 {
+  padding: 0 0.1rem;
+}
+
+.list_p {
+  padding-bottom: 0.36rem;
+}
+
+.list_p>p {
+  font-size: 0.3rem;
+  color: #000;
+  line-height: 0.4rem;
+}
+
+.list_p>p>span {
+  color: #FA7A89;
+}
+
+.rank-list {
+  text-align: center;
+  padding-bottom: 0.2rem;
+}
+
+.rank-list>li {
+  display: inline-block;
+  padding: 0 0.05rem;
+}
+
+.rank-list>li>p {
+  padding: 0 0.1rem;
+  text-align: center;
+  font-size: 0.24rem;
+  line-height: 0.42rem;
+  /* background: url("http://obs.99yuyin.com/h5/activity/huodong/520love/大灰.png");
+    background-size: 100% 100%; */
+  color: #FA7A89;
+}
+
+.rank-list>.active>p {
+  background: url("http://obs.99yuyin.com/h5/activity/huodong/520love/大蓝.png");
+  background-size: 100% 100%;
+  color: #FFFEF1;
+}
+
+.up-rank-list {
+  text-align: center;
+  padding-bottom: 0.2rem;
+  display: flex;
+  flex-grow: 0;
+  justify-content: center;
+}
+
+.up-rank-list>li {
+  display: inline-block;
+  padding: 0 0.04rem;
+}
+
+.up-rank-list>li>p {
+  padding: 0 0.01rem;
+  text-align: center;
+  font-size: 0.24rem;
+  line-height: 0.42rem;
+  border-radius: 0.21rem;
+  background: #d8d8d8;
+  color: #fff;
+}
+
+.up-rank-list>.active>p {
+  background: #d30100;
+}
+
+.number {
+  width: 96%;
+  margin: 2%;
+  background: #FFDCE4;
+  border-radius: 0.2rem;
+}
+
+.gift_number {
+  padding-left: 0.2rem;
+  height: 0.6rem;
+  border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.gift_number>p {
+  font-size: 0.28rem;
+  color: #000;
+  line-height: 0.6rem;
+}
+
+.gift_title {}
+
+.gift_title>li {
+  text-align: center;
+  font-size: 0.24rem;
+  color: #000;
+  line-height: 0.44rem;
+  float: left;
+}
+
+.gift_title>li:nth-child(1) {
+  width: 10%;
+  padding-left: 0.1rem;
+}
+
+.gift_title>li:nth-child(2) {
+  width: 26%;
+}
+
+.gift_title>li:nth-child(3) {
+  width: 16%;
+}
+
+.gift_title>li:nth-child(4) {
+  width: 16%;
+}
+
+.gift_title>li:nth-child(5) {
+  width: 32%;
+}
+
+.gift_box {
+  border-radius: 0 0 0.2rem 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.gift_box>p {
+  width: 100%;
+  line-height: 4rem;
+  text-align: center;
+  font-size: 0.4rem;
+  color: #000;
+}
+
+.gift_box>ul:first-child {
+  border-top: none;
+}
+
+.box_list {
+  padding-top: 0.2rem;
+}
+
+.box_list>li {
+  text-align: center;
+  font-size: 0.24rem;
+  color: #000;
+  float: left;
+  line-height: 1.4rem;
+}
+
+.box_list>li:nth-child(1) {
+  width: 10%;
+  padding-left: 0.1rem;
+}
+
+.box_list>li:nth-child(2) {
+  width: 26%;
+}
+
+.box_list>li:nth-child(3) {
+  width: 16%;
+}
+
+.box_list>li:nth-child(4) {
+  width: 16%;
+}
+
+.box_list>li:nth-child(5) {
+  width: 32%;
+}
+
+.box_list>li>p {
+  font-size: 0.24rem;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.box_list>li:nth-child(1)>img {
+  width: 0.6rem;
+  vertical-align: middle;
+}
+
+.box_list>li:nth-child(2)>div {
+  line-height: 0.8rem;
+}
+
+.box_list>li:nth-child(2)>p {
+  font-size: 0.20rem;
+  line-height: 0.4rem;
+}
+
+.box_list>li:nth-child(2)>div>img {
+  border-radius: 50%;
+  width: 1rem;
+  vertical-align: middle;
+}
+
+.box_list>li:nth-child(5)>img {
+  width: 1.88rem;
+  vertical-align: middle;
+}

@@ -1,0 +1,859 @@
+li {
+  list-style: none;
+}
+
+.box {
+  width: 100%;
+  background-image: url(./images/bg.png);
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  font-size: 0.26rem;
+  padding-bottom: 0.5rem;
+}
+
+.clear {
+  clear: both;
+}
+
+.backG_black {
+  background: #827979e6;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+
+.loding {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 9999;
+  display: none;
+}
+
+.loding>img {
+  top: calc(50% - 16px);
+  ;
+  position: absolute;
+  left: calc(50% - 16px);
+}
+
+.change-box {
+  width: 100%;
+  border-image: url("./images/changebox.png") 340 0 250 0 fill / 180px 0px stretch;
+  background-size: 100% 100%;
+  margin: 0 auto;
+  padding: 0.1rem 0.4rem 0.7rem;
+}
+
+/* 按钮 */
+.pagebox {
+  width: 98%;
+  height: 3.6rem;
+  margin: 5.2rem auto 0.2rem;
+  padding: 0.4rem 0 0;
+  list-style: none;
+}
+
+.pagebox>li {
+  width: 25%;
+  float: left;
+  margin-bottom: 0.2rem;
+}
+
+.pagebox>li>div {
+  width: 1.56rem;
+  height: 3.28rem;
+  FONT-VARIANT: JIS83;
+  font-size: 0.33rem;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+}
+
+.pagebtn0 {
+  background-image: url("./images/活跃任务.png");
+  background-size: 100% 100%;
+}
+
+.pagebtn1 {
+  background-image: url("./images/新服狂欢.png");
+  background-size: 100% 100%;
+}
+
+.pagebtn2 {
+  background-image: url("./images/邀请助力.png");
+  background-size: 100% 100%;
+}
+
+.pagebtn3 {
+  background-image: url("./images/势力争夺.png");
+  background-size: 100% 100%;
+}
+
+/* 内容框 */
+.content {
+  width: 94%;
+  background-image: url("./images/contentbg.png");
+  background-size: 100% 100%;
+  margin: 0 auto;
+  padding: 1rem 0.4rem 0.5rem;
+}
+
+.title {
+  color: #fff;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  top: 0.7rem;
+  width: 3rem;
+  height: 1rem;
+  line-height: 1.1rem;
+  background-image: url(./images/titlebg.png);
+  background-size: 100% 100%;
+}
+
+.familyText {
+  background-image: url(images/datetext.png);
+  background-size: 100% 100%;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  text-align: center;
+  font-size: 0.28rem;
+  color: #fff;
+  margin: -0.2rem auto 0;
+}
+
+.datebg {
+  width: 100%;
+  height: 2rem;
+  background-image: url(images/datebg.png);
+  background-size: 100% 100%;
+  padding: 0.9rem 0 0.2rem 0.2rem;
+  margin-top: -0.4rem;
+}
+
+.datebg>.img {
+  position: relative;
+  height: 0.6rem;
+  top: -0.7rem;
+  left: 4.4rem;
+}
+
+.dateList {
+  width: 4.3rem;
+  height: 0.8rem;
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+.dateList>div {
+  height: 0.8rem;
+  width: max-content;
+}
+
+.dateList>div>.dateBtn {
+  float: left;
+  height: 0.8rem;
+  width: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+  background-image: url(images/正常.png);
+  background-size: 100% 100%;
+  margin: 0 0.1rem;
+}
+
+.dateList>div>.dateBtn>img {
+  position: relative;
+  top: -0.8rem;
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+.familyTask {
+  color: #fff;
+}
+
+.familyTask>div {
+  width: 100%;
+  height: 0.8rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url(images/目标框1.png);
+  background-size: 100% 100%;
+  margin: 0.2rem 0;
+}
+
+.familyTask>div>div {
+  width: 68%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 0 2%;
+}
+
+.familyTask>div>div>p {
+  line-height: 1.2;
+}
+
+.familyTask>div>div>img {
+  height: 0.6rem;
+}
+
+.giftbox {
+  height: 2.1rem;
+  padding: 0.1rem 0.2rem 0.1rem 0;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.giftbox>div {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  background-image: url("images/giftbg.png");
+  background-size: 100% 100%;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-end;
+}
+
+.giftbox>div>img {
+  height: 1rem
+}
+
+.giftbox>div>p {
+  height: 0.5rem;
+  font-size: 0.24rem;
+  color: #fff;
+  text-align: center;
+  width: 130%;
+}
+
+.Btn {
+  line-height: 0.5rem;
+  height: 0.5rem;
+  margin: 0.4rem auto 0;
+  width: 4rem;
+  text-align: center;
+  color: #142875;
+  font-weight: bolder;
+  background-size: 100% 100%;
+}
+
+.btnture {
+  background-image: url("./images/立即领取1.png")
+}
+
+.btnfalse {
+  background-image: url("./images/立即领取2.png")
+}
+
+.tip {
+  font-size: 0.26rem;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #FFf;
+  line-height: 0.4rem;
+  text-align: left;
+  margin: 0.1rem 0.4rem;
+}
+
+.giftContent {
+  width: 94%;
+  background-image: url("./images/giftcontentbg.png");
+  background-size: 100% 100%;
+  margin: 0 auto;
+  padding: 1rem 0.4rem 0.5rem;
+}
+
+.giftTitle {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  top: -0.52rem;
+  font-size: 0.24rem;
+  line-height: 0.25rem;
+}
+
+.rechargebox {
+  width: 80%;
+  height: 1rem;
+  margin: 0.6rem auto 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.rechargebox>div {
+  width: 2.2rem;
+  height: 0.76rem;
+  margin: 0 auto;
+  background-size: 100% 100%;
+}
+
+.recharge0 {
+  background-image: url("./images/客户端充值@2x.png")
+}
+
+.recharge0Add {
+  background-image: url("./images/客户端充值.png")
+}
+
+.recharge1 {
+  background-image: url("./images/代理端充值@2x.png")
+}
+
+.recharge1Add {
+  background-image: url("./images/代理端充值.png")
+}
+
+.inviteTask {
+  color: #fff;
+  font-size: 0.24rem;
+}
+
+.inviteTask>div {
+  width: 100%;
+  height: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(images/目标框2.png);
+  background-size: 100% 100%;
+  margin: 0.2rem 0;
+  line-height: 1;
+}
+
+.inviteTask>div>div {
+  width: 68%;
+  margin: 0 0 0 2%;
+}
+
+.inviteTask>p {
+  text-align: center;
+}
+
+.topthreebox {
+  padding-top: 0.5rem;
+  font-size: 0.24rem;
+  font-family: SourceHanSansCN;
+  font-weight: 500;
+  color: #fff;
+}
+
+.topthreebox>ul {
+  width: 96%;
+  height: 2.68rem;
+  background-image: url("./images/排名台阶2.png");
+  background-size: 100% 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.topthreebox>ul>li {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topthreebox>ul>li>img {
+  width: 1.6rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.topthreebox>ul>li:nth-child(2)>img {
+  margin-bottom: 0.5rem;
+}
+
+.topthreebox>ul>li:nth-child(2) {
+  width: 40%;
+  height: 140%;
+  margin-top: -0.8rem;
+}
+
+.topthreebox>ul>li>.iconBg {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-size: 100% 100%;
+}
+
+.topthreebox>ul>li:nth-child(1)>.iconBg {
+  background-image: url('./images/头像2.png');
+}
+
+.topthreebox>ul>li:nth-child(2)>.iconBg {
+  background-image: url('./images/头像1.png');
+}
+
+.topthreebox>ul>li:nth-child(3)>.iconBg {
+  background-image: url('./images/头像3.png');
+}
+
+.topthreebox>ul>li>div>img {
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-left: calc(50% - 0.35rem);
+  border-radius: 50%;
+  margin-top: 0.2rem;
+}
+
+.topthreebox>ul>li>.greenBg {
+  width: 1.8rem;
+  height: 0.8rem;
+  line-height: 0.9rem;
+  margin-top: -0.2rem;
+  text-align: center;
+  background-image: url(./images/titlebg.png);
+  background-size: 100% 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.topthreebox>ul>li>p {
+  width: 100%;
+  line-height: 0.5rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: -0.15rem;
+}
+
+.topthreebox>ul>li:nth-child(2)>p {
+  font-size: 0.28rem;
+}
+
+.inviteTree {
+  color: #fff;
+  margin-bottom: 0.4rem;
+}
+
+.treeTitle {
+  display: flex;
+  justify-content: space-around;
+  height: 1rem;
+  line-height: 1.3rem;
+  text-align: center;
+  background-size: 100% 100%;
+  background-image: url('./images/datebg.png');
+}
+
+
+.treeContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-size: 103% 100%;
+  background-image: url('./images/排名榜.png');
+  height: 1.6rem;
+  padding: 0.2rem 0 0.1rem;
+}
+
+.treeTitle>li:nth-child(1),
+.treeContent>li:nth-child(1) {
+  width: 12%;
+  text-align: center;
+}
+
+.treeTitle>li:nth-child(2),
+.treeContent>li:nth-child(2) {
+  width: 20%;
+}
+
+.treeTitle>li:nth-child(3),
+.treeContent>li:nth-child(3) {
+  width: 35%;
+}
+
+.treeTitle>li:nth-child(4),
+.treeContent>li:nth-child(4) {
+  width: 33%;
+}
+
+.treeContent>li:nth-child(2)>.iconBg {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-size: 100% 100%;
+  background-image: url('./images/头像4.png');
+}
+
+.treeContent>li:nth-child(2)>.iconBg>img {
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-left: calc(50% - 0.35rem);
+  border-radius: 50%;
+  margin-top: 0.2rem;
+}
+
+.treeContent>li>p {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 0.2rem;
+  line-height: 0.4rem;
+  height: 0.4rem;
+}
+
+.treeContent>li>.greenBg {
+  width: 1.8rem;
+  height: 0.8rem;
+  line-height: 0.9rem;
+  margin: -0.2rem 0 0 0.2rem;
+  text-align: center;
+  background-image: url(./images/titlebg.png);
+  background-size: 100% 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.myContent {
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 1rem;
+}
+
+.myContent>li {
+  width: 30%;
+}
+
+.myContent>li:nth-child(1) {
+  width: 15%;
+}
+
+.myContent>li:nth-child(3) {
+  width: 25%;
+}
+
+.myContent>li:nth-child(4) {
+  width: 30%;
+  text-align: center;
+}
+
+.myContent>li>img {
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-left: calc(50% - 0.35rem);
+  border-radius: 50%;
+}
+
+.myContent>li>p {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 0.5rem;
+}
+
+.myContent>li>div {
+  width: 1.4rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: center;
+  background-image: url(./images/分享邀请.png);
+  background-size: 100% 100%;
+}
+
+.forceTask {
+  color: #fff;
+  font-size: 0.24rem;
+}
+
+.forceTask>div {
+  width: 100%;
+  height: 0.8rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(images/目标框1.png);
+  background-size: 100% 100%;
+  margin: 0.2rem 0;
+}
+
+.forceTask>div>div {
+  width: 68%;
+  margin: 0 0 0 2%;
+}
+
+.forceTask>p {
+  text-align: center;
+}
+
+.familyContent {
+  color: #fff;
+  font-size: 0.24rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.familyContent>li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.familyContent>li>.gift {
+  background-image: url(images/giftbg.png);
+  background-size: 100% 100%;
+  padding: 0.1rem;
+}
+
+.familyContent>li>.gift>img {
+  margin: 0.1rem;
+  width: 1rem;
+}
+
+.familyTree {
+  margin-top: 1rem;
+  color: #fff;
+}
+
+.familyTitle {
+  display: flex;
+  justify-content: space-around;
+  height: 1rem;
+  line-height: 1.3rem;
+  text-align: center;
+  background-size: 100% 100%;
+  background-image: url('./images/datebg.png');
+}
+
+
+.familycontent {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  background-size: 100% 100%;
+  background-image: url('./images/排名.png');
+  height: 0.5rem;
+  margin: 0.2rem 0;
+}
+
+.familyTitle>li:nth-child(1),
+.familycontent>li:nth-child(1) {
+  width: 18%;
+}
+
+.familyTitle>li:nth-child(2),
+.familycontent>li:nth-child(2) {
+  width: 60%;
+}
+
+.familyTitle>li:nth-child(3),
+.familycontent>li:nth-child(3) {
+  width: 30%;
+}
+
+
+.lucky-share {
+  width: 100%;
+  height: 4.55rem;
+  background: rgba(255, 255, 255, 1);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.lucky-share-top {
+  width: 100%;
+  height: 3.1rem;
+}
+
+.lucky-share-title {
+  margin: 0.2rem 0 0.4rem 0;
+  width: 100%;
+  font-size: 14px;
+  color: #121212;
+  padding-left: 0.5rem;
+}
+
+.lucky-share-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  color: #121212;
+  font-size: 11px;
+  width: 100%;
+  height: 1.9rem;
+}
+
+.lucky-share-content>div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.lucky-share-content>div>img {
+  display: block;
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.lucky-share-bottom {
+  width: 100%;
+  height: 1.25rem;
+  background-color: #faf6f2;
+  font-size: 17px;
+  color: #00c1f0;
+  text-align: center;
+  line-height: 1.25rem;
+}
+
+.myFamily {
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  align-items: center;
+  height: 1rem;
+}
+
+.myFamily>li {
+  width: 40%;
+}
+
+.myFamily>li:nth-child(1) {
+  width: 15%;
+}
+
+.myFamily>li:nth-child(3) {
+  width: 45%;
+}
+
+.myFamily>li>img {
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-left: calc(50% - 0.35rem);
+  border-radius: 50%;
+}
+
+.myFamily>li>p {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 0.5rem;
+}
+
+.giftBox {
+  background-image: url(images/弹窗.png);
+  background-size: 100% 100%;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.giftBox>.close {
+  background-image: url(images/关闭.png);
+  background-size: 100% 100%;
+  width: 1rem;
+  height: 1rem;
+  position: relative;
+  top: -0.2rem;
+  left: 80%;
+}
+
+.giftBoxTitle {
+  margin: 0 auto 0.2rem;
+}
+
+.giftBoxTitle>img {
+  margin-left: 10%;
+  width: 80%;
+}
+
+.giftBoxContent {}
+
+.giftBoxContentTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0.6rem;
+}
+
+.giftBoxContentTitle>img {
+  width: 1.3rem;
+}
+
+.giftBoxContentTitle>p {
+  font-size: 0.36rem;
+  color: brown;
+  font-family: auto;
+  font-weight: bolder;
+  letter-spacing: 0.1rem;
+  margin: 0 0.1rem;
+}
+
+.giftBoxContentBox {
+  height: 2.3rem;
+  padding: 0.1rem 0.2rem 0.1rem 0;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 83%;
+}
+
+.giftBoxContentBox>.bg {
+  background-image: url(images/弹窗奖励.png);
+  background-size: 100% 100%;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-end;
+  width: 30%;
+  height: 100%;
+  display: flex;
+}
+
+.giftBoxContentBox>.bg>.c {}
+
+.giftBoxContentBox>.bg>.c>img {
+  height: 1rem
+}
+
+.giftBoxContentBox>.bg>p {
+  height: 0.5rem;
+  font-size: 0.24rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.3rem;
+}

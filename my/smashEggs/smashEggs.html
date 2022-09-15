@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <title>砸蛋活动</title>
+    <script src="../../js/rem-count.js"></script>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="smashEggs.css">
+    <script>
+        //获取浏览器页面可见高度和宽度
+        var ua = navigator.userAgent.toLowerCase()
+        if (/iphone|ipad|ipod/.test(ua)) {
+
+        }else {
+            loading();
+        }
+
+        function loading() {
+            var _PageHeight = document.documentElement.clientHeight,
+                _PageWidth = document.documentElement.clientWidth;
+            //			计算loading框距离顶部和左部的距离（loading框的宽度为215px，高度为61px）
+            var _LoadingTop = _PageHeight > 61 ? (_PageHeight - 61) / 2 : 0,
+                _LoadingLeft = _PageWidth > 215 ? (_PageWidth - 215) / 2 : 0;
+            //			在页面未加载完毕之前显示的loading Html自定义内容
+            var loading = '<div class="loading" id="loading" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;background: #fff;z-index: 9999;"><img src="http://doudoujiaoyou.oss-cn-beijing.aliyuncs.com/h5/activity/preferential/loding.gif" style="top: calc(50% - 16px);;position: absolute;left: calc(50% - 16px);"> </div></div>';
+
+            document.write(loading);
+            //监听加载状态改变
+
+            document.onreadystatechange = completeLoading;
+
+            function completeLoading() {
+                if (document.readyState == "complete") {
+                    var loadingMask = document.getElementById('loading');
+                    loadingMask.parentNode.removeChild(loadingMask);
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="box">
+        <div class="eggsmashingbox">
+            <div class="backbtn"></div>
+            <p>砸蛋乐翻天</p>
+        </div>
+        <div class="congratulationsbox">
+            <ul>
+                <li>
+                    <p>恭喜：<span class="nametext">兔子女神阿兔</span>获得<span class="rewardtext">幸运草x6</span></p>
+                </li>
+                <li>
+                    <p>恭喜：<span class="nametext">123123123</span>获得<span class="rewardtext">asdasdx6</span></p>
+                </li>
+                <li>
+                    <p>恭喜：<span class="nametext">casdasfasd</span>获得<span class="rewardtext">123456x6</span></p>
+                </li>
+                <li>
+                    <p>恭喜：<span class="nametext">casdasfasd</span>获得<span class="rewardtext">123456x6</span></p>
+                </li>
+            </ul>
+        </div>
+        <div class="eggsbtnbox">
+            <li>
+                <div class="prizepoolbtn">本期奖池</div>
+                <div class="activityrulesbtn">活动规则</div>
+            </li>
+            <li>
+                <p>幸运值：<span class="luckynum">0</span></p>
+                <div class="eggimg"></div>
+            </li>
+            <li>
+                <div class="winningrecordbtn">中奖纪录</div>
+                <div class="dailylistbtn">每日榜单</div>
+            </li>
+        </div>
+        <div class="diamondshammerbox">
+            <li>
+                <p>
+                    余额
+                    <img src="./img/蓝钻.png" alt="">
+                    <span>0</span>
+                </p>
+            </li>
+            <li>
+                <p>
+                    金锤
+                    <img src="./img/锤子.png" alt="">
+                    <span>1</span>
+                </p>
+            </li>
+        </div>
+        <div class="hammerbox">
+            <div class="hammerbtn hammerAdd" uid="1">1连锤</div>
+            <div class="hammerbtn" uid="10">10连锤</div>
+            <div class="hammerbtn" uid="100">100连锤</div>
+        </div>
+        <div class="imfeelingbtn">试试手气</div>
+
+
+        <!-- 弹窗 -->
+        <div class="backG_black" style="display: none;">
+            <!-- 本期奖池弹窗 -->
+            <div class="prizepoolpopupbox popupbox" style="display: none;">
+                <div class="prizepoolbox popupcase">
+                    <p class="prizepooltext popupboxtext">本期奖池</p>
+                    <div class="prizepoolcontent">
+                        <li class="prizepoollist">
+                            <img src="./img/LOGO01.png" alt="">
+                            <div>
+                                <img src="./img/蓝钻.png" alt="">
+                                <span>000</span>
+                            </div>
+                        </li>
+                        <li class="prizepoollist">
+                            <img src="./img/LOGO01.png" alt="">
+                            <div>
+                                <img src="./img/蓝钻.png" alt="">
+                                <span>0000</span>
+                            </div>
+                        </li>
+                        <li class="prizepoollist">
+                            <img src="./img/LOGO01.png" alt="">
+                            <div>
+                                <img src="./img/蓝钻.png" alt="">
+                                <span>00000</span>
+                            </div>
+                        </li>
+                        <li class="prizepoollist">
+                            <img src="./img/LOGO01.png" alt="">
+                            <div>
+                                <img src="./img/蓝钻.png" alt="">
+                                <span>00000</span>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                <div class="prizepoolclosebtn closebtn"></div>
+            </div>
+            <!-- 规则介绍弹窗 -->
+            <div class="rulepopupbox popupbox" style="display: none;">
+                <div class="rulebox popupcase">
+                    <p class="ruletext popupboxtext">规则介绍</p>
+                    <div class="rulecontent">
+                        <p>1、每砸一次金蛋将获得5幸运值，每砸一次银蛋将获得2幸运值，累计幸运值达到30000分时，将获得砸钻石蛋的资格；<br>
+                            2、砸蛋前需要备好锤子，每把需消耗200钻；<br>
+                            3、您可以选择一次性砸一个，也可以选择10连锤或100连锤，连击更容易砸出超值好礼哦；<br>
+                            4、砸蛋100％中奖不同价值礼物，奖池中惊现全服最新礼物，最高可获得限，版尊贵大礼；<br>
+                            5、砸蛋礼物直接放入礼物背包中，您可以点击礼物背包查看，气泡、座驾、头饰可在个人装扮中查看，使用期限可累计；<br> 
+                            6、您可在中奖记录中浏览自己最近的砸蛋记录；<br>
+                            7、如有相关问题可联系星恋语音客服。</p>
+                    </div>
+                </div>    
+                <div class="ruleclosebtn closebtn"></div>
+            </div>
+            <!-- 中奖纪录 无 弹窗 -->
+            <div class="nowinningrecordpopupbox popupbox" style="display: none;">
+                <div class="nowinningrecordboxx popupcase">
+                    <p class="nowinningrecordtext popupboxtext">中奖纪录</p>
+                    <div class="nowinningrecordcontent">
+                        <img src="./img/空背景.png" alt="">
+                        <p>这里什么都没有</p>
+                    </div>
+                </div>
+                <div class="nowinningrecordclosebtn closebtn"></div>
+            </div>
+            <!-- 中奖纪录 有 弹窗 -->
+            <div class="winningrecordpopupbox popupbox" style="display: none;">
+                <div class="winningrecordbox popupcase">
+                    <p class="winningrecordtext popupboxtext">中奖纪录</p>
+                    <div class="winningrecordcontent">
+                        <li class="winningrecordlist">
+                            <div>
+                                <p><span class="giftname">蓝色妖姬</span><span class="giftnum">x1</span><span class="giftdiamonds">(300000钻石)</span></p>
+                                <p>2021-02-26 14:29:15</p>
+                            </div>
+                            <img src="./img/LOGO01.png" alt="">
+                        </li>
+                        <li class="winningrecordlist">
+                            <div>
+                                <p><span class="giftname">小星星</span><span class="giftnum">x1</span><span class="giftdiamonds">(200钻石)</span></p>
+                                <p>2021-02-26 14:29:15</p>
+                            </div>
+                            <img src="./img/LOGO01.png" alt="">
+                        </li>
+                    </div>
+                </div>
+                <div class="winningrecordclosebtn closebtn"></div>
+            </div>
+            <!-- 每日榜单弹窗 -->
+            <div class="dailylistpopupbox popupbox" style="display: none;">
+                <div class="dailylistbox popupcase">
+                    <p class="dailylisttext popupboxtext">每日榜单</p>
+                    <div class="dailylistcontent">
+                        <li class="dailylistlist">
+                            <p>1</p>
+                            <img src="./img/占位.png" alt="">
+                            <div><p>三生三世十里桃花</p><p>2021-02-26 14:29:15</p></div>
+                            <div><p>蓝色妖姬</p><p>(00000钻石)</p></div>
+                        </li>
+                    </div>
+                </div>
+                <div class="winningrecordclosebtn closebtn"></div>
+            </div>
+            <!-- 购买锤子弹窗 -->
+            <div class="buyhammerpopupbox" style="display: none;">
+                <div class="hammerimg"></div>
+                <p class="galdhammertext">金锤子</p>
+                <div class="buyhammercontent">
+                    <li class="numbertext">数量</li>
+                    <li class="reducebtn">-</li>
+                    <li>
+                        <input class="myinput" type="text" value="1" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
+                    </li>
+                    <li class="plusbtn">+</li>
+                </div>
+                <div class="pricecontent">
+                    <p>价格<span>200</span>久币</p>
+                </div>
+                <div class="cancelconfirmationcontent">
+                    <div class="cancelbtn">取消</div>
+                    <div class="confirmationbtn">确定</div>
+                </div>
+            </div>
+            <!-- 购买锤子 钻石不足弹窗 -->
+            <div class="diamondshortagepopupbox" style="display: none;">
+                <p class="eggsmashingtipstext">砸蛋提示</p>
+                <p class="balancetext">余额不足购买失败，是否马上充值</p>
+                <div class="canceltorechargecontent">
+                    <div class="cancelbtn">取消</div>
+                    <div class="torechargebtn">去充值</div>
+                </div>
+            </div>
+            <!-- 购买成功弹窗 -->
+            <div class="buysuccesspopupbox" style="display: none;"><p>购买成功</p></div>
+            <!-- 1连锤弹窗 -->
+            <div class="hammeronepopupbox" style="display: none;">
+                <div class="hammeronecontent">
+                    <img src="./img/LOGO01.png" alt="">
+                    <p>蓝色妖姬<span>x1</span></p>
+                </div>
+            </div>
+            <!-- 10连锤 100连锤弹窗 -->
+            <div class="hammerthpopupbox" style="display: none;">
+                <div class="hammerthcontent">
+                    <li class="hammerthlist">
+                        <img src="./img/LOGO01.png" alt="">
+                        <p>蓝色妖姬<span>x1</span></p>
+                    </li>
+                    <li class="hammerthlist">
+                        <img src="./img/LOGO01.png" alt="">
+                        <p>蓝色妖姬<span>x1</span></p>
+                    </li>
+                    <li class="hammerthlist">
+                        <img src="./img/LOGO01.png" alt="">
+                        <p>蓝色妖姬<span>x1</span></p>
+                    </li>
+                    <li class="hammerthlist">
+                        <img src="./img/LOGO01.png" alt="">
+                        <p>蓝色妖姬<span>x1</span></p>
+                    </li>
+                    <li class="hammerthlist">
+                        <img src="./img/LOGO01.png" alt="">
+                        <p>蓝色妖姬<span>x1</span></p>
+                    </li>
+                    <li class="hammerthlist">
+                        <img src="./img/LOGO01.png" alt="">
+                        <p>蓝色妖姬<span>x1</span></p>
+                    </li>
+                    <li class="hammerthlist">
+                        <img src="./img/LOGO01.png" alt="">
+                        <p>蓝色妖姬<span>x1</span></p>
+                    </li>
+                    <li class="hammerthlist">
+                        <img src="./img/LOGO01.png" alt="">
+                        <p>蓝色妖姬<span>x1</span></p>
+                    </li>
+                </div>
+            </div>
+
+
+
+    </div>
+    <script type="text/javascript" src="../../js/common_native.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/svga.min.js"></script>
+    <script src="../../js/methods.js"></script>
+    <script src="../../js/giftNameByBackground.js"></script>
+    <script src="smashEggs.js"></script>
+</body>
+</html>

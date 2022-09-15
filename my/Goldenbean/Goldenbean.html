@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <title>充值蓝钻</title>
+    <script src="../../js/rem-count.js"></script>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="Goldenbean.css">
+    <script>
+        //获取浏览器页面可见高度和宽度
+        var ua = navigator.userAgent.toLowerCase()
+        if (/iphone|ipad|ipod/.test(ua)) {
+
+        }else {
+            loading();
+        }
+
+        function loading() {
+            var _PageHeight = document.documentElement.clientHeight,
+                _PageWidth = document.documentElement.clientWidth;
+            //			计算loading框距离顶部和左部的距离（loading框的宽度为215px，高度为61px）
+            var _LoadingTop = _PageHeight > 61 ? (_PageHeight - 61) / 2 : 0,
+                _LoadingLeft = _PageWidth > 215 ? (_PageWidth - 215) / 2 : 0;
+            //			在页面未加载完毕之前显示的loading Html自定义内容
+            var loading = '<div class="loading" id="loading" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;background: #fff;z-index: 9999;"><img src="http://doudoujiaoyou.oss-cn-beijing.aliyuncs.com/h5/activity/preferential/loding.gif" style="top: calc(50% - 16px);;position: absolute;left: calc(50% - 16px);"> </div></div>';
+
+            document.write(loading);
+            //监听加载状态改变
+
+            document.onreadystatechange = completeLoading;
+
+            function completeLoading() {
+                if (document.readyState == "complete") {
+                    var loadingMask = document.getElementById('loading');
+                    loadingMask.parentNode.removeChild(loadingMask);
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="box">
+        <div class="contentbox">
+            <div class="returntorechargebox">
+                <div class="returnbtn"></div>
+                <p class="rechargebluediamondtext">充值蓝钻</p>
+            </div>
+            <div class="balancebox">余额：<img src="img/蓝钻.png" ><span class="balancenum">52000</span></div>
+            <div class="bluediamondbox">
+                <li><div class="bluediamondlist"><img src="img/蓝钻.png" alt="">600<span>￥6</span></div></li>
+                <li><div class="bluediamondlist"><img src="img/蓝钻.png" alt="">600<span>￥6</span></div></li>
+                <li><div class="bluediamondlist"><img src="img/蓝钻.png" alt="">600<span>￥6</span></div></li>
+                <li><div class="bluediamondlist"><img src="img/蓝钻.png" alt="">600<span>￥6</span></div></li>
+                <li><div class="bluediamondlist"><img src="img/蓝钻.png" alt="">600<span>￥6</span></div></li>
+                <li><div class="bluediamondlist"><img src="img/蓝钻.png" alt="">600<span>￥6</span></div></li>
+                <li><div class="bluediamondlist"><img src="img/蓝钻.png" alt="">600<span>￥6</span></div></li>
+                <li><div class="bluediamondlist"><img src="img/蓝钻.png" alt="">600<span>￥6</span></div></li>
+            </div>
+            <div class="myInputbox">
+                <input class="myInput" maxlength="9" type="text" name="" id="" placeholder="输入自定义整数金额" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
+                <p class="bluediamondtext" style="display:none;">(<span>0</span>蓝钻)</p>
+                <div class="rechargebtn" style="display:none;">充值</div>
+            </div>
+        </div>
+       
+        <!-- 遮罩 -->
+        <div class="backG_black" style="display:none;"></div>
+        <!-- 支付弹窗 -->
+        <div class="paymentpopupbox" style="display:none;">
+            <div class="paybackbox">
+                <div class="backbtn"></div>
+                <p>选择支付方式</p>
+            </div>
+            <div class="moneydiamondbox">
+                <p class="moneytext">￥<span>2188</span></p>
+                <p class="diamondtext"><span>218800</span>蓝钻</p>
+            </div>
+            <div class="wechatbtn">
+                <img src="img/微信.png" alt="">
+                <p>微信支付</p>
+            </div>
+            <div class="alipaybtn">
+                <img src="img/支付宝.png" alt="">
+                <p>支付宝</p>
+            </div>
+        </div>
+        
+
+    </div>
+    <script type="text/javascript" src="../../js/common_native.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/svga.min.js"></script>
+    <script src="../../js/methods.js"></script>
+    <script src="../../js/giftNameByBackground.js"></script>
+    <script src="Goldenbean.js"></script>
+</body>
+</html>
