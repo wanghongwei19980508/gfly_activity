@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../js/rem-count.js"></script>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="Anniversaryoftheactivity.css" />
+    <style>
+        .diceroller-box{
+            background-image: url("http://obs.99yuyin.com/h5/activity/huodong/Anniversaryoftheactivity/风筝背景.png");
+            background-size: 100%, 100%;
+            background-repeat: no-repeat;
+        }
+        .diceroller-content{
+            width: 1.2rem;
+            height: 0.4rem;
+            overflow: hidden;
+            position: absolute;
+            left: 4.5rem;
+            top: 10.5rem;
+        }
+        .diceroller{
+            position: absolute;
+            width: 6.4rem;
+        }
+        .diceroller>img{
+            width: 0.4rem;
+            margin: 0;
+            padding: 0;
+        }
+        .dice-box{
+            width: 100%;
+            height: 11rem;
+        }
+        .dice-box>ul{
+            width: 100%;
+            height: 1rem;
+        }
+        .dice-box>ul>li{
+            height: 1rem;
+            width: 10%;
+            float: left;
+        }
+        .square{
+            background-image: url("http://obs.99yuyin.com/h5/activity/huodong/Anniversaryoftheactivity/0.png");
+            background-size: 100% 100%;
+        }
+        .square-box{
+            background-image: url("http://obs.99yuyin.com/h5/activity/huodong/Anniversaryoftheactivity/宝箱星星.png");
+            background-size: 100% 100%;
+        }
+        .square-stare{
+            background-image: url("http://obs.99yuyin.com/h5/activity/huodong/Anniversaryoftheactivity/黄星星.png");
+            background-size: 100% 100%;
+        }
+        .square-player{
+            background-image: url("http://obs.99yuyin.com/h5/activity/huodong/Anniversaryoftheactivity/人物星星.png");
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="content">
+            <div class="dice-box">
+                <ul>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black square" id="square16"></li>
+                    <li class="square-black square" id="square17"></li>
+                    <li class="square-black square" id="square18"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                </ul>
+                <ul>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black square" id="square15"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black square" id="square19"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                </ul>
+                <ul>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black square square-box square-box" id="square14"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black square square-box square-box" id= "square20"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                </ul>
+                <ul>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black square" id="square13"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black square" id="square21"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                </ul>
+                <ul>
+                    <li class="square-black square" id="square9"></li>
+                    <li class="square-black square square-box" id="square10"></li>
+                    <li class="square-black square" id="square11"></li>
+                    <li class="square-black square" id="square12"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black square" id="square22"></li>
+                    <li class="square-black square square-box" id="square23"></li>
+                    <li class="square-black square" id="square24"></li>
+                    <li class="square-black square" id="square25"></li>
+                </ul>
+                <ul>
+                    <li class="square-black square" id="square8"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black square" id="square26"></li>
+                </ul>
+                <ul>
+                    <li class="square-black square" id="square7"></li>
+                    <li class="square-black square" id="square6"></li>
+                    <li class="square-black square square-box" id="square5"></li>
+                    <li class="square-black square" id="square4"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black square" id="square30"></li>
+                    <li class="square-black square" id="square29"></li>
+                    <li class="square-black square square-box" id="square28"></li>
+                    <li class="square-black square" id="square27"></li>
+                </ul>
+                <ul>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black square" id="square3"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black square" id="square31"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                </ul>
+                <ul>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black square square-box" id="square2"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black square" id="square32"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                </ul>
+                <ul>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black square" id="square1"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black square square-box" id="square33"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                </ul>
+                <ul>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black square square-stare" id="square0"></li>
+                    <li class="square-black square" id="square35"></li>
+                    <li class="square-black square" id="square34"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                    <li class="square-black"></li>
+                </ul>
+            </div>
+            <div class="diceroller-box">
+                <div class="diceroller-content">
+                    <div class="diceroller">
+                        <img src="http://obs.99yuyin.com/h5/activity/huodong/Anniversaryoftheactivity/1.png">
+                        <img src="http://obs.99yuyin.com/h5/activity/huodong/Anniversaryoftheactivity/2.png">
+                        <img src="http://obs.99yuyin.com/h5/activity/huodong/Anniversaryoftheactivity/3.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../js/common_native.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/svga.min.js"></script>
+    <script src="../../js/methods.js"></script>
+    <script src="../../js/giftNameByBackground.js"></script>
+    <script>
+        var math=Math.floor(Math.random()*7);
+        var content='';
+        var diceleft=0;  //数字的margin位置
+        var b=0;  //人物的位置
+        // characterposition();
+        // function characterposition(){
+        //     $.ajax({
+        //         type: 'GET',
+        //         url: httpPath + '/qzjactive/dice/getIntegralHaved',
+        //         async: true,
+        //         data: {
+        //             playerId: playerId,
+        //             activeId:activeId,
+        //         },
+        //         dataType: 'json',
+        //         success: function(data) {
+        //             if (data.code == 1) {
+
+        //             } else {
+        //                 alert(data.msg);
+        //             }
+        //         }
+        //     })
+        // }
+        rollthedice(math);
+        // 摇骰子
+        function rollthedice(math){
+            for(i=0;i<16;i++,math++){
+                if(math>=7){
+                    math=math-7;
+                    content+='<img src="http://obs.99yuyin.com/h5/activity/huodong/Anniversaryoftheactivity/'+math+'.png">';
+                }else{
+                    content+='<img src="http://obs.99yuyin.com/h5/activity/huodong/Anniversaryoftheactivity/'+math+'.png">';
+                }
+            }
+            $('.diceroller').html(content);
+            rollthediceanimation();
+        }
+        // 摇骰子动画
+        function rollthediceanimation(){
+            var dice=setInterval(function(){
+                diceleft=diceleft+0.04;
+                $('.diceroller').css({
+                    'margin-left':'-'+diceleft+'rem'
+                })
+            },50);
+            setTimeout(function(){
+                clearInterval(dice);
+                var dice1=setInterval(function(){
+                    diceleft=diceleft+0.04;
+                    $('.diceroller').css({
+                        'margin-left':'-'+diceleft+'rem'
+                    })
+                },25);
+                setTimeout(function(){
+                    clearInterval(dice1);
+                    var dice2=setInterval(function(){
+                        diceleft=diceleft+0.04;
+                        $('.diceroller').css({
+                            'margin-left':'-'+diceleft+'rem'
+                        })
+                    },50);
+                    setTimeout(function(){
+                        clearInterval(dice2);
+                        var dice3=setInterval(function(){
+                            diceleft=diceleft+0.04;
+                            $('.diceroller').css({
+                                'margin-left':'-'+diceleft+'rem'
+                            })
+                        },100);
+                        setTimeout(function(){
+                            clearInterval(dice3);
+                            peoplemove();
+                        },2000);
+                    },1000);
+                },1250);
+            },2000);
+        }
+        // 人物移动
+        function peoplemove(){
+            
+        }
+    </script>
+
+</body>
+</html>

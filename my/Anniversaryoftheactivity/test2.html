@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../js/rem-count.js"></script>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="Anniversaryoftheactivity.css" />
+    <style>
+        .test-box{
+            width: 85%;
+            margin: 0 auto;
+            height: 7.24rem;
+            overflow: hidden;
+            position: absolute;
+        }
+        .test{
+            position: absolute;
+            height: 17.84rem;
+            width: 100%;
+            margin-top: -10.6rem;
+            background-image: url('http://obs.99yuyin.com/h5/activity/huodong/Anniversaryoftheactivity/风筝背景.png');
+            background-size: 100% 100%;
+        }
+        .test-content{
+            position: absolute;
+            top: 4.4rem;
+            left: 3.2rem;
+            z-index: 1;
+        }
+        .test-txt{
+            line-height: 0.6rem;
+            font-size: 0.30rem;
+            text-align: center;
+            width: 1.2rem;
+            height: 0.8rem;
+            margin-left: -0.8rem;
+            margin-bottom: -0.5rem;
+            background-image: url('http://obs.99yuyin.com/h5/activity/huodong/Anniversaryoftheactivity/风筝米数.png');
+            background-size: 100% 100%;
+        }
+        .test-img{
+            width: 1.54rem;
+            height: 2.4rem;
+            background-image: url('http://obs.99yuyin.com/h5/activity/huodong/Anniversaryoftheactivity/风筝.png');
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="content" style="    height: 10rem;">
+            <div class="test-box">
+                <div class="test-content">
+                    <div class="test-txt">点击放飞</div>
+                    <div class="test-img"></div>
+                </div>
+                <div class="test"></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../js/common_native.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/svga.min.js"></script>
+    <script src="../../js/methods.js"></script>
+    <script src="../../js/giftNameByBackground.js"></script>
+    <script>
+        var math=0;
+        var num=0;
+        var a=10.5;
+        var b=3.5;
+        var c=3.6;
+        $('.test-content').off().on('click',function(){
+            $('.test-content').css({
+                'pointer-events': 'none'
+            })
+            math=Math.floor(Math.random()*12)*300;
+            math=(math/40).toFixed(0);
+            flyinganimation();
+        });
+        
+        function flyinganimation(){
+            var delay=setInterval(function(){
+                num=parseInt(num)+parseInt(math);
+                a=a-0.25;
+                b=b-(((Math.floor(Math.random()*20)-10)/1000).toFixed(3));
+                if(math>=3000){
+                    c=c-(Math.floor(Math.random()*15)/1000);
+                }else{
+                    c=c-(Math.floor(Math.random()*30)/1000);
+                };
+                
+
+                $('.test').css({
+                    'margin-top':'-'+a+'rem'
+                });
+                $('.test-content').css({
+                    'left':b+'rem',
+                    'top':c+'rem'
+                });
+                console.log(b);
+                console.log(c);
+                $('.test-txt').text(num);
+            },100);
+            setTimeout(function(){
+                clearInterval(delay);
+                $('.test-content').css({
+                    'pointer-events': 'auto'
+                });
+                // $('.test-txt').text('点击放飞');
+                math=0;
+                num=0;
+                a=10.5;
+                b=3.5;
+                c=3.6;
+            },4000);
+        }
+        function nihaoa(){
+
+        }
+    </script>
+
+</body>
+</html>
